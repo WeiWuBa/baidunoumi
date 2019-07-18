@@ -1,3 +1,131 @@
+#head{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0,0,0,.06);
+    overflow: hidden;
+}
+#head_cont{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo{
+    width: 122px;
+    height: 48px;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/cb17435feec4eff36e37473ba20575fb.png) no-repeat;
+    background-size: contain;
+    margin-top: 12px;
+    float: left;
+}
+#head_cont>ul{
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    float: right;
+}
+#head_cont>ul>li{
+    line-height: 70px;
+}
+#head_cont>ul>li:nth-child(1){
+    font-weight: 700;
+}
+#head_cont>ul>li:nth-child(1)::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 3px;
+    position: relative;
+    background: linear-gradient(45deg,#6d93fe,#3b99fc);
+    bottom: 16px;
+    left: 5.5px;
+}
+#head_cont>ul>li>a:hover{
+    font-weight: 700;
+}
+#head_cont>ul>li:last-child>a{
+    display: inline-block;
+    width: 112px;
+    height: 36px;
+    line-height: 36px;
+    background: linear-gradient(45deg,#6d93fe,#3b99fc);
+    border-radius: 19px;
+    color: #fff;
+}
+#subject{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;background: #f8f8f9;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/a27d1e713e60967d0db8118311a566c9.jpg) no-repeat;
+}
+#search{
+    width: 798px;
+    height: 50px;
+    border-radius: 26px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 40px 0 hsla(0,0%,56%,.2);
+    margin: 32px auto;
+    background: #fff;
+}
+.search_input{
+    width: 600px;
+    height: 28px;
+    margin: 11px 15px 11px 0;
+}
+.occupation{
+    float: left;
+    height:50px;
+    line-height: 50px;
+    margin: 0 15px 0 36px;
+}
+.occupation>i{
+    display: inline-block;
+    width: 7px;
+    height: 5px;
+    background-image: url(http://zhaopin.baidu.com/static/newpczhaopin/2ecbc4f579ca2383b671f7e0969ed5f8.png);
+    /* http://zhaopin.baidu.com/static/newpczhaopin/1a8701d1c7fda19813dda2af7e60e182.png 点击之后*/
+    background-size: contain;
+    margin-left: 6px;
+    margin-bottom: 2px;
+}
+.fangdj{
+    width: 60px;
+    height: 50px;
+    float: right;
+}
+.fangdj>i{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top:14px;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/c8365c4a1acbb89ca909012aa6dba999.png) no-repeat;
+    /* http://zhaopin.baidu.com/static/newpczhaopin/d13628725f9a6c879b06461e73d0cf1b.png 鼠标滑到 */
+    background-size: contain;
+}
+.suggest-result{
+    position: absolute;
+    width: 800px;
+    top: 168px;
+    z-index: 10;
+    background: #fff;
+    border-color: #5183ff;
+    box-shadow: 0 0 40px 0 rgba(81,131,255,.35);
+    border-radius: 5px;
+    display: none;
+}
+.suggest-result>ul{
+    height: 250px;
+    overflow: auto;
+}
+.suggest-result>ul>li{
+    line-height: 44px;
+    padding-left: 35px;
+}
+.suggest-result>ul>li:hover{
+    background-color: #f5f5f5;
+}
 .right_black{
     background: #222;
     position: absolute;
@@ -5,25 +133,5 @@
     top: 0px;
     width: 56px;
     height: 100%;
-}
-#search{
-    width: 798px;
-    height: 50px;
-    border-radius: 26px;
-    border: 1px solid #5183ff;
-}
-.search_input{
-    width: 600px;
-    height: 28px;
-}
-.occupation{
-    float: left;
-    height:50px;
-    line-height: 50px;
-}
-.occupation>i{
-    float: left;
-    width: 7px;
-    height: 5px;
-    background-image: url(http://zhaopin.baidu.com/static/newpczhaopin/1a8701d1c7fda19813dda2af7e60e182.png);  
+    z-index: 100000;
 }

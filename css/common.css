@@ -7,4 +7,17 @@ input,select,textarea,button{outline:0; -webkit-appearance: none; font-family: "
 textarea{resize:none; overflow: auto;}
 table{border-collapse: collapse; border-spacing: 0;}
 th,strong,var,em{font-weight: normal; font-style: normal;}
-a{text-decoration: none;}
+a{text-decoration: none; color: black;}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	content:" ";
+	display: block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+}
+fieldset{
+	border: none;
+}
