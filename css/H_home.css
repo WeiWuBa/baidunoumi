@@ -5,5 +5,25 @@
     top: 0px;
     width: 56px;
     height: 100%;
-    
+}
+#search{
+    width: 798px;
+    height: 50px;
+    border-radius: 26px;
+    border: 1px solid #5183ff;
+}
+.search_input{
+    width: 600px;
+    height: 28px;
+}
+.occupation{
+    float: left;
+    height:50px;
+    line-height: 50px;
+}
+.occupation>i{
+    float: left;
+    width: 7px;
+    height: 5px;
+    background-image: url(http://zhaopin.baidu.com/static/newpczhaopin/1a8701d1c7fda19813dda2af7e60e182.png);  
 }
