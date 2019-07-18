@@ -1,0 +1,77 @@
+/* 网页开始 */
+/* 头部header */
+ #C_hearder{
+	background-color: #f2f2f2;
+	height: 40px;
+	width: 100%;
+}
+.C_hearder{
+	width: 1210px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.C_LOGIN{
+	float: left;
+}
+.C_LOGIN>li{
+	float: left;
+	height: 100%;
+	margin-left: 20px;
+	line-height: 40px;
+}
+.C_LOGIN>li:hover>a{
+	color: #B08C4A;
+}
+.C_login_a{
+	color: #B08C4A;
+}
+/* 用户名 */
+.C_user_name{
+	/* display: none; */
+}
+/* 登录状态退出 */
+.C_logout{
+	/* display: none; */
+}
+/* 用户登录 */
+.C_login{
+	display: block;
+}
+/* 用户注册 */
+.C_logon{
+	display: block;
+}
+
+
+/* 右侧工具栏 */
+.C_hearderUtil{
+	float: right;
+}
+.C_hearderUtil>li{
+	float: left;
+	padding-right: 20px;
+	line-height: 40px;
+	position: relative;
+}
+.C_hearderUtil>li:hover>a{
+	color: #B08C4A;
+}
+
+.C_heardertriangle{
+	display: inline-block;
+	background: url(../images/black-triangle.png) no-repeat;
+	background-size: cover;
+	width: 6px;
+	height: 3px;
+	margin: 0 0 4px 2px;
+}
+.C_lines{
+	position: absolute;
+	width: 1px;
+	height: 14px;
+	top: 20px;
+	right: 0;
+	border-right: 1px solid #dbdbdb;
+}
+
+
