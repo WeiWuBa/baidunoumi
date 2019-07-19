@@ -67,15 +67,12 @@
 	color: #a6a6a6;
 	float: left;
 }
-.C_markup{
-	background-size: 18px 10px;
-	background: url(../images/hotel/white-triangle.png);
-}
+
 /* 区域 */
 .C_hotelCityDetail_area{
-	height: 20px;
 	line-height: 20px;
 	padding: 16px 0 16px 0;
+	overflow: hidden;
 	border-bottom: 1px solid #f5f5f5;
 }
 /* 全部按钮 */
@@ -84,6 +81,9 @@
 	height: 20px;
 	float: left;
 	margin-left: 20px;
+}
+.C_hotelCityDetail_fuoce>a{
+	padding: 0 2px;
 }
 .C_hotelCityDetail_fuoce>a:focus{
 	background-color: #42444F;
@@ -99,12 +99,41 @@
 	float: left;
 	width: 848px;
 	line-height: 20px;
+	padding-left: 2px;
 }
 .C_hotelCityDetail_tab>a{
 	display: inline-block;
+	position: relative;
 	width: 112px;
 	margin: 0 10px;
 	font-size: 14px;
+}
+.C_hotelCityDetail_tab>a:hover{
+	color: black;
+}
+.C_markup{
+	width: 18px;
+	height: 10px;
+	background-size:18px 10px;
+	background: url(../images/hotel/white-triangle.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: -50%;
+	left: 16%;
+	z-index: 1;
+	display: none;
+}
+/* 城市详情 */
+.C_hotelCityDetail_areaDetail{
+	width: 848px;
+	float: left;
+	margin: 9px 0 0 10%;
+	border: 1px solid #EEEEEE;
+	background-color: #fbfbfb;
+	display: block;
+	box-sizing: border-box;
+	display: none;
+	padding: 10px;
 }
 /* 分类 */
 .C_hotelCityDetail_classify{
@@ -128,6 +157,59 @@
 	margin-top: 72px;
 	border: 1px solid #EEEEEE;
 	box-sizing: border-box;
+}
+
+
+/* 主体详情部分 */
+.C_content{
+	width: 982px;
+	height: 48px;
+	background-color: #e5e5e5;
+	border: #CCCCCC 1px solid;
+	box-sizing: border-box;
+	margin-top: 16px;
+}
+.C_contentTop{
+	height: 48px;
+}
+.C_contentTop_list{
+}
+.C_contentTop_list>a{
+	line-height: 48px;
+	padding:12px 20px;
+	border-bottom: #CCCCCC 1px solid;
+	border-left: #e5e5e5 1px solid;
+	border-right: #e5e5e5 1px solid;
+}
+.C_contentTop_list>a:hover{
+	border-bottom: #FFFFFF 1px solid;
+	border-left: #CCCCCC 1px solid;
+	border-right: #CCCCCC 1px solid;
+	z-index: 1;
+}
+.C_contentTop_checek{
+	line-height: 48px;
+	margin-left: 30px;
+}
+.contentTop_checek{
+	  display: inline-block;
+	  appearance: none;    /* 取消自身块样式*/
+	  font-weight: 100;
+	  color:#BCBCBC;
+}
+.contentTop_checek::after{
+	display: block;
+	content: '';
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	padding: 0;
+	text-align: center;
+	background: url(../images/hotel/list_1.png) no-repeat center;
+	background-size: cover;
+}
+.contentTop_checek:checked::after{
+	content: '\2714';
 }
 
 
