@@ -1,3 +1,5 @@
+
+//*****************************搜索框鼠标放上*********************** */
 $('#search').on('mouseover',function(){
     $('#search').css({
         'border-color': '#5183ff',
@@ -18,7 +20,9 @@ $('#search').on('mouseover',function(){
         'background-size': 'contain'
     });
 })
+//*****************************搜索框鼠标放上*********************** */
 
+//*************************搜索框**********************
 $('.search_input').on('keyup',function(){
     $('.suggest-result').css({'display':'block'});
 
@@ -44,3 +48,32 @@ $('.search_input').on('keyup',function(){
         $('.suggest-result').css({'display':'none'});
     };
 })
+var jishu = 0;
+$('.occupation').on('click',function(){
+    if(jishu == 0){
+        $('.occupation>i').css({
+            'background-image':'url(http://zhaopin.baidu.com/static/newpczhaopin/1a8701d1c7fda19813dda2af7e60e182.png)'
+        });
+        $('.occupation>div').css({
+            'display' : 'block'
+        })
+        jishu ++;
+    }else{
+        $('.occupation>i').css({
+            'background-image':'url(http://zhaopin.baidu.com/static/newpczhaopin/2ecbc4f579ca2383b671f7e0969ed5f8.png)'
+        });
+        $('.occupation>div').css({
+            'display' : 'none'
+        })
+        jishu = 0 ;
+    }
+})
+//*************************搜索框**********************
+
+//*************************点击document清除掉所有的改挂显示**********************
+    $("body").click(function (e) {
+        if (!$(e.target).closest(".occupation").length) {
+            $(".occupation>div").hide();
+        }
+    });
+//*************************点击document清除掉所有的改挂显示**********************
