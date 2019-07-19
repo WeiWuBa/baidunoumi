@@ -1,3 +1,4 @@
+/* ********************头部***************** */
 #head{
     width: 100%;
     background: #fff;
@@ -53,12 +54,17 @@
     border-radius: 19px;
     color: #fff;
 }
+/* ********************头部***************** */
+
+
 #subject{
-    width: 100%;
     margin: 0 auto;
     overflow: hidden;background: #f8f8f9;
     background: url(http://zhaopin.baidu.com/static/newpczhaopin/a27d1e713e60967d0db8118311a566c9.jpg) no-repeat;
+    padding-right: 56px;
 }
+
+/* ********************搜索框***************** */
 #search{
     width: 798px;
     height: 50px;
@@ -78,6 +84,7 @@
     height:50px;
     line-height: 50px;
     margin: 0 15px 0 36px;
+    position: relative;
 }
 .occupation>i{
     display: inline-block;
@@ -88,6 +95,23 @@
     background-size: contain;
     margin-left: 6px;
     margin-bottom: 2px;
+}
+.occupation>div{
+    width: 98px;
+    background: #fff;
+    z-index: 10;
+    border:1px solid #5183ff;
+    border-top: 1px solid #fff;
+    position: absolute;
+    left: -16px;
+    display: none;
+}
+.occupation>div>ul>li{
+    line-height: 40px;
+    padding-left: 15px;
+}
+.occupation>div>ul>li:hover{
+    background: #f5f5f5;
 }
 .fangdj{
     width: 60px;
@@ -104,7 +128,8 @@
     /* http://zhaopin.baidu.com/static/newpczhaopin/d13628725f9a6c879b06461e73d0cf1b.png 鼠标滑到 */
     background-size: contain;
 }
-.suggest-result{
+
+ .suggest-result{/* 输出的ajax放置区域 */
     position: absolute;
     width: 800px;
     top: 168px;
@@ -126,6 +151,10 @@
 .suggest-result>ul>li:hover{
     background-color: #f5f5f5;
 }
+/* ********************搜索框***************** */
+
+
+/* ********************侧边框***************** */
 .right_black{
     background: #222;
     position: absolute;
@@ -135,3 +164,4 @@
     height: 100%;
     z-index: 100000;
 }
+/* ********************侧边框***************** */
