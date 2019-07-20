@@ -3,7 +3,7 @@
 	width: 1210px;
 }
 /* 网页开始 */
-/* 主体部分容器 */
+/* mian————————————主体部分容器 */
 #C_mian{
 	width: 1210px;
 	height: auto;
@@ -59,7 +59,7 @@
 	float: left;
 }
 
-/* 区域 */
+/* navigation————————————区域导航 */
 .C_hotelCityDetail_area{
 	line-height: 20px;
 	padding: 16px 0 16px 0;
@@ -130,11 +130,9 @@
 	padding: 16px 0 16px 0;
 	border-bottom: 1px solid #f5f5f5;
 }
-
 /* 价格 */
 .C_hotelCityDetail_price{
 	padding: 16px 0 16px 0;
-	
 }
 /* 右侧APP二维码 */
 .C_mianRight{
@@ -153,18 +151,20 @@
 /* 主体详情部分 */
 .C_content{
 	width: 982px;
-	height: 48px;
-	background-color: #e5e5e5;
 	border: #CCCCCC 1px solid;
 	box-sizing: border-box;
 	margin-top: 16px;
 }
-/* 黏性nav */
+/* content————————————黏性nav */
 .C_contentTop{
-	height: 48px;
+	height: 47px;
+	width: 982px;
+	background-color: #e5e5e5;
+	border-bottom: #CCCCCC 1px solid;
+	box-sizing: border-box;
 }
 .C_contentTop_list{
-	
+	overflow: hidden;
 }
 .C_contentTop_list>a{
 	line-height: 48px;
@@ -178,6 +178,7 @@
 	border-left: #CCCCCC 1px solid;
 	border-right: #CCCCCC 1px solid;
 	z-index: 1;
+	background-color: #FFF;
 }
 .C_contentTop_checek{
 	line-height: 48px;
@@ -216,13 +217,17 @@
 	border: 1px solid #CCCCCC;
 	overflow: hidden;
 	float: left;
+	display: none;
 	margin-right: 18px;
 }
 #C_contentTop_right_serch{
 	border: none;
 	height: 32px;
 	width: 170px;
+	padding:  0 10px;
 	position: relative;
+	color: #666;
+	box-sizing: border-box;
 }
 #C_contentTop_right_submit{
 	position: absolute;
@@ -252,12 +257,14 @@
 	margin: 9px 0;
 }
 .C_contentTop_right_pagingl:hover{
-	
 }
 .C_contentTop_right_pagingT{
 	float: left;
 	padding: 0 4px;
 	font-size: 14px;
+}
+.C_contentTop_right_pagingT1{
+	color: #B08C4A;
 }
 .C_contentTop_right_pagingR{
 	float: left;
@@ -268,8 +275,118 @@
 }
 
 
+/* content————————————酒店信息 */
+.C_contentMid{
+	width: 982px;
+	overflow: hidden;
+}
+.C_contenthotel{
+	width: 982px;
+}
+.C_contenthotel_list{
+	width: 982px;
+}
+.C_contenthotel_list>li{
+	padding: 20px;
+	border-bottom: #CCCCCC 1px solid;
+	overflow: hidden;
+}
+.C_contenthotel_listcontent{
+	overflow: hidden;
+}
+.C_contenthotel_list>li:hover{
+	background-color: #fbfbfb;
+}
+/* 酒店logo图 */
+.C_contenthotel_list>li>a:nth-child(1){
+	float: left;
+	padding-right: 20px;
+}
+.C_contenthotel_list>li>a:nth-child(1)>img{
+	width: 174px;
+	height: 124px;
+	background-size: cover;
+}
+/* 酒店名称 */
+.C_contenthotel_listcontent>a:nth-child(1){
+	overflow: hidden;
+}
+.C_contenthotel_listcontent>a:nth-child(1)>h3{
+	font-size: 20px;
+	font-weight: 400;
+	padding: 6px 0;
+}
+/* 酒店星形评价 */
+.C_contenthotel_listcontent>p:nth-child(2){
+	padding: 6px 0 12px;
+	width: 570px;
+}
+.C_contenthotel_listcontent>p:nth-child(2)>a{
+	overflow: hidden;
+	position: relative;
+}
+.C_contenthotel_listcontent>p:nth-child(2)>a>img:nth-child(1){
+	width: 72px;
+	height: 12px;
+	z-index: -1;
+}
+.C_contenthotel_listcontent>p:nth-child(2)>a>span:nth-child(2){
+	width: 50px;
+	height: 15px;
+	position: absolute;
+	display: inline-block;
+	overflow: hidden;
+	left: 0;
+	top: 03px;
+}
+.C_contenthotel_listcontent>p:nth-child(2)>a>span:nth-child(2)>img{
+	border: 0;
+	width: 72px;
+	height: 12px;
+}
+.C_contenthotel_listcontent>p:nth-child(2)>a>span{
+	color: #9d8352;
+	font-size: 14px;
+}
+/* 酒店价格 */
+.C_contenthotel_listcontent>p:nth-child(2)>span:nth-child(2){
+	float: right;
+	top: 64px;
+	right: 120px;
+}
+.C_contenthotel_listcontent>p:nth-child(2)>span:nth-child(2) span{
+	font-size: 20px;
+}
+/* 酒店文字评价 */
+.C_contenthotel_listcontent>span:nth-child(3){
+	display: inline-block;
+}
+.C_contenthotel_listcontent>span:nth-child(3)>a{
+	color: #B08C4A;
+	font-size: 14px;
+}
+.C_contenthotel_listcontent>span:nth-child(3)>a:hover{
+	color: #9d8352;
+}
+/* 酒店地址 */
+.C_contenthotel_listcontent>p:nth-child(4){
+	padding: 15px 0 0;
+	font-size: 14px;
+}
+.C_contenthotel_listcontent>p:nth-child(4)>span{
+	padding-left: 10px;
+	border-left: 1px solid #6666;
+	margin-left: 10px;
+}
 
 
+/* paging————————————分页器 */
+.C_contentBot_paging{
+	height: 140px;
+	width: 982px;
+	box-sizing: border-box;
+	margin-bottom: 100px;
+}
 
 
 
