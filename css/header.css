@@ -158,7 +158,10 @@ a{
     height: 42px;
     float: right;
     border: none;
-    background: #d6ad62;
+    background-image: linear-gradient(-180deg,#d6ad62 0,#bf974d 100%);
+}
+ .searchBtn:hover{
+	background-color: #a18248;
 }
 .search-text{
     position: absolute;
@@ -166,7 +169,7 @@ a{
     top: 7px;
     font-size: 18px;
     color: white;
-    z-index: 1;
+    z-index: 2;
 }
 .dingwei{
     position: relative;
@@ -177,7 +180,7 @@ a{
     height: 42px;
     right: 0;
     cursor: pointer;
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -247,7 +250,7 @@ a{
     color: #222;
 }
 .header-3 .HeaNav1{
-    background:#bf974d;
+    background-image: linear-gradient(-180deg,#d6ad62 0,#bf974d 100%);
     padding: 0 0 0 16px;
     text-align: left;
     font-weight: 500;
@@ -257,9 +260,9 @@ a{
     font-size: 18px;
     color: white;
     position: relative;
+	z-index: 2;
 }
 .HeaNav1_con{
-	z-index: 2;
 	overflow: hidden;
 	display: none;
 }

@@ -1,4 +1,7 @@
-
+.footer{
+	height: 500px;
+	width: 1210px;
+}
 /* 网页开始 */
 /* 主体部分容器 */
 #C_mian{
@@ -91,7 +94,6 @@
 }
 .C_hotelCityDetail_tab>a{
 	display: inline-block;
-	position: relative;
 	width: 112px;
 	margin: 0 10px;
 	font-size: 14px;
@@ -157,10 +159,12 @@
 	box-sizing: border-box;
 	margin-top: 16px;
 }
+/* 黏性nav */
 .C_contentTop{
 	height: 48px;
 }
 .C_contentTop_list{
+	
 }
 .C_contentTop_list>a{
 	line-height: 48px;
@@ -199,6 +203,75 @@
 .contentTop_checek:checked::after{
 	content: '\2714';
 }
+/* 黏性nav搜索 */
+.C_contentTop_right{
+	height: 32px;
+	line-height: 32px;
+	float: right;
+	margin: 6px 30px 6px 0;
+}
+.C_contentTop_right_serch{
+	width: 212px;
+	height: 32px;
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+	float: left;
+	margin-right: 18px;
+}
+#C_contentTop_right_serch{
+	border: none;
+	height: 32px;
+	width: 170px;
+	position: relative;
+}
+#C_contentTop_right_submit{
+	position: absolute;
+	border: none;
+	height: 32px;
+	width: 42px;
+	background:#fff url(../images/hotel/search-icon_40f1403.png) no-repeat center center;
+	border-left: 1px solid #CCCCCC;
+	cursor: pointer;
+}
+#C_contentTop_right_submit:hover{
+	background:#fff url(../images/hotel/search-icon_f38607e.png) no-repeat center center;
+	background-size: cover;
+}
+/* 分页器箭头 */
+.C_contentTop_right_paging{
+	float: right;
+	width: 54px;
+	height: 32px;
+	text-align: center;
+}
+.C_contentTop_right_pagingl{
+	float: left;
+	border-top:6px dashed transparent;
+	border-right: 6px solid #CCCCCC;
+	border-bottom: 6px dashed transparent;
+	margin: 9px 0;
+}
+.C_contentTop_right_pagingl:hover{
+	
+}
+.C_contentTop_right_pagingT{
+	float: left;
+	padding: 0 4px;
+	font-size: 14px;
+}
+.C_contentTop_right_pagingR{
+	float: left;
+	border-top: 6px solid transparent;
+	border-left: 6px solid #666;
+	border-bottom: 6px solid transparent;
+	margin: 9px 0;
+}
+
+
+
+
+
+
 
 
 
