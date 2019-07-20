@@ -4,11 +4,12 @@
         "/quanzhi?city=深圳",
         "/btrain?city=深圳",
         "/jianzhi?city=深圳",
-        "/xiaoyuan?city=深圳" ,
+        "/xiaoyuan?city=深圳",
         "/zph?startdate=20190718_20190916&amp;city=深圳",
         "/firm?city=深圳",
         "/daily?tab=0&amp;city=深圳",
-        "/fabu/login/passRouter"
+        "/fabu/login/passRouter",
+        "/quanzhi?city=深圳"
     ],
     "navText":["首页","全职","培训","兼职","校园","招聘会","企业","百聘日报","发布职位"]
 }
