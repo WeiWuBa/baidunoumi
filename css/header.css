@@ -125,6 +125,14 @@ a{
 }
 .brown{
     color: brown;
+	overflow: hidden;
+}
+.brown>img{
+	width: 15px;
+	height: 19px;
+	padding-right: 4px;
+	background: url(images/C_common/re-pos_50b4a85.png) no-repeat;
+	background-size: cover;
 }
 .search-area{
     width: 576px;
