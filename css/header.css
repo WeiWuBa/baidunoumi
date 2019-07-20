@@ -93,7 +93,7 @@ a{
     width: 165px;
     height: 59px;
     float: left;
-    overflow: hidden;
+    position: relative;
 }
 .new-logo{
     width: 165px;
@@ -104,8 +104,8 @@ a{
 }
 .city-wrap{
     position: absolute;
-    top: 91px;
-    left: 270px;
+    top: 31px;
+    left: 178px;
     width: 165px;
     height: 30px;
     cursor: pointer;

@@ -1,0 +1,20 @@
+{
+  "name": "baudunuomi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeiWuBa/baidunoumi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeiWuBa/baidunoumi/issues"
+  },
+  "homepage": "https://github.com/WeiWuBa/baidunoumi#readme"
+}
