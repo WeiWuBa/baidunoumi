@@ -1,6 +1,7 @@
 .footer{
-	height: 500px;
+	height: 200px;
 	width: 1210px;
+	background-color: #BCBCBC;
 }
 /* 网页开始 */
 /* mian————————————主体部分容器 */
@@ -285,6 +286,7 @@
 }
 .C_contenthotel_list{
 	width: 982px;
+	box-sizing: border-box;
 }
 .C_contenthotel_list>li{
 	padding: 20px;
@@ -296,6 +298,7 @@
 }
 .C_contenthotel_list>li:hover{
 	background-color: #fbfbfb;
+	border-right: #CCCCCC 1px solid;
 }
 /* 酒店logo图 */
 .C_contenthotel_list>li>a:nth-child(1){
@@ -386,9 +389,39 @@
 	width: 982px;
 	box-sizing: border-box;
 	margin-bottom: 100px;
+	padding: 30px 0 0 30px;
 }
-
-
+.C_contentBot_pagingT1{
+	color: #B08C4A;
+}
+.C_contentBot_pagingB{
+	text-align: center;
+	padding: 20px;
+}
+.C_contentBot_pagination{
+	display: inline-block;
+	overflow: hidden;
+}
+.C_contentBot_pagination>li{
+	display: inline;
+	width: 43px;
+	height: 39px;
+	line-height: 39px;
+}
+.C_contentBot_pagination>li>a{
+	color: #CCCCCC;
+	padding: 8px 16px;
+	border: 1px solid #CCCCCC;
+	margin: 0 4px;
+	border-radius: 4px;
+}
+.C_contentBot_pagination>li:hover>a{
+	border: 1px solid #333333;
+	color: #333333;
+}
+.C_contentBot_pagination>li:nth-child(1){
+	display: none;
+}
 
 
 

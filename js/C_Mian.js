@@ -15,7 +15,7 @@ $.ajax({
 		var conet = 0;
 		$.each(data,function(index,element){
 			conet++;
-			shop += '<li><!-- 酒店logo图 --><a href="#" class="clearfix"><img src="'+element.hotel_img_url+'" /></a><div class="C_contenthotel_listcontent"><!-- 酒店名称 --><a href="#"><h3>'+element.hotel_name+'</h3></a><!-- 酒店星形评价 --><p><a href="#"><img src="images/hotel/shop-star-b_767a724.png" /><span><img src="images/hotel/shop-star-o_e5d6259.png" /></span><span>4分</span></a><!-- 酒店价格 --><span>人均 <span>'+element.hotel_price+'</span></span></p><!-- 酒店文字评价 --><span><a href="#">'+element.hotel_appraise+'</a></span><!-- 酒店地址 --><p><i class="iconfont">&#xe60c;</i>'+element.hotel_site+'<span>'+element.hotel_address+'</span></p></div></li>';
+			shop += '<li><!-- 酒店logo图 --><a href="#" class="clearfix"><img src="'+element.hotel_img_url+'" /></a><div class="C_contenthotel_listcontent"><!-- 酒店名称 --><a href="#"><h3>'+element.hotel_name+'</h3></a><!-- 酒店星形评价 --><p><a href="#"><img src="images/hotel/shop-star-b_767a724.png" /><span><img src="images/hotel/shop-star-o_e5d6259.png" /></span><span>4分</span></a><!-- 酒店价格 --><span>'+element.hotel_price+'</span></p><!-- 酒店文字评价 --><span><a href="#">'+element.hotel_appraise+'</a></span><!-- 酒店地址 --><p><i class="iconfont">&#xe60c;</i>'+element.hotel_site+'<span>'+element.hotel_address+'</span></p></div></li>';
 		});
 		$('.C_contenthotel_list').html(shop);
 	},
