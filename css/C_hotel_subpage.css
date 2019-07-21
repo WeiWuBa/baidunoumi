@@ -1,0 +1,203 @@
+/*————————————————头部 */
+/*————————————————面包屑 */
+#C_crumb{
+	padding: 10px 0;
+	width: 1210px;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.C_crumb{
+	float: left;
+}
+.C_crumb_last>a{
+	color: deeppink;
+	font-size: 12px;
+}
+/*————————————————主体内容区 */
+.C_mian{
+	width: 1210px;
+	height: auto;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+/*————————————————酒店详情 */
+.C_mian_top{
+	width: 1210px;
+	height: 263px;
+	box-shadow:1px 1px 3px #CCCCCC;
+	padding: 28px 440px 28px 28px;
+	box-sizing: border-box;
+	position: relative;
+	margin: 10px 0;
+}
+.C_mian_top>h1{
+	font-size: 20px;
+	font-weight: 900;
+}
+/* 酒店星形评价 */
+.C_mian_top>p:nth-child(2){
+	padding: 6px 0 12px;
+	width: 570px;
+}
+.C_mian_top>p:nth-child(2)>a{
+	overflow: hidden;
+	position: relative;
+}
+.C_mian_top>p:nth-child(2)>a>img:nth-child(1){
+	width: 72px;
+	height: 12px;
+	z-index: -1;
+}
+.C_mian_top>p:nth-child(2)>a>span:nth-child(2){
+	width: 50px;
+	height: 15px;
+	position: absolute;
+	display: inline-block;
+	overflow: hidden;
+	left: 0;
+	top: 03px;
+}
+.C_mian_top>p:nth-child(2)>a>span:nth-child(2)>img{
+	border: 0;
+	width: 72px;
+	height: 12px;
+}
+.C_mian_top>p:nth-child(2)>a>span{
+	color: #9d8352;
+	font-size: 14px;
+}
+/* 酒店价格 */
+.C_contenthotel_listcontent>p:nth-child(2)>span:nth-child(2){
+	float: right;
+	top: 64px;
+	right: 120px;
+}
+.C_contenthotel_listcontent>p:nth-child(2)>span:nth-child(2) span{
+	font-size: 20px;
+}
+/* 酒店地址、电话、营业时间 */
+.C_mian_top>ul>li{
+	padding: 10px 0;
+	font-size: 14px;
+}
+.C_mian_top>a:nth-child(4){
+	overflow: hidden;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+/* 酒店图片——img */
+.C_mian_top>a:nth-child(4)>img{
+	width: 305px;
+	height: 205px;
+	
+}
+/* 地图定位 */
+.C_mian_top>ul>li>span:nth-child(2){
+	font-size: 12px;
+	padding: 0 20px;
+	color: #3B99FC;
+}
+.C_mian_top>ul>li>span:nth-child(2)>i{
+	font-size: 16px;
+	color: #3B99FC;
+	padding: 0 4px;
+}
+
+/*————————————————下半部分 */
+.C_mian_bot{
+	width: 1210px;
+	margin: 10px auto;
+	box-sizing: border-box;
+}
+/*————————————————下半部分_左边 */
+.C_mian_bot_L{
+	width: 964px;
+	overflow: hidden;
+}
+/*商家团购 */
+.C_mian_bot_header{
+	width: 964px;
+	padding: 10px 0 10px;
+	font-size: 18px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.C_mian_bot_shop{
+	width: 964px;
+	box-sizing: border-box;
+}
+.C_mian_bot_shopping>div{
+	padding: 20px 0 10px;
+	border-bottom: 1px solid #CCCCCC;
+	overflow: hidden;
+}
+.C_mian_bot_shopping>div>a:nth-child(1)>img{
+	width: 143px;
+	height: 89px;
+	float: left;
+}
+.C_mian_bot_shopping>div>dl:nth-child(2){
+	padding: 0 10px;
+	float: left;
+	width: 216px;
+}
+.C_mian_bot_shopping>div>dl:nth-child(2)>dt{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.C_mian_bot_shopping>div>dl:nth-child(2)>dd{
+	font-size: 12px;
+	margin-bottom:10px;
+	color: #b2b2b2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.C_mian_bot_shopping>div>dl:nth-child(2)>p{
+	font-size: 12px;
+	color: #b2b2b2;
+}
+.C_mian_bot_shopping>div>div:nth-child(3){
+	color: #b2b2b2;
+	font-size: 14px;
+	float: left;
+	line-height: 89px;
+	margin-left: 40px;
+}
+/* 价格 */
+.C_mian_bot_shopping_price{
+	float: left;
+	margin-left: 50px;
+	padding: 10px 0;
+	text-align: center;
+}
+.C_mian_bot_shopping_price>dt{
+	font-size: 24px;
+	color: deeppink;
+	font-weight: 500;
+}
+.C_mian_bot_shopping_price>dd{
+	font-size: 12px;
+	color: #BCBCBC;
+	font-weight: 500;
+}
+.C_mian_bot_shopping_price>dd>span{
+	text-decoration: line-through;
+}
+.C_shopping_but{
+	display: inline-block;
+	width: 86px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	background-color: deeppink;
+	color: white;
+}
+.C_shopping_but:hover{
+	background-color: #c92e81;
+}
+.C_mian_bot_shopping>div>span{
+	float: right;
+	margin: 20px 100px;
+}
+

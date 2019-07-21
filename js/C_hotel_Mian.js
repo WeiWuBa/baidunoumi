@@ -15,6 +15,7 @@ $(window).scroll(function(){
 });
 
 /* ———————————————————————————————酒店页面店家展示———————————————————————————————————— */
+
 $.ajax({
 	url:'json/C_hotel.json',
 	dataType:'json',//服务器返回json格式数据
