@@ -13,12 +13,16 @@
     });
 //*****************************头部导航json*********************** */
 //*****************************搜索框鼠标放上*********************** */
-$('#search').on('mouseover',function(){
+$('#search').on('mouseenter',function(){
     $('#search').css({
         'border-color': '#5183ff',
         'box-shadow': '0 0 40px 0 rgba(81,131,255,.35)'
     });
-    $('#search').on('mouseout',function(){
+    $('.fangdj>i').css({
+        'background' : 'url(http://zhaopin.baidu.com/static/newpczhaopin/d13628725f9a6c879b06461e73d0cf1b.png) no-repeat',
+        'background-size': 'contain'
+    });
+    $('#search').on('mouseleave',function(){
         $('#search').css({
             'border-color': '#ccc',
             'box-shadow': '0 0 40px 0 hsla(0,0%,56%,.2)'
@@ -27,10 +31,6 @@ $('#search').on('mouseover',function(){
             'background' : 'url(http://zhaopin.baidu.com/static/newpczhaopin/c8365c4a1acbb89ca909012aa6dba999.png) no-repeat',
             'background-size': 'contain'
         })
-    });
-    $('.fangdj>i').css({
-        'background' : 'url(http://zhaopin.baidu.com/static/newpczhaopin/d13628725f9a6c879b06461e73d0cf1b.png) no-repeat',
-        'background-size': 'contain'
     });
 })
 //*****************************搜索框鼠标放上*********************** */
@@ -85,7 +85,7 @@ $('.occupation').on('click',function(){
 //*************************搜索框**********************
 
 //*************************banner轮播_职业选择部分鼠标滑过事件**********************
-$('.banner_left>ul>li').on('mouseover',function(e){
+$('.banner_left>ul>li').on('mouseenter',function(e){
     $(e.target).children(".left_arrow").css({
         'display':'block'
     });
@@ -196,3 +196,21 @@ $('.banner_left>ul>li').on('mouseover',function(e){
         }
     });
 //*************************点击document清除掉所有的改挂显示**********************
+//*************************right_black弹出的宽**********************
+
+// function popup(){
+//     if($('.right_black_top_a>div').text().length == 4){
+//         return 56;
+//     }else{
+//         return 85;
+//     }
+// }
+
+
+//*************************right_black弹出的宽**********************
+
+//*************************right_black弹出的动画效果**********************
+$('.right_black_top_a').mouseenter(function(e){
+    $(e.target).children("div").addClass('fadeInleft animated')
+});
+//*************************right_black弹出的动画效果**********************
