@@ -142,6 +142,11 @@
 	height: 89px;
 	float: left;
 }
+.C_mian_top_name{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .C_mian_bot_shopping>div>dl:nth-child(2){
 	padding: 0 10px;
 	float: left;
