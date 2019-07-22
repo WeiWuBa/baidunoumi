@@ -26,13 +26,13 @@
     text-align: center;
     float: right;
 }
-#head_cont>ul>li{
+.nav_yangS>li{
     line-height: 70px;
 }
-#head_cont>ul>li:nth-child(1){
+.nav_yangS>li:nth-child(1){
     font-weight: 700;
 }
-#head_cont>ul>li:nth-child(1)::after{
+.nav_yangS>li:nth-child(1)::after{
     content: '';
     display: block;
     width: 20px;
@@ -42,7 +42,7 @@
     bottom: 16px;
     left: 5.5px;
 }
-#head_cont>ul>li>a:hover{
+.nav_yangS>li>a:hover{
     font-weight: 700;
 }
 #head_cont>ul>li:last-child>a{
@@ -54,17 +54,31 @@
     border-radius: 19px;
     color: #fff;
 }
+#head_cont>ul>li:last-child>a:hover{
+    box-shadow: 0 0 20px 0 rgba(97,149,254,.35);
+}
 /* ********************头部***************** */
 
 
 #subject{
     margin: 0 auto;
-    overflow: hidden;background: #f8f8f9;
+    overflow: hidden;
     background: url(http://zhaopin.baidu.com/static/newpczhaopin/a27d1e713e60967d0db8118311a566c9.jpg) no-repeat;
     padding-right: 56px;
+    background-color: #f8f8f9;
 }
 
+.string{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+}
 /* ********************搜索框***************** */
+.centent{
+    width: 1200px;
+    margin: 0 auto;
+}
 #search{
     width: 798px;
     height: 50px;
@@ -83,8 +97,9 @@
     float: left;
     height:50px;
     line-height: 50px;
-    margin: 0 15px 0 36px;
+    padding: 0 15px 0 36px;
     position: relative;
+    cursor:pointer;
 }
 .occupation>i{
     display: inline-block;
@@ -103,7 +118,7 @@
     border:1px solid #5183ff;
     border-top: 1px solid #fff;
     position: absolute;
-    left: -16px;
+    left: 20px;
     display: none;
 }
 .occupation>div>ul>li{
@@ -117,6 +132,7 @@
     width: 60px;
     height: 50px;
     float: right;
+    cursor:pointer;
 }
 .fangdj>i{
     display: block;
@@ -153,11 +169,281 @@
 }
 /* ********************搜索框***************** */
 
+/* ********************banner部分***************** */
+#banner{
+    box-shadow: 0 0 70px 0 rgba(33,44,55,.5);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+.banner_left{
+    float: left;
+    width: 250px;
+    height: 520px;
+    background: #222;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    position: relative;
+}
+.banner_left>ul{
+    padding-top: 18px;
+}
+.banner_left>ul>li{
+    line-height: 40px;
+    padding-left:35px;
+    position: relative;
+    cursor:pointer;
+}
+.banner_left>ul>li>.left_arrow{
+    position: absolute;
+    right: 0px;
+    top: 13.5px;
+    z-index: 100;
+    border-right: 6px solid #fff;
+    border-top: 6px dashed transparent;
+    border-bottom: 6px dashed transparent;
+    display: none;
+}
+.banner_left>ul>li:hover{
+    background: #404040;
+}
+.banner_left>ul>li>a{
+    color: #fff;
+    margin: 0 4px;
+}
+.banner_level{
+    width: 698px;
+    height: 520px;
+    padding: 34px 30px 20px 29px;
+    box-sizing:border-box;
+    z-index: 99;
+    border: 1px solid #5183ff;
+    border-left: none;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 40px 0 rgba(81,131,255,.35);
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    display: none;
+}
+
+
+.banner_right{
+    float: right;
+    height: 520px;
+    background: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+}
+.banner_right_top{
+    width: 259px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing:border-box;    
+}
+.banner_right_top>li{
+    line-height: 58px;
+}
+.banner_right_cent>ul>li>a{
+    display: block;
+    padding: 10px 30px;
+}
+
+.banner_right_cent>ul>li>a>span:nth-child(1){
+    float: left;
+}
+.banner_right_cent>ul>li>a>span:nth-child(2){
+    display: inline-block;
+    max-width: 100px;
+    height: 19px;
+    margin-left: 10px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    float: left;
+}
+.banner_right_cent>ul>li>a>span:nth-child(3){
+    color: #666;
+    float: right;
+}
+.banner_right_cent>ul>li:nth-child(1)>a>span:nth-child(1){
+    color: #f94e4c;
+    font-weight: 600;
+}
+.banner_right_cent>ul>li:nth-child(2)>a>span:nth-child(1){
+    color: #ff910d;
+    font-weight: 600;
+}
+.banner_right_cent>ul>li:nth-child(3)>a>span:nth-child(1){
+    color: #ffbe00;
+    font-weight: 600;
+}
+.banner_right_buttom>a{
+    display: block;
+    margin-top: 33px;
+    font-size: 12px;
+    color: #666;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/0a080ae333880aa96a20934eae5c5614.png) no-repeat;
+    background-size: 4px 7px;
+    background-position: 150px;
+    padding-right:14px;
+}
+.banner_right_buttom>a:hover{
+    color: #5183ff;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/af29178b5f658517739fc32605d6080d.png) no-repeat;
+    background-size: 4px 7px;
+    background-position: 150px;
+    padding-right:14px;
+}
+/* ********************banner部分***************** */
+
+/* ********************主体部分-全职***************** */
+.subject_quanzhi{
+    background: #fff;
+    padding: 36px 36px 30px 0;
+    margin-bottom: 30px;
+}
+.subject_quanzhi_left{
+    width: 252px;
+    text-align: center;
+    float: left;
+}
+.subject_quanzhi_left>.subject_quanzhi_left1{
+    line-height: 55px;
+    font-size: 24px;
+}
+.subject_quanzhi_left>.subject_quanzhi_left2>a{
+    display: block;
+    cursor: pointer;
+    height: 14px;
+    margin-bottom: 11px;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/47c7c53af95a5282226f75379e7b6523.png) no-repeat;
+    margin-top: -6px;
+    background-position: 50%;
+    background-size: 100%;
+}
+.subject_quanzhi_left>.subject_quanzhi_left3>a{
+    display: block;
+    margin: 0 auto 19px;
+    width: 190px;
+    line-height: 38px;
+    border: #5179ff 1px solid;
+    border-right:none;
+    border-left:none;
+    color: #5179ff;
+    font-size: 18px;
+}
+.subject_quanzhi_left>.subject_quanzhi_left4{
+    line-height: 40px;
+    font-size: 14px;
+}
+.subject_quanzhi_left>.subject_quanzhi_left4>em{
+    margin: 0 14px;
+}
+.subject_quanzhi_left>.subject_quanzhi_left4>a:hover{
+    color: #5179ff;
+}
+.subject_quanzhi_left>a{
+    display: block;
+    width: 96px;
+    height: 32px;
+    border-radius: 17px;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    font-size: 12px;
+    line-height: 32px;
+    margin: 0 auto;
+}
+.subject_quanzhi_left>a:hover{
+    border-color:#5183ff;
+    box-shadow: 0 0 20px 0 rgba(81,131,255,.35);
+    color:  #5183ff;
+}
+.subject_quanzhi_right{
+    float: left;
+}
+.subject_quanzhi_right>ul{
+    width: 912px;
+    display: flex;
+    justify-content:space-between; 
+    flex-wrap: wrap;
+}
+.subject_quanzhi_right_a{
+    display: block;
+    width: 300px;
+    height: 162px;
+    box-sizing:border-box;    
+    background: #f8f8f8;
+    margin-bottom: 6px;
+    padding: 24px;
+    color: #666;
+    font-size: 14px;
+}
+.subject_quanzhi_right_a>div:nth-child(1){
+    font-size: 20px;
+    line-clamp: 24px;
+    margin-bottom: 14px;
+    color: #000;
+}
+.subject_quanzhi_right_a>div:nth-child(2)>em{
+    margin: 0 10px;
+}
+.subject_quanzhi_right_a>div:nth-child(3){
+    margin: 10px 0 12px;
+}
+.subject_quanzhi_right_a>div:nth-child(4){
+    font-size: 20px;
+    color: #ff7900;
+    line-height: 27px;
+    overflow: hidden;
+}
+.subject_quanzhi_right_a>div:nth-child(4)>span:nth-child(n+2){
+    display: inline-block;
+    width: 36px;
+    height: 16px;
+    margin-left: 8px;
+    line-height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    color: #000;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+}
+.subject_quanzhi_right_a>div:nth-child(4)>span:nth-child(n+2)>em{
+    display: block;
+    font-size: 14px;
+    transform:scale(.8);
+    margin-top: -3.55px;
+}
+/* ********************主体部分-全职***************** */
+
+/* ********************主体部分-校招***************** */
+.subject_xiAozHao_right_a{
+    display: block;
+    width: 178px;
+    height: 162px;
+    padding: 21px;
+    margin-bottom: 6px;
+    box-sizing:border-box;    
+    background: #f8f8f8;
+    font-size: 16px;
+    color: #000;
+}
+/* ********************主体部分-校招***************** */
 
 /* ********************侧边框***************** */
 .right_black{
     background: #222;
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 0px;
     width: 56px;
