@@ -98,6 +98,10 @@
 	padding: 0 20px;
 	color: #3B99FC;
 }
+.C_mian_top>ul>li>span:nth-child(2)>i>a{
+	font-size: 12px;
+	color: #3B99FC;
+}
 .C_mian_top>ul>li>span:nth-child(2)>i{
 	font-size: 16px;
 	color: #3B99FC;
@@ -107,13 +111,14 @@
 /*————————————————下半部分 */
 .C_mian_bot{
 	width: 1210px;
-	margin: 10px auto;
+	margin: 10px 0 100px;
 	box-sizing: border-box;
 }
-/*————————————————下半部分_左边 */
+/*————————————————下半部分_左侧_团购及评价 */
 .C_mian_bot_L{
 	width: 964px;
 	overflow: hidden;
+	float: left;
 }
 /*商家团购 */
 .C_mian_bot_header{
@@ -124,6 +129,7 @@
 }
 .C_mian_bot_shop{
 	width: 964px;
+	margin-bottom: 10px;
 	box-sizing: border-box;
 }
 .C_mian_bot_shopping>div{
@@ -184,6 +190,7 @@
 .C_mian_bot_shopping_price>dd>span{
 	text-decoration: line-through;
 }
+/* 购买按钮 */
 .C_shopping_but{
 	display: inline-block;
 	width: 86px;
@@ -200,4 +207,155 @@
 	float: right;
 	margin: 20px 100px;
 }
+
+/* 用户评价 */
+.C_mian_bot_appraise{
+	margin-bottom: 100px;
+}
+.C_mian_bot_Comment_top{
+	padding: 10px 0;
+}
+.C_mian_bot_Comment_top>div{
+	width: 49%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.C_mian_bot_Comment_top>div:nth-child(1){
+	border-right: #EEEEEE 1px solid;
+}
+.C_mian_bot_Comment_top>div>span{
+	display: inline-block;
+	padding: 50px 0;
+	font-size: 24px;
+	color: #EEEEEE;
+}
+/*————————————————下半部分_右侧_地图 */
+.C_mian_bot_R{
+	width: 226px;
+	float: right;
+	margin-top: 10px;
+}
+.C_mian_bot_R_map{
+	width: 226px;
+	height: 96px;
+	padding: 6px;
+	margin-bottom: 14px;
+	box-sizing: border-box;
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+}
+.C_mian_bot_R_map1{
+	overflow: hidden;
+	position: relative;
+}
+.C_mian_bot_R_map1>img{
+	width: 214px;
+	height: 84px;
+}
+.C_mian_bot_R_map1>a{
+	background-color: rgba(21,31,36,0.5);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 14px;
+	color: white;
+	padding: 0 2px 2px;
+	opacity: 0;
+}
+.C_mian_bot_R_map1>a>span{
+	font-size: 20px;
+}
+.C_mian_bot_R_map2{
+	overflow: hidden;
+	position: relative;
+}
+.C_mian_bot_R_map2>img{
+	width: 214px;
+	height: 84px;
+}
+.C_mian_bot_R_map2>a{
+	background-color: rgba(21,31,36,0.5);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 14px;
+	color: white;
+	padding: 0 2px 2px;
+	opacity: 0;
+}
+.C_mian_bot_R_map2>a>span{
+	font-size: 20px;
+}
+/* 酒店推荐 */
+.C_mian_bot_R_rec{
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	box-sizing: border-box;
+}
+.C_mian_bot_R_rec_header{
+	overflow: hidden;
+	padding: 10px;
+	line-height: 18px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.C_mian_bot_R_rec_header>p{
+	float: left;
+}
+.C_mian_bot_R_rec_header>a{
+	float: right;
+	width: 17px;
+	height: 17px;
+	background: url(../images/hotel/hotel_subpage/refresh_d84c7e3.png) no-repeat center center;
+	background-position: 0 0;
+}
+.C_mian_bot_R_rec_header>a:hover{
+	background: url(../images/hotel/hotel_subpage/refresh_d84c7e3.png) no-repeat center center;
+	background-position: 0 -30px;
+}
+
+.C_mian_bot_R_rec_con{
+	
+}
+.C_mian_bot_R_rec_con>li{
+	padding: 10px;
+	overflow: hidden;
+	border-bottom:1px solid #CCCCCC;
+}
+.C_mian_bot_R_rec_con>li>a:hover>dl>dt{
+	color: deeppink;
+}
+.C_mian_bot_R_rec_con>li>a>img{
+	width: 100px;
+	height: 77px;
+	float: left;
+}
+.C_mian_bot_R_rec_con>li>a>dl{
+	font-size: 14px;
+	float: right;
+	padding-left: 4px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.C_mian_bot_R_rec_con>li>a>dl>dt{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.C_mian_bot_R_rec_con>li>a>dl>dd{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.C_mian_bot_R_rec_con>li>a>dl>p>span:nth-child(1){
+	font-size: 14px;
+	color: red;
+}
+.C_mian_bot_R_rec_con>li>a>dl>p>span:nth-child(2){
+	font-size: 12px;
+	text-decoration: line-through;
+	color: #BCBCBC;
+}
+
 

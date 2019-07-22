@@ -13,7 +13,11 @@ $(window).scroll(function(){
 		$('.C_contentTop_right_serch').css({'display':'none'});
 	}
 });
-
+// 榜单选择器
+$('.C_contentTop_list').on('click','a',function(){
+	$('.C_contentTop_list a').removeClass('C_contentTop_list_hover');
+	$(this).toggleClass('C_contentTop_list_hover');
+})
 /* ———————————————————————————————酒店页面店家展示———————————————————————————————————— */
 
 $.ajax({
