@@ -1,0 +1,231 @@
+.header_xr{
+	width: 100%;
+	height: 79px;
+	border: 1px solid #DBDBDB;
+	background: #fff;
+}
+.wrap_xr{
+	width: 980px;
+	margin: 0 auto;
+}
+.wrap_xr .logo_xr{
+	width: 980px;
+}
+.wrap_xr .logo_xr img{
+	width: 110px;
+	height: 40px;
+	margin-top: 17px;
+	float: left;
+}
+.wrap_xr .logo_xr .text_xr{
+	width: 65px;
+	height: 24px;
+	border-left: 1px solid #C9C9C9;
+	float: left;
+	margin-top: 32px;
+	font-size: 18px;
+	padding-left: 20px;
+	margin-left: 20px;
+	color: #666666;
+}
+.wrap_xr .logo_xr .reg-area{
+	width: 178px;
+	height: 32px;
+	float: right;
+	margin-top: 23px;
+	color: #977E66;
+}
+.wrap_xr .logo_xr .reg-area .btn_xr{
+	display: inline-block;
+    width: 64px;
+	height: 32px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 3px;
+	color: #000000;
+	font-weight: 600;
+}
+.wrap_xr .login_logo{
+	width: 623px;
+	height: 337px;
+	background: salmon;
+	float: left;
+	margin-top: 80px;
+	background: url(../img/register_logo2.png) no-repeat;
+}
+body,html{
+	background: #F5FBFD;
+}
+.center_xr{
+	width: 100%;
+	height: 5px;
+	background: #DBDBDB;
+	float: left;
+	margin-top: 38px;
+}
+.wrap_xr .login_area_xr{
+	width: 309px;
+	height: 328px;
+	border: 1px solid #EEEEEE;
+	background: #fff;
+	float: right;
+	margin-top: 80px;
+	padding: 20px 14px;
+}
+.wrap_xr .login_area_xr .title_xr{
+	width: 279px;
+	height: 25px;
+	font-size: 17px;
+	font-weight: 700;
+	color: #666;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper{
+	text-align: right;
+	margin: 0 0 10px;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper{
+    position: relative;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .pass-sms-btn{
+	text-decoration: underline;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .pass-sms-btn:hover{
+	color: #0000FF;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .i1_xr{
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	background: url(../img/sjlogo.png)no-repeat;
+	position: absolute;
+	top: 2px;
+	left: 226px;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .ipt1_xr{ 
+	width: 308px;
+	height: 40px;
+	border: 1px solid #F0F0F0;
+	margin: 15px 0 15px 0;
+	position: relative;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .ipt1_xr span{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/elf.png) no-repeat;
+	background-position: 0 -44px;
+	position: absolute;
+	top: 8px;
+	left: 15px;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .ipt1_xr input{
+	width: 268px;
+	height: 40px;
+	padding: 0 0 0 40px;
+	border: 0;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .ipt2_xr{ 
+	width: 308px;
+	height: 40px;
+	border: 1px solid #F0F0F0;
+	margin: 15px 0 15px 0;
+	position: relative;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .ipt2_xr span{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/elf.png) no-repeat;
+	background-position: 0 3px;
+	position: absolute;
+	top: 8px;
+	left: 15px;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .ipt2_xr input{
+	width: 268px;
+	height: 40px;
+	padding: 0 0 0 40px;
+	border: 0;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .login_xr{
+	text-align: left;
+	position: relative;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .login_xr a{
+	display: block;
+	float: right;
+	color: #73ADC9;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .login_xr a:hover{
+	text-decoration: underline;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .login_xr span{
+	margin-left: 25px;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .login_xr input{
+	position: absolute;
+	top: -1px;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .button_xr{
+	width: 308px;
+	height: 40px;
+	background: #FF78A5;
+	color: #fff;
+	border: 0;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 44px;
+	cursor: pointer;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .button_xr:hover{
+	opacity: 0.8;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .qqLogo_xr{
+	width: 308px;
+	height: 24px;
+	margin-top: 14px;
+	text-align: left;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .qqLogo_xr i{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .qqLogo_xr .qq{
+	background: url(../img/elf_02.png)no-repeat;
+	background-position: -88px -1px;
+}
+.wrap_xr .login_area_xr .pass-smsSwitchWrapper .qqLogo_xr .wb{
+	background: url(../img/elf_02.png)no-repeat;
+	background-position: -64px -1px;
+	margin-left: 24px;
+}
+.footer_xr{
+	float: left;
+	width: 1520px;
+	height: 99px;
+	padding: 40px 0 20px;
+}
+.footer_xr .f_wrap{
+	width: 980px;
+	margin: 0 auto;
+	height: 82px;
+}
+.footer_xr .f_wrap .links_xr span{
+	margin: 0 12px;
+}
+.footer_xr .f_wrap .links_xr{
+	color: #666;
+	text-align: center;
+}
+.footer_xr .f_wrap .links_xr .tel{
+	margin: 0;
+	color: #FD678C;
+}
+.footer_xr .f_wrap .site_info_xr{
+	text-align: center;
+	margin-top: 27px;
+	color: #999;
+}
