@@ -1,5 +1,11 @@
 $(function(){
-
+/* ———————————————————————————————入住城市选择———————————————————————————————————— */
+$('#C_hotelSearchCity').focus(function(){
+	$('.C_hotelCityLeft_inp').css({'display':'block'});
+});
+$('#C_hotelSearchCity').blur(function(){
+	$('.C_hotelCityLeft_inp').css({'display':'none'});
+});
 /* ———————————————————————————————酒店页面吸顶效果———————————————————————————————————— */
 $(window).scroll(function(){
 	var C_contentTop_t = $(window).scrollTop();

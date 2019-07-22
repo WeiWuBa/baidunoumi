@@ -20,12 +20,12 @@
 	padding: 20px 0;
 	background: url(../images/hotel/hotel_city_7f236b3.png)no-repeat left center;
 	box-sizing: border-box;
-	overflow: hidden;
 	line-height: 32px;
 }
 .C_hotelCityLeft{
 	padding-left: 30px;
 	float: left;
+	position: relative;
 }
 .C_hotelCityLeft>input{
 	border: 1px solid #CCCCCC;
@@ -33,11 +33,33 @@
 	height: 28px;
 	margin-left: 10px;
 	padding-left: 10px;
-	font-size: 16px;
+	font-size: 14px;
+	color: #404040;
 }
 .C_hotelCityLeft>input:focus{
 	box-shadow: 0 0 1px #BCBCBC;
 }
+.C_hotelCityLeft_inp{
+	position: absolute;
+	width: 300px;
+	height: 160px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	z-index: 2;
+	top: 33px;
+	left: 109px;
+	/* display: none; */
+}
+.C_hotelCityLeft_inp>ul{
+	overflow: hidden;
+	padding: 10px 10px 5px 10px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.C_hotelCityLeft_inp>ul>li{
+	float: left;
+	padding: 0 10px;
+}
+
 .C_hotelCityRight{
 	float: right;
 }
