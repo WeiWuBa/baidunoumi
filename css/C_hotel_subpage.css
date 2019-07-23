@@ -9,9 +9,16 @@
 .C_crumb{
 	float: left;
 }
+.C_crumb_list{
+	height: 24px;
+	line-height: 24px;
+}
 .C_crumb_last>a{
 	color: deeppink;
-	font-size: 12px;
+}
+.C_ico_gt{
+	font-size: 14px;
+	padding-right: 4px;
 }
 /*————————————————主体内容区 */
 .C_mian{

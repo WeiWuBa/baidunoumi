@@ -23,6 +23,7 @@ if (localStorage.getItem('C_Data')) {
 						// 4获取地址
 						// 5随机电话号码
 						// 6随机售出额
+						$('.C_crumb_last').find('a').text(element.hotel_name);
 						$('.C_mian_top_name').text(element.hotel_name);
 						$('.C_mian_top_site').text(element.hotel_address);
 						$('.C_mian_bot_shopping_sell1').text(getRand(50,500));

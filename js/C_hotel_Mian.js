@@ -1,4 +1,7 @@
 $(function(){
+	$('.contentTop_checek').on('click',function(){
+		location.reload();
+	})
 /* ———————————————————————————————入住城市选择———————————————————————————————————— */
 $('#C_hotelSearchCity').click(function(e){
 	e.stopPropagation();
@@ -34,6 +37,16 @@ $(window).scroll(function(){
 $('.C_contentTop_list').on('click','a',function(){
 	$('.C_contentTop_list a').removeClass('C_contentTop_list_hover');
 	$(this).toggleClass('C_contentTop_list_hover');
+});
+//保存选中状态
+$('.contentTop_checek').click(function(){
+	var val = $(this).val();
+	var arr = $.cookie("checkval").split(",");
+	arr.forEach(function(item,index){
+		if(val == item){
+			arr.splice(index,1);
+		}
+	})
 });
 
 /* ———————————————————————————————酒店地点选择———————————————————————————————————— */
@@ -75,7 +88,7 @@ $('.C_hotelCityDetail_tab').on('click','a',function(){
 
 /* ———————————————————————————————默认全选状态———————————————————————————————————— */
 $('.C_hotelCityDetail_tab2').find('span a').click(function(){
-	$('.C_hotelCityDetail_tab2').parent().find('a').removeClass('C_hotelCityDetail_fuoce_click');
+	$('.C_hotelCityDetail_tab2').parent().find('a').removeClass('C_hotelCityDetail_fuoce_click');s
 	$(this).parent().siblings().find('a').removeClass('C_hotelCityDetail_fuoce_click');
 	$(this).toggleClass('C_hotelCityDetail_fuoce_click');
 });
@@ -164,7 +177,6 @@ $('.C_contenthotel_list').on('click','li a',function (){
 	console.log(jsonStr);
 	localStorage.setItem('C_Data',jsonStr);
 });
-
 
 /* ———————————————————————————————数据分页显示————————————————————————————— */
 	// 绑定点击页码事件
