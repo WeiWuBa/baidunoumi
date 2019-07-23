@@ -1,11 +1,24 @@
 $(function(){
 /* ———————————————————————————————入住城市选择———————————————————————————————————— */
-$('#C_hotelSearchCity').focus(function(){
+$('#C_hotelSearchCity').click(function(e){
+	e.stopPropagation();
 	$('.C_hotelCityLeft_inp').css({'display':'block'});
 });
-$('#C_hotelSearchCity').blur(function(){
+$('body').click(function(e){
+	e.stopPropagation();
 	$('.C_hotelCityLeft_inp').css({'display':'none'});
 });
+// $("body").click(function (e) {
+// 	if (!$(e.target).closest("#C_hotelSearchCity").length) {
+// 		$(".C_hotelCityLeft_inp").hide();
+// 	}
+// });
+// 热门城市选择
+$('.C_hotelCityLeft_inp').on('click','ul li',function(){
+	$('.C_hotelCityLeft_inp ul li').removeClass('C_hotelCityLeft_inpulli_hover');
+	$(this).toggleClass('C_hotelCityLeft_inpulli_hover');
+});
+	
 /* ———————————————————————————————酒店页面吸顶效果———————————————————————————————————— */
 $(window).scroll(function(){
 	var C_contentTop_t = $(window).scrollTop();
@@ -27,6 +40,7 @@ $('.C_contentTop_list').on('click','a',function(){
 $('.C_hotelCityDetail_tab').on('click','a',function(){
 	//三角小标
 	$('.C_hotelCityDetail_tab a span').css('display','none');
+	$('.C_hotelCityDetail_areaDetail').css('display','block');
 	$(this).find('span').css('display','inline-block');
 	//text值
 	function GetCity(as){
@@ -58,12 +72,25 @@ $('.C_hotelCityDetail_tab').on('click','a',function(){
 		}
 	});
 });
-//默认全选状态
 
-
-
-
-
+/* ———————————————————————————————默认全选状态———————————————————————————————————— */
+$('.C_hotelCityDetail_tab2').find('span a').click(function(){
+	$('.C_hotelCityDetail_tab2').parent().find('a').removeClass('C_hotelCityDetail_fuoce_click');
+	$(this).parent().siblings().find('a').removeClass('C_hotelCityDetail_fuoce_click');
+	$(this).toggleClass('C_hotelCityDetail_fuoce_click');
+});
+$('.C_hotelCityDetail_fuoce1').find('a').click(function(){
+	$(this).parent().siblings().find('a').removeClass('C_hotelCityDetail_fuoce_click');
+});
+// 价格
+$('.C_hotelCityDetail_tab3').find('span a').click(function(){
+	$('.C_hotelCityDetail_tab3').parent().find('a').removeClass('C_hotelCityDetail_fuoce_click');
+	$(this).parent().siblings().find('a').removeClass('C_hotelCityDetail_fuoce_click');
+	$(this).toggleClass('C_hotelCityDetail_fuoce_click');
+});
+$('.C_hotelCityDetail_fuoce2').find('a').click(function(){
+	$(this).parent().siblings().find('a').removeClass('C_hotelCityDetail_fuoce_click');
+});
 
 /* ———————————————————————————————酒店页面店家展示———————————————————————————————————— */
 
@@ -75,6 +102,7 @@ $.ajax({
 	success:function(data){
 		var shop ='';//清空shop
 		var conet = 0;
+		var num = 0;
 		$.each(data,function(index,element){
 			conet++;
 			shop += '<li class="C_Data" code="'+element.hotel_id+'"><!-- 酒店logo图 --><a href="hotel_subpage.html" class="clearfix"><img src="'+element.hotel_img_url+'" /></a><div class="C_contenthotel_listcontent"><!-- 酒店名称 --><a href="hotel_subpage.html"><h3>'+element.hotel_name+'</h3></a><!-- 酒店星形评价 --><p><a href="hotel_subpage.html"><img src="images/hotel/shop-star-b_767a724.png" /><span><img src="images/hotel/shop-star-o_e5d6259.png" /></span><span>4分</span></a><!-- 酒店价格 --><span>'+element.hotel_price+'</span></p><!-- 酒店文字评价 --><span><a href="#">'+element.hotel_appraise+'</a></span><!-- 酒店地址 --><p><i class="iconfont">&#xe60c;</i>'+element.hotel_site+'<span>'+element.hotel_address+'</span></p></div></li>';
@@ -137,11 +165,26 @@ $('.C_contenthotel_list').on('click','li a',function (){
 	localStorage.setItem('C_Data',jsonStr);
 });
 
-	
-	
-	
-	
-	
+
+/* ———————————————————————————————数据分页显示————————————————————————————— */
+	// 绑定点击页码事件
+	$('.C_contentBot_pagination').on('click','li a',function(){
+		var str =$(this).html();
+		if(!isNaN(str)){
+			//移除之前的C_active
+			$('.C_contentBot_pagination li a').removeClass('C_active');
+			$(this).attr('class','C_active');
+			$('#currentPage').val(str);
+		}
+		if($(this).html() != 1 ){
+			$('.C_contentBot_pagination').children(':first').css({'display':'inline'});
+		}else{
+			$('.C_contentBot_pagination').children(':first').css({'display':'none'});
+		}
+	});
+
+
+
 });
 
 
