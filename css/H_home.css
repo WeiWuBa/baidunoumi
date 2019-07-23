@@ -830,3 +830,74 @@ body{
     };
 }
 /* ********************侧边框***************** */
+
+/* ********************边区块***************** */
+.bianqukuai{
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 9px 0 84px;
+    font-size: 16px;
+    line-height: 16px;
+    box-sizing: border-box;
+    cursor:pointer; 
+    z-index: 1000001;
+}
+.bianqukuai_top>span{
+    display: block;
+    line-height: 24px;
+    margin: 14px 0 24px 24px;
+}
+.bianqukuai_top>i{
+    display: block;
+    width: 52px;
+    height: 24px;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/3310890b88423edcc2dfc300e454780c.png) no-repeat;
+    background-size: 12px;
+    background-position: 50%;
+    position: absolute;
+    top: 18px;
+    right: 0px;
+}
+.bianqukuai_top>i:hover{
+    background-image: url(http://zhaopin.baidu.com/static/newpczhaopin/e394c6d15c754e2afca6f6b5d0bb2e99.png);
+}
+
+.bianqukuai_dalei{
+    margin-left: 40px;
+}
+
+.bianqukuai_span{
+    padding: 7px 10px;
+    color: #000;
+}
+.bianqukuai_dalei>li{
+    float: left;
+}
+
+.dalei_index>li:nth-child(1){
+    background: #f8f8f8;
+}
+
+.bianqukuai_dalei_xia{
+    width: 230px;
+    height: 116px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8px 10px;
+    background: #f8f8f8;
+}
+.bianqukuai_dalei_xia>a{
+    font-size: 13px;
+    line-height: 13px;
+    color: #666;
+    letter-spacing: 0;
+    margin: 0 10px;
+    padding: 8px 0;
+}
+/* ********************边区块***************** */

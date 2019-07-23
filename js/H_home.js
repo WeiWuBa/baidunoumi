@@ -200,7 +200,9 @@ $('.banner_left>ul>li').on('mouseenter',function(e){
 //*************************点击document替换内容**********************
 
 $('.occupation>div').on('click',function(e){
+    var hUan = $('.occupation>span').text();
     $('.occupation>span').text($(e.target).text());
+    $(e.target).text(hUan);
 })
 
 
@@ -223,3 +225,30 @@ $('.right_black_top_a').mouseenter(function(e){
     $(e.target).children("div").addClass('fadeInleft animated')
 });
 //*************************right_black弹出的动画效果**********************
+
+//*************************点击返回顶部**********************
+$('.return').click(function(){
+    if($('body').scrollTop()+$('html').scrollTop() != 0){
+        var index = $('body').scrollTop()+$('html').scrollTop();
+        var time = setInterval(function(){
+            index-=20;
+            $('body,html').scrollTop(index) ;
+            if($('body').scrollTop()+$('html').scrollTop() == 0){
+                clearTimeout(time)
+            }
+        },0.1)
+    }
+})
+//*************************点击返回顶部**********************
+
+//*************************分类框内点击切换ajax**********************
+$('.dalei_index').on('click',function(e){
+    $('.dalei_index>li').css({
+        'background':'#fff'
+    })
+    $(e.target).children("li").css({
+        'background':'#f8f8f8'
+    })
+    console.log(e.target);
+})
+//*************************分类框内点击切换ajax**********************
