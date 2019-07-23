@@ -1,3 +1,4 @@
+
 $(function(){
 	$('.contentTop_checek').on('click',function(){
 		location.reload();
@@ -38,6 +39,7 @@ $('.C_contentTop_list').on('click','a',function(){
 	$('.C_contentTop_list a').removeClass('C_contentTop_list_hover');
 	$(this).toggleClass('C_contentTop_list_hover');
 });
+<<<<<<< HEAD
 //保存选中状态
 $('.contentTop_checek').click(function(){
 	var val = $(this).val();
@@ -48,6 +50,24 @@ $('.contentTop_checek').click(function(){
 		}
 	})
 });
+=======
+// 复选框状态保存
+// $('.contentTop_checek').on('click',function(){
+// 	var val = $(this).val();
+// 	var array = $.cookie('checkValue').split(',');
+// 	array.forEach(function(item,index){
+// 		if(val == item){
+// 			array.splice(index,1);
+// 		}
+// 	});
+// 	if ($(this).prop('checked')) {
+// 		array.push($(this).val());
+// 	}
+// 	$.cookie('checkval',array);
+// 	console.log($.cookie('checkValue',array));
+// });
+
+>>>>>>> CMD
 
 /* ———————————————————————————————酒店地点选择———————————————————————————————————— */
 $('.C_hotelCityDetail_tab').on('click','a',function(){

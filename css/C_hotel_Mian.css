@@ -1,9 +1,9 @@
-.footer{
+/* .footer{
 	height: 200px;
 	width: 1210px;
 	background-color: #BCBCBC;
 	margin:  0 auto;
-}
+} */
 /* 网页开始 */
 /* mian————————————主体部分容器 */
 #C_mian{
@@ -417,7 +417,7 @@
 	display: inline-block;
 	overflow: hidden;
 	left: 0;
-	top: 03px;
+	top: -1px;
 }
 .C_contenthotel_listcontent>p:nth-child(2)>a>span:nth-child(2)>img{
 	border: 0;

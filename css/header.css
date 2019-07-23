@@ -1,0 +1,503 @@
+
+a{
+    text-decoration: none;   
+}
+.bian{
+    background: #eeeeee;
+}
+.header-1{
+    width: 1210px;
+    height: 40px;
+    color: #666666;
+    margin: 0 auto;
+    font-size: 14px;
+	position: relative;
+}
+.header-1 a{
+    color: #666666;
+}
+.welcome{
+    list-style: none;
+}
+.welcome li{
+    float: left;
+}
+.welcome li a{
+    height: 40px;
+    padding-left: 20px;
+}
+.welcome li:nth-child(1){
+    height: 40px;
+    line-height: 40px;
+}
+.LoginBtn a{
+    line-height: 40px;
+    display: block;
+    color: #B08C4A;
+}
+.RegBtn a{
+    line-height: 40px;
+    display: block;
+}
+.LoginOut a{
+    display: none;
+    line-height: 40px;
+}
+
+.right{
+    list-style: none;
+}
+.right li{
+    float: right;
+}
+.right li a{
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    padding-right: 20px;
+}
+.right li:nth-child(1) a{
+    padding-right: 0;
+}
+.right li:nth-child(5) a{
+    display: inline-block;
+}
+.right li:nth-child(4) a{
+    padding-left: 20px;
+}
+.right li:nth-child(3) .shang{
+    display: inline-block;
+}
+.right li:nth-child(2) a{
+    padding-left: 20px;
+}
+
+.friends{
+    background: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    position: relative;
+    left: -20px;
+    box-shadow: 0px 0px 8px #cccccc;
+    display: none;
+}
+.qiege{
+    color: #ddd;
+}
+
+.header-2{
+    height: 90px;
+    width: 1210px;
+    margin: 21px auto 0;
+}
+.logo-area{
+    width: 165px;
+    height: 59px;
+    float: left;
+    position: relative;
+}
+.new-logo{
+    width: 165px;
+    height: 57px;
+}
+.logo{
+    float: left;
+}
+.city-wrap{
+    position: absolute;
+    top: 17px;
+    left: 185px;
+    width: 165px;
+    height: 30px;
+    cursor: pointer;
+	font-size: 18px;
+}
+.city-wrap .iconfont{
+	font-size: 22px;
+	color: #BF974D;
+}
+.anima{
+    display: inline-block;
+    transition: all 0.3s linear;
+}
+.anima:hover{
+    transform: rotate(180deg);
+}
+.dl_hover_child:hover a{
+	color: #666666;
+}
+.span_hover:hover{
+	color: #B68C4A !important;
+}
+.brown{
+    color: brown;
+}
+.search-area{
+    width: 575px;
+    height: 64px;
+    float: left;
+    margin: 4px 0 0 173px;
+}
+.form-right{
+	height: 42px;
+    float: left;
+    width: 100%;
+    border: 2.5px solid #d6ad62;
+}
+.searchInput{
+    width: 446px;
+    height: 40px;
+    float: left;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+.tijiao{
+    width: 109px;
+    height: 42px;
+    float: right;
+    border: none;
+    background: #C39B51;
+}
+.search-text{
+    position: absolute;
+    left:503px;
+    top: 7px;
+    font-size: 18px;
+    color: white;
+    z-index: 1;
+}
+.dingwei{
+    position: relative;
+}
+.searchBtn{
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    left: 467px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.header-2 ul{
+    list-style: none;
+}
+.header-2 ul li{
+    float: left;
+    margin: 8px 16px 0 0;
+}
+.header-2 ul li a{
+    color: #ccc;
+    font-size: 14px;
+}
+.pay{
+    border: 1px solid #EDE3CE;
+    background-color: #FFF8EB;
+    float: right;
+    margin-right: 132px;
+    margin-top: 4px;
+    position: relative;
+    padding: 11px 0;
+}
+.icon-3,.icon-2,.icon-1{
+    float:left;
+    width: 49px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+}
+.icon-1,.icon-2{
+    border-right: 1px solid #ddd;
+}
+.chuxian{
+    position: absolute;
+    top:43px;
+    left: 0px;
+    width: 128px;
+    padding: 10px;
+    border: 1px solid #EDE3CE;
+    background-color: #FFF8EB;
+    box-shadow: 0px 0px 8px #cccccc;
+    display: none;
+}
+
+.header-3{
+    width: 1210px;
+    height: 44px;
+    border-bottom: 2px solid #b38b47;
+    color: #222;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.header-3 ul{
+    list-style: none;
+    cursor: pointer;
+}
+.header-3 li{
+    float: left;
+	text-align: center;
+	font-size: 14px;
+}
+.header-3 ul li a,.HeaNav4{
+    padding: 0 8px;
+    width: 74px;
+    display: block;
+    line-height: 44px;
+    color: #222;
+}
+.header-3 .HeaNav1{
+    background:#bf974d;
+    padding: 0 0 0 16px;
+    text-align: left;
+    font-weight: 500;
+    width: 217px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+.HeaNav1 .right{
+    float: right;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.header-3 .HeaNav4{
+    position: relative;
+}
+.chepiao{
+    position: absolute;
+    top:46px;
+    left: -17px;
+    width: 92px;
+    text-align: center;
+    border: 1px solid #eee;
+    background-color: white;
+    box-shadow: 0px 0px 8px #cccccc;
+    display: none;
+}
+.HeaNav1 dl{
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 211px;
+    height: 49px;
+    background: #333;
+    padding: 0 11px;
+    float: left;
+}
+.dl_hover:hover{
+	background: #EBEBEB;
+}
+.HeaNav1 .dl_f_xr{
+	width: 218px;
+	height: 386px;
+	position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 999;
+	/* 注释去掉显示联动 */
+}
+.HeaNav1 .dl_f_xr dt a{
+	color: #A6A6A6;
+}
+.HeaNav1 .dl_f_xr dt{
+	color: #A6A6A6;
+}
+.HeaNav1:hover .dl_f_xr{
+	display: block;
+}
+.HeaNav1>.dl_f_xr>.dl_hover_01:hover>.interlock_xr{
+	display: block;
+}
+.HeaNav1>.dl_f_xr>.dl_hover_02:hover>.interlock_xr{
+	display: block;
+	position: absolute;
+	top: -49px;
+	left: 233px;
+}
+.HeaNav1>.dl_f_xr>.dl_hover_03:hover>.interlock_xr{
+	display: block;
+	position: absolute;
+	top: -98px;
+	left: 233px;
+}
+.HeaNav1>.dl_f_xr>.dl_hover_04:hover>.interlock_xr{
+	display: block;
+	position: absolute;
+	top: -147px;
+	left: 233px;
+}
+.HeaNav1>.dl_f_xr>.dl_hover_05:hover>.interlock_xr{
+	display: block;
+	position: absolute;
+	top: -196px;
+	left: 233px;
+}
+.HeaNav1>.dl_f_xr>.dl_hover_06:hover>.interlock_xr{
+	display: block;
+	position: absolute;
+	top: -245px;
+	left: 233px;
+}
+.HeaNav1>.dl_f_xr>.dl_hover_07:hover>.interlock_xr{
+	display: block;
+	position: absolute;
+	top: -294px;
+	left: 233px;
+}
+.HeaNav1>.dl_f_xr>.dl_hover_08:hover>.interlock_xr{
+	display: block;
+	position: absolute;
+	top: -343px;
+	left: 233px;
+}
+.interlock_xr{
+	width: 729px;
+	height: 386px;
+	background: #fff;
+	z-index: 999;
+	position: absolute;
+	top: 0px;
+	left: 233px;
+	box-shadow: darkgrey 1px 1px 14px -1px;
+	display: none;
+	color: #C1A194;
+}
+.HeaNav1 dl dd{
+    float: left;
+}
+.HeaNav1 .dl_xr{
+	height: 43px;
+}
+.HeaNav1 dl dd a{
+    text-align: left;
+    font-weight: 500;
+    width: 75px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    color: white;
+}
+.HeaNav1 dl dt{
+    float: right;
+    font-size: 12px;
+    min-width: 35px;
+    color: #ccc;
+}
+.HeaNav1 dl dt a{
+    font-size: 12px;
+    display: inline;
+    padding: 0;
+    height: 48px;
+    color: #ccc;
+}
+.HeaNav1 dl:nth-of-type(2){
+    top: 93px;
+}
+.HeaNav1 dl:nth-of-type(3){
+    top: 142px;
+}
+.HeaNav1 dl:nth-of-type(4){
+    top: 191px;
+}
+.HeaNav1 dl:nth-of-type(5){
+    top: 240px;
+}
+.HeaNav1 dl:nth-of-type(6){
+    top: 289px;
+}
+.HeaNav1 dl:nth-of-type(7){
+    top: 338px;
+}
+.HeaNav1 dl:nth-of-type(8){
+    top: 387px;
+}
+
+.right .recently_wp{
+	position: relative;
+}
+.right .recently_wp .recently_jt_wp_xr{
+	display: none;
+}
+.right .recently_wp:hover .recently_jt_wp_xr{
+	display: block;
+}
+.right .recently_wp .recently_jt_xr{
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+	position: absolute;
+	top: 21px;
+	left: 35px;
+	z-index: 9999;
+}
+.y_xr{
+	box-shadow: darkgrey 1px 1px 14px -1px;
+}
+.right .recently_wp .recently_div_xr{
+	width: 343px;
+	height: 84px;
+	box-shadow: darkgrey 1px 1px 14px -1px;
+	position: absolute;
+	top: 40px;
+	left: -121px;
+	background: #fff;
+	z-index: 999;
+}
+.HeaNav1 .interlock_xr .il_con{
+	width: 669px;
+	height: 137.4px;
+	padding: 10px 30px 14px;
+}
+.HeaNav1 .interlock_xr .il_con h3{
+	font-size: 15px;
+	color: #222;
+	float: left;
+}
+.HeaNav1 .interlock_xr .il_con ul{
+	padding-top 20px;
+	color: #949494;
+	float: left;
+	width: 50%;
+}
+.HeaNav1 .interlock_xr .il_con ul li{
+	float: none;
+	text-align: left;
+	height: 30px;
+	cursor: pointer;
+	width: 50%;
+}
+.HeaNav1 .interlock_xr .il_con ul li:hover{
+	color: #D09A4A;
+}
+.HeaNav1 .interlock_xr .il_con .con_right{
+	width: 569px;
+	border-bottom: 1.5px dotted #eee;
+	float: left;
+	margin-left: 30px;
+	padding-bottom: 20px;
+}
+.header-1 .yonhu_xr{
+	width: 280px;
+	height: 40px;
+	background: #EEEEEE;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+	line-height: 40px;
+	font-size: 14px;
+	display: none;
+}
+.header-1 .yonhu_xr img{
+	width: 51px;
+	height: 39px;
+	border-radius: 22px;
+}
+.header-1 .yonhu_xr .tc{
+	cursor: pointer;
+}
