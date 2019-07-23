@@ -47,6 +47,7 @@ $('.search_input').on('keyup',function(){
                 type: 'get',
                 data: 'wd='+tVal,
                 success: function(data){
+                    console.log(data);
                     var json = JSON.parse(data);
                     for(var i = 0 ; i < json.s.length ; i++){
                         $('.suggest-result>ul').append("<li>"+json.s[i]+"</li>");
@@ -84,6 +85,27 @@ $('.occupation').on('click',function(){
 });
 //*************************搜索框**********************
 
+//*************************banner轮播_职业选择部分ajax**********************
+ajax({
+    url: './json/H_banner_left.json',
+    type: 'get',
+    dataType: 'json',
+    success: function(data){
+        var json = JSON.parse(data);
+        $('.banner_left').html('<li>')
+        for(i = 0 ; i < json.length ; i++){
+            $('.banner_left').append('<li>');
+            for(j = 0 ; j < json[i].career.length ; j++){
+                console.log();
+                $('.banner_left').append('<a href="#">'+json[i].career[j]+'</a>')
+            };
+            $('.banner_left').append('<i class="left_arrow jiAnTou"></i></li>');
+        }
+        $('.banner_left').append('</li>')
+    }
+});
+//*************************banner轮播_职业选择部分ajax**********************
+
 //*************************banner轮播_职业选择部分鼠标滑过事件**********************
 $('.banner_left>ul>li').on('mouseenter',function(e){
     $(e.target).children(".left_arrow").css({
@@ -118,7 +140,7 @@ var mySwiper = new Swiper ('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  })        
+  })
 //*************************banner轮播**********************
 
 //*************************点击document清除掉所有的改挂显示**********************
