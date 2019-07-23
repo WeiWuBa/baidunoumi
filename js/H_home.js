@@ -196,6 +196,16 @@ $('.banner_left>ul>li').on('mouseenter',function(e){
         }
     });
 //*************************点击document清除掉所有的改挂显示**********************
+
+//*************************点击document替换内容**********************
+
+$('.occupation>div').on('click',function(e){
+    $('.occupation>span').text($(e.target).text());
+})
+
+
+//*************************点击document替换内容**********************
+
 //*************************right_black弹出的宽**********************
 
 // function popup(){
@@ -205,7 +215,6 @@ $('.banner_left>ul>li').on('mouseenter',function(e){
 //         return 85;
 //     }
 // }
-
 
 //*************************right_black弹出的宽**********************
 
