@@ -294,7 +294,12 @@ a{
 .HeaNav1 .dl_f_xr{
 	width: 218px;
 	height: 386px;
-	/* display: none;注释去掉显示联动 */
+	position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 999;
+	/* 注释去掉显示联动 */
 }
 .HeaNav1 .dl_f_xr dt a{
 	color: #A6A6A6;

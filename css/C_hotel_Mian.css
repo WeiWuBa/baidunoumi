@@ -420,7 +420,7 @@
 	display: inline-block;
 	overflow: hidden;
 	left: 0;
-	top: 03px;
+	top: -1px;
 }
 .C_contenthotel_listcontent>p:nth-child(2)>a>span:nth-child(2)>img{
 	border: 0;
