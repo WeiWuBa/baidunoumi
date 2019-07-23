@@ -104,89 +104,21 @@ $('.banner_left>ul>li').on('mouseenter',function(e){
 //*************************banner轮播_职业选择部分鼠标滑过事件**********************
 
 //*************************banner轮播**********************
-// (function(){
-// 	var banner_centre_xr = document.querySelector(".banner_centre_xr");
-// 	var glyphicon = document.querySelectorAll(".glyphicon");
-// 	var imgList_xr = document.querySelector(".imgList_xr");
-// 	var imglist_xr = imgList_xr.children;
-// 	var paging = document.querySelector(".paging");
-// 	var imgli = paging.children;
-// 	var left_xr = document.querySelector(".left_xr");
-// 	var right_xr = document.querySelector(".right_xr");
-
-// 	    var timer = setInterval(autoPlay,2000);  
-// 		var index = 0;
-// 		function autoPlay(){
-// 			if(index==5){
-// 				imgList_xr.style.left = 0;
-// 				index = 1;
-// 			}else{
-// 				index++;
-// 			}
-// 			for(var i = 0; i<imgli.length; i++){
-// 				imgli[i].className = "";
-// 			}
-// 			animate(imgList_xr,{left:-717*index},20);
-// 			imgli[index == 5 ? 0 : index].className = "active";
-// 		}
-// 		//轮播，鼠标移入显示箭头
-// 			banner_centre_xr.onmouseover = function(){
-// 				animate(glyphicon[0],{opacity:100},20);
-// 				animate(glyphicon[1],{opacity:100},20);
-// 				clearInterval(timer);
-// 			}
-// 			banner_centre_xr.onmouseout = function(){
-// 				animate(glyphicon[0],{opacity:0},20);
-// 				animate(glyphicon[1],{opacity:0},20);
-// 				timer = setInterval(autoPlay,1500);  
-// 			}
-// 			left_xr.onclick = function(){
-// 				if(index==5){
-// 					imgList_xr.style.left = 0;
-// 					index = 0;
-// 				}else if(index==0){
-// 					index = 4;
-// 				}else{
-// 					index--;
-// 				}
-// 				for(var j = 0; j<imgList_xr.length; j++){
-// 					index = j;
-// 				}
-// 				for(var k = 0; k<imgli.length; k++){
-// 					imgli[k].className = "";
-// 				}
-// 				imgli[index].className = "active";
-// 				animate(imgList_xr,{left:-717*index},20);
-// 			}
-// 			right_xr.onclick = function(){
-// 				if(index==4){
-// 					index = 0;
-// 				}else{
-// 					index++;
-// 				}	
-// 				for(var j = 0; j<imgList_xr.length; j++){
-// 					index = j;
-// 				}
-// 				for(var k = 0; k<imgli.length; k++){
-// 					imgli[k].className = "";
-// 				}
-// 				imgli[index].className = "active";
-// 				animate(imgList_xr,{left:-717*index},20);
-// 			}
-// 			for(let l = 0; l<imgli.length; l++){
-// 				imgli[l].onclick = function(){
-// 					// for(var j = 0; j<imgList_xr.length; j++){
-// 					// 	index = j;
-// 					// }
-// 					for(var k = 0; k<imgli.length; k++){
-// 						imgli[k].className = "";
-// 					}
-// 					imgli[l].className = "active";
-// 					animate(imgList_xr,{left:-717*l},20);
-// 				}
-// 			}
-// })();
-
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    autoplay:true,
+    // 如果需要分页器
+    pagination :{
+        el: '.swiper-pagination',
+        clickable :true,
+    },
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })        
 //*************************banner轮播**********************
 
 //*************************点击document清除掉所有的改挂显示**********************
@@ -197,7 +129,7 @@ $('.banner_left>ul>li').on('mouseenter',function(e){
     });
 //*************************点击document清除掉所有的改挂显示**********************
 
-//*************************点击document替换内容**********************
+//*************************点击搜索框替换内容**********************
 
 $('.occupation>div').on('click',function(e){
     var hUan = $('.occupation>span').text();
@@ -206,7 +138,7 @@ $('.occupation>div').on('click',function(e){
 })
 
 
-//*************************点击document替换内容**********************
+//*************************点击搜索框替换内容**********************
 
 //*************************right_black弹出的宽**********************
 
@@ -241,12 +173,49 @@ $('.return').click(function(){
 })
 //*************************点击返回顶部**********************
 
+//*************************点击分类出现侧边框和点击叉去除侧边框**********************
+$('.fenlei').on('click',function(){
+    var index = -300;
+    var index2 = 0;
+    var time = setInterval(function(){
+        index +=3;
+        index2 += 3;
+        $('.bianqukuai').css({
+            'right':index+'px'
+        }) ;
+        $('.right_black').css({
+            'right':index2+'px'
+        }) ;
+        if(index == 0){
+            clearTimeout(time)
+        }
+    },1)
+});
+$('.bianqukuai_top>i').on('click',function(){
+    var index = 0;
+    var index2 = 300;
+    var time = setInterval(function(){
+        index -=3;
+        index2 -= 3;
+        $('.bianqukuai').css({
+            'right':index+'px'
+        }) ;
+        $('.right_black').css({
+            'right':index2+'px'
+        }) ;
+        if(index == -300){
+            clearTimeout(time)
+        }
+    },1)
+})
+//*************************点击分类出现侧边框和点击叉去除侧边框**********************
+
 //*************************分类框内点击切换ajax**********************
 $('.dalei_index').on('click',function(e){
     $('.dalei_index>li').css({
         'background':'#fff'
     })
-    $(e.target).children("li").css({
+    $(e.target).css({
         'background':'#f8f8f8'
     })
     console.log(e.target);

@@ -96,6 +96,7 @@ body{
     box-shadow: 0 0 40px 0 hsla(0,0%,56%,.2);
     margin: 32px auto;
     background: #fff;
+    z-index: 99;
 }
 .search_input{
     width: 600px;
@@ -306,6 +307,43 @@ body{
     background-size: 4px 7px;
     background-position: 150px;
     padding-right:14px;
+}
+.banner_centre_xr{
+    float: left;
+}
+.swiper-container{
+    width: 690px;
+    height: 520px;
+    float: left;
+    cursor: pointer;
+}
+.swiper-button-prev{
+    background-image: url(http://zhaopin.baidu.com/static/newpczhaopin/30b3005c693b04377106427b88d28765.png);
+    background-size: 40px 48px;
+    opacity: 0.5;
+}
+.swiper-button-prev:hover{
+    opacity: 1;
+}
+.swiper-button-next:hover{
+    opacity: 1;
+}
+.swiper-button-next{
+    background-image:url(http://zhaopin.baidu.com/static/newpczhaopin/158a70da2affcdbc9df5193760670ece.png);
+    background-size: 40px 48px;
+    opacity: 0.5;
+}
+.swiper-pagination-bullet{
+    width: 56px;
+    height: 5px;
+    background: #fff;
+    opacity: .4;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius:0;
+}
+.swiper-pagination>.swiper-pagination-bullet-active{
+    background: #5183ff;
 }
 /* ********************banner部分***************** */
 
@@ -838,7 +876,7 @@ body{
     background: #fff;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     padding: 9px 0 84px;
     font-size: 16px;
     line-height: 16px;
