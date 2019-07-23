@@ -35,6 +35,22 @@ $('.C_contentTop_list').on('click','a',function(){
 	$('.C_contentTop_list a').removeClass('C_contentTop_list_hover');
 	$(this).toggleClass('C_contentTop_list_hover');
 });
+// 复选框状态保存
+$('input[name="check"]').on('click',function(){
+	var val = $(this).val();
+	var array = $.cookie('checkValue').split(',');
+	array.forEach(function(item,index){
+		if(val == item){
+			array.splice(index,1);
+		}
+	});
+	if ($(this).prop('checked')) {
+		array.push($(this).val());
+	}
+	$.cookie('checkval',array);
+	console.log($.cookie('checkValue',array));
+});
+
 
 /* ———————————————————————————————酒店地点选择———————————————————————————————————— */
 $('.C_hotelCityDetail_tab').on('click','a',function(){

@@ -3,7 +3,7 @@
 #C_crumb{
 	padding: 10px 0;
 	width: 1210px;
-	font-size: 14px;
+	font-size: 16px;
 	box-sizing: border-box;
 }
 .C_crumb{
@@ -12,6 +12,9 @@
 .C_crumb_last>a{
 	color: deeppink;
 	font-size: 12px;
+}
+.C_ico_gt{
+	padding-right: 4px;
 }
 /*————————————————主体内容区 */
 .C_mian{
