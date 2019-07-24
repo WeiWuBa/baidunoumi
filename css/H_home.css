@@ -232,9 +232,30 @@ body{
     top: 0px;
     left: 250px;
     display: none;
+    font-size: 14px;
+    line-height: 14px;
 }
-
-
+.banner_level>ul>li{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.banner_level>ul>li>span{
+    float: left;
+    color: #000;
+    margin-left: 8px;
+}
+.banner_level>ul>li>div{
+    margin-left: 108px;
+}
+.banner_level>ul>li>div>a{
+    color: #666;    
+    float: left;
+    padding: 3px 0 16px;
+    margin-right: 20px;
+}
+.banner_level>ul>li>div>a:hover{
+    color: #5183ff;
+}
 .banner_right{
     float: right;
     height: 520px;
@@ -259,7 +280,6 @@ body{
     display: block;
     padding: 10px 30px;
 }
-
 .banner_right_cent>ul>li>a>span:nth-child(1){
     float: left;
 }
@@ -441,6 +461,9 @@ body{
 }
 .subject_quanzhi_right_a>div:nth-child(2)>em{
     margin: 0 10px;
+}
+.subject_quanzhi_right_a>div:nth-child(2)>.string:nth-child(1){
+    display: none;
 }
 .subject_quanzhi_right_a>div:nth-child(3){
     margin: 10px 0 12px;
