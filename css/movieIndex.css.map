@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,YAAY;EACX,KAAK,EAAE,GAAG",
+"sources": ["../sass/movieIndex.scss"],
+"names": [],
+"file": "movieIndex.css"
+}
