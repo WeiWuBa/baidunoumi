@@ -9,7 +9,7 @@ $(function(){
 	// "xingzhengqu":["崇明县","浦东新区","闵行区","黄浦区","宝山区","松江区","杨浦区","虹口区","徐汇区","卢湾区","长宁区","青浦区","奉贤区","静安区"],
 	// "C_cityid":"shanghai"
 	// }
-/* ———————————————————————————————二级页面获取一级页面数据————————————————————————————— */
+/* ———————————————————————————————二级页面获取一级页面数据—————————————————————————— */
 
 if (localStorage.getItem('C_Data')) {
 	// 获取本地数据[]
@@ -57,4 +57,37 @@ if (localStorage.getItem('C_Data')) {
 	$('.C_mian_bot_R_map').mouseout(function(){
 		$(this).find('a').css('opacity','0');
 	});
-})
+/* ———————————————————————————————酒店推荐页随机显示————————————————————————————— */
+$.ajax({
+	url:'json/hotel/C_hotel.json',
+	dataType:'json',//服务器返回json格式数据
+	type:'get',//HTTP请求类型
+	cache:false,//是否使用缓存
+	success:function(data){
+		var shop ='';//清空shop
+		var conet = 0;
+		// for (var i = 0; i < data.length; i++) {
+		// 	if (conet >= 4) {
+		// 		return;
+		// 	}
+		// 	var index = getRand(1,33);
+		// 	conet++;
+		// 	console.log(index);
+		// 	var num = getRand(1,18);
+		// 	shop += '<li class="clearfix"><a href="//www.nuomi.com/deal/u00rsopxy.html"><img src="images/hotel_json/houshotel'+num+'.jpg" title="'+data[index].hotel_name+'"><dl><dt>'+data[index].hotel_name+'</dt><dd>'+data[index].hotel_appraise+data[index].hotel_appraise+'</dd><p><span>￥138</span><span>￥189</span></p></dl></a></li>';
+		// }
+		$.each(data,function(index,element){
+			if (conet >= 4) {
+				return;
+			}
+			conet++;
+			var num = getRand(1,18);
+			shop += '<li class="clearfix"><a href="//www.nuomi.com/deal/u00rsopxy.html"><img src="images/hotel_json/houshotel'+num+'.jpg" title="'+element.hotel_name+'"><dl><dt>'+element.hotel_name+'</dt><dd>'+element.hotel_appraise+element.hotel_appraise+'</dd><p><span>￥138</span><span>￥189</span></p></dl></a></li>';
+		});
+		$('.C_mian_bot_R_rec_con').html(shop);
+	},
+	error:function(xhr,type,errorThrown){
+		alert("请求失败，请重试！！")
+	}
+});
+});

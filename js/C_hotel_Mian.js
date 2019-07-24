@@ -146,6 +146,7 @@ $.ajax({
 			}
 		$('.C_contenthotel_list').html(str);
 		$('.C_contentBot_pagingT1').html(arr_length);
+		$('.C_contentTop_right_pagingT1').html(pageNum);
 		}else{
 			$('.C_contenthotel_list').html('');
 		}
@@ -193,6 +194,7 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 				}
 			$('.C_contenthotel_list').html(str);
 			$('.C_contentBot_pagingT1').html(arr_length);
+			$('.C_contentTop_right_pagingT1').html(pageNum);
 			}else{
 				$('.C_contenthotel_list').html('');
 			}

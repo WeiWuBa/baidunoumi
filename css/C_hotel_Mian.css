@@ -433,9 +433,10 @@
 	float: right;
 	top: 64px;
 	right: 120px;
-}
-.C_contenthotel_listcontent>p:nth-child(2)>span:nth-child(2) span{
 	font-size: 20px;
+}
+.C_contenthotel_listcontent>p:nth-child(2)>span:nth-child(2):hover{
+	color:orangered;
 }
 /* 酒店文字评价 */
 .C_contenthotel_listcontent>span:nth-child(3){
