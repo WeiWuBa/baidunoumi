@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/C_hotel_Mian.css"/>
 <link rel="stylesheet" href="iconfont/header/iconfont.css">
 <script type="text/javascript" src="js/jquery-1.8.3/jquery-1.8.3.min.js"></script>
-<!-- <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
 </head>
 <body>
 <!------------------------------------------
@@ -22,6 +22,7 @@
 	<div class="header"></div>
 	<script>
 		$('.header').load('header.html');
+
 	</script>
 <!-- 主体内容区 -->
 	<div id="C_mian">
@@ -143,12 +144,12 @@
 			<div class="C_content clearfix">
 				<div class="C_contentTop ">
 					<span class="C_contentTop_list">
-						<a href="#" class="C_contentTop_list_hover">综合榜</a>
-						<a href="#">热销榜</a>
-						<a href="#">新品榜</a>
+						<a href="#" value="1" class="C_contentTop_list_hover">综合榜</a>
+						<a href="#" value="2">热销榜</a>
+						<a href="#" value="3">新品榜</a>
 					</span>
 					<span class="C_contentTop_checek">
-							<input name="check" value="1" class="contentTop_checek" type="radio" >
+							<input name="check" value="1" class="contentTop_checek" type="radio">
 							<label>免预约</label>
 							<input name="check" value="2" class="contentTop_checek" type="radio">
 							<label>优惠券</label>
@@ -178,16 +179,16 @@
 				</div>
 				<div class="C_contentBot_pagingB clearfix">
 					<ul class="C_contentBot_pagination">
-						<li><a href="###" value="10">首页</a></li>
-						<li><a href="###">«</a></li>
-						<li><a class="C_active" href="###" value="10">1</a></li>
-						<li><a href="###" value="20">2</a></li>
-						<li><a href="###" value="30">3</a></li>
-						<li><a href="###" value="40">4</a></li>
-						<li><a href="###" value="50">5</a></li>
-						<li><a href="###" value="60">6</a></li>
-						<li><a href="####" value="70">7</a></li>
-						<li><a href="####">»</a></li>
+						<li><a href="###" class="home-page" data_cod="1">首页</a></li>
+						<li><a href="###" class="last-page">«</a></li>
+						<li><a href="###" class="C_active" data_cod="1">1</a></li>
+						<li><a href="###" data_cod="2">2</a></li>
+						<li><a href="###" data_cod="3">3</a></li>
+						<li><a href="###" data_cod="4">4</a></li>
+						<li><a href="###" data_cod="5">5</a></li>
+						<li><a href="###" data_cod="6">6</a></li>
+						<li><a href="###" data_cod="7">7</a></li>
+						<li><a href="###" class="next-page">»</a></li>
 					</ul>
 				</div>
 				
@@ -203,6 +204,9 @@
 	</script>
 	
 <footer class="footer"></footer>	
+<script type="text/javascript">
+	// $('.footer').load('footer.html');
+</script>
 </div>
 
 <script src="js/C_hotel_Mian.js" type="text/javascript" charset="utf-8"></script>

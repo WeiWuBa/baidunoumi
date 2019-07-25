@@ -146,7 +146,6 @@ $.ajax({
 			}
 		$('.C_contenthotel_list').html(str);
 		$('.C_contentBot_pagingT1').html(arr_length);
-		$('.C_contentTop_right_pagingT1').html(pageNum);
 		}else{
 			$('.C_contenthotel_list').html('');
 		}
@@ -172,7 +171,6 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 	}
 });
 $('.C_contentBot_pagination').on('click','li a',function(){
-
 	var pageNum = $(this).attr('data_cod'); 	// 页数
 	console.log(pageNum);
 	var pageSize = 10;	// 每一页显示条数
@@ -182,7 +180,7 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 		type:'get',//HTTP请求类型
 		cache:false,//是否使用缓存
 		success:function(data){
-			// $(".C_contenthotel_list").html("");
+			$(".C_contenthotel_list").html("")
 			if(data.length > 0){
 				var arr_length = data.length;// 总条数
 				var newarr = [];
@@ -195,7 +193,6 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 				}
 			$('.C_contenthotel_list').html(str);
 			$('.C_contentBot_pagingT1').html(arr_length);
-			$('.C_contentTop_right_pagingT1').html(pageNum);
 			}else{
 				$('.C_contenthotel_list').html('');
 			}
