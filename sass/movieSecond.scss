@@ -1,0 +1,527 @@
+@mixin buttomcommon{
+	font-size:20px;
+	color:888;
+	display: inline-block;
+	width:42px;
+	height:42px;
+	line-height: 42px;
+	text-align: center;
+	background: #000;
+	border-radius:50%;
+	 position: absolute;
+	 top:100px;
+	z-index:99;
+}
+@mixin yh5common{
+	width:58px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+}
+
+
+/*头部*/
+.yCommon{
+	width: 1210px;
+	margin: 0 auto;
+}
+.yHeaderWrap{
+	
+	height: 80px;
+	
+	.yHeader{
+		height: 80px;
+		.yLogo{
+			width: 313px;
+			height: 40px;
+			background: url("../../images/yLogo.png") no-repeat;
+			background-size:cover;
+			margin-top: 27px;
+			float: left;
+			.yLogoName{
+				display: block;
+				width: 313px;
+				height: 40px;
+				text-indent:-999px;
+			}
+		}
+		.ySite{
+			float: left;
+			min-width: 80px;
+			height:26px;
+			line-height: 26px;
+			margin-top: 36px;
+			margin-left:20px; 
+			position: relative;
+			.yAddress{
+				display: inline-block;
+				float: left;
+			}
+			.ydownarrow{
+				display: inline-block;
+				width:30px;
+				height:30px;
+				float: left;
+				font-size: 20px;
+				margin-left:6px; 
+				position: absolute;
+				top: 2px;
+				
+			}
+			.ychooseCity{
+				
+				float: left;
+				width:190px;
+				position: absolute;
+				top:28px;
+				padding:8px;
+				background: #fff;
+				border: 1px solid #dfdfdf;
+				display:none;
+				h3{
+					padding-left: 10px;
+					color: #73adc9;
+					line-height: 28px;
+					
+				}
+				.yHotcity{
+					li{
+						float: left;
+						line-height: 26px;
+						width: 25%;
+						text-align: center;
+						color: #333;
+						font-size: 12px;
+					}
+				}
+				.ymore-city{
+					
+						text-align:right;
+						line-height: 20px;
+						color: #999;	
+					
+						
+				}
+			}
+		}
+		
+		.ySearch{
+			margin-top:20px;
+			width: 390px;
+			height: 40px;
+			line-height: 40px;
+			float: right;
+			border: 1px solid #ccc;
+			padding: 0 10px;
+			 position: relative;
+			 color: #ccc;
+			.ySearchbox{
+				// display: inline-block;
+				width: 360px;
+				height: 24px;
+				line-height: 24px;
+				font-size: 14px;
+			}
+			.ymagnifyingglass{
+				font-size: 26px;
+				cursor: pointer; 
+				 position: absolute;
+				 color: #666;
+			}
+		}
+	}	
+}
+
+/*导航区*/
+.yNavWrap{
+	height: 60px;
+	
+	background: #333;
+	.yNav{
+		height: 60px;
+		line-height: 60px;
+		.yNavBox{
+			float: left;
+			li{
+				float: left;
+				font-size: 18px;
+				padding:0 32px;
+				&:hover{
+					background:#1d1d20 ;
+				}
+				a{
+					color: #fff;
+				}
+			}
+		}
+	}
+	.yNav-right{
+		float: right;
+		height: 60px;
+		.yposter{
+			display:inline-block;
+			width:182px;
+			height:32px;
+			background:url("../../images/icon.png") no-repeat;
+			background-size:cover;
+			margin-top:16px; 
+		}
+		.ylogin{
+			display:inline-block;
+			float: right;
+			margin-left: 18px;
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+}
+
+/*内容区*/
+.yTopWrap{
+	background: #fff;
+	height:292px; 
+	margin-top: 34px;
+	.ytopContent{
+		background:black;
+		height:292px; 
+		box-sizing: border-box;
+		padding: 16px;
+		color: #fff;
+		a{
+			display: inline-block;
+			float: left;
+			width:183px;
+			height: 252px;
+			background:url('../../images/film_img01.jpg') no-repeat;
+			background-size:cover; 
+		}
+		.yTopCon-right{
+			float: left;
+			width:894px;
+			padding: 0 18px;
+			h4{
+				font-size:20px;
+				line-height: 28px;
+			}
+			.ymovierating{
+				margin-top: 4px;
+				color:#ff7e00;
+				height: 20px;
+				line-height: 20px;
+				span{
+					margin-left: 10px;
+				}
+				
+			}
+			.ymovie-infor{
+				line-height: 28px;
+				font-size: 14px;
+				.ysummarize{
+					line-height: 44px;
+					
+				}
+				.ysynopsis{
+					width:916px;
+					span{
+						position: relative;
+						float: left;
+						display: inline-block;
+						width:894px;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+					}
+					.icon-xiajiantou{
+						float: left;
+						font-size: 20px;
+						cursor: pointer;
+						color:#fff;
+					}
+				}
+				
+				.ylike{
+					width:166px;
+					text-align: center;
+					display: block;
+					height: 30px;
+					line-height: 30px;
+					border:1px solid #bdc0af;
+					background:transparent;
+					margin-top: 16px;
+					border-radius:2px;
+					&:hover{
+						cursor: pointer
+					}
+					.icon-icon-test{
+						font-size: 16px;
+						margin-right:6px;
+					}
+				}
+				
+			}
+			
+		}
+	}
+}
+
+.yContentWrap{
+	minheight: 60px;
+	margin-top: 36px;
+	.yContent{
+		minheight: 60px;
+		/*左边内容更换区*/
+		.yContent-left{
+			float: left;
+			width:958px;
+			h3{
+				font-size: 20px;
+				height:28px;
+				margin-bottom: 15px;
+				color:#333333;
+				
+			}
+			.yTicket{
+				margin: 0 auto;
+				width:940px ;
+				border: 1px solid #f3f3f3;
+				padding: 20px 0 14px 0;
+				.yPlaydate{
+					
+					 height:18px;
+					 line-height: 18px;
+						h5{
+						@include yh5common;
+						}
+						ul{
+							width:850px;
+							float:left;
+							li{
+								float: left;
+								padding: 0 4px;
+								margin-right: 26px;
+							}
+						}
+// 					
+				}
+				.yPlayarea{
+					margin-top: 34px;
+					h5{
+						@include yh5common;
+					}
+					a{
+						padding: 0 4px;
+						margin-right: 26px;
+					}
+				}
+				.yspecificarea{
+					width:860px;
+					margin-top:10px;
+					margin-left: 56px;
+					// display: none;
+					ul{
+						border: 1px solid #f3f3f3;
+						box-sizing: border-box;
+						padding: 12px 20px 0 20px;
+						min-height: 44px; 
+						background: #fbfbfb;
+						li{
+							margin-right:30px;
+							float: left;
+							height: 18px;
+							line-height: 18px;
+						}
+						
+					}
+				}
+			}
+			.yCineplexList{
+				min-height:196px;
+				margin: 0 auto;
+				width:940px;
+				li{
+					border-bottom: 1px solid #f3f3f3;
+					height: 75px;
+					padding: 30px 0 26px  0;
+					.yInf{
+						float: left;
+						width: 402px;
+						padding-right:10px;
+						font-size: 18px;
+						p{
+							font-size: 14px;
+							line-height: 34px;
+							max-width: 398px;
+						}
+					}
+					.yPrices{
+						float: left;
+						width: 88px;
+						margin-top: 26px;
+						margin-left:180px; 
+						i{
+							font-size:18px;
+							 color:#fd8e51;
+						}
+					}
+					.yChoosein{
+						float: right;
+						width: 244px;
+						height: 75px;
+						text-align: right;
+						a{
+							display: inline-block;
+							width: 87px;
+							height: 25px;
+							line-height: 25px;
+							color: #fff;
+							margin-top: 28px;
+							margin-right: 8px;
+							background: #fe8f50;
+							text-align: center;
+						}
+					}
+				} 
+			}
+			.yContentBottom{
+				height: 34px;
+				border: 1px solid #f3f3f3;
+				line-height: 34px;
+				text-align: center;
+				background-color: #f9f9f9;
+				color: #767676;
+				margin-bottom: 36px;
+			}
+			.ygetMore{ 
+				margin: 0 auto;
+				h3{
+					width:940px;
+					height: 28px;
+				}
+				ul{
+					width:940px;
+					li{
+						width:33%;
+						float:left;
+						text-align: center;
+						border-left: 1px solid #f3f3f3; 
+						&:nth-child(1){
+							border-left: none; 
+						}
+						strong{
+							 line-height: 40px;
+							 font-size: 18px;
+							span{
+								 font-size: 50px;
+								 color:#ff318c; 
+							}
+						}
+						p{
+							 font-size: 16px;
+						}
+					}
+				}
+				.yRelevant{
+					margin-top: 44px;
+					h3{
+						width:940px;
+						height: 28px;
+					}
+					ul{
+						min-height: 100px;
+					}
+				}
+			
+			}
+			
+		}
+		.yContent-right{
+			float: left;
+			width:250px;
+			h3{
+				font-size: 20px;
+				height:46px;
+				margin-bottom: 15px;
+				line-height: 46px;
+				border-bottom:1px solid #f3f3f3;
+				a{
+					margin-top: 2px;
+					float: right;
+					font-size: 12px;
+					color: #666;
+				}
+			}
+			.ybox-office{
+				h2{
+				font-size: 20px;
+				height: 54px;
+				line-height: 54px;
+				border-bottom:1px solid #f3f3f3;
+				}
+				.yrank{
+					
+					li{
+						span{
+						color: #ff318c;
+						display: inline-block;
+						width: 24px;
+						line-height: 36px;
+						float: left;
+						}
+						
+						h4{
+							display: inline-block;
+							width: 224px;
+							height: 36px;
+							line-height: 36px;
+							 overflow: hidden;
+							cursor: pointer;
+							a{
+								display: inline-block;
+							    width: 147px;
+								color: #111;
+								font-size: 14px;
+							}
+							em{
+								float: right;
+								color: #333;
+								font-size: 12px;
+								padding: 0 11px 0 5px;
+							}
+							
+						}
+						.ystage-photo{
+							width:204px;
+							margin-left: 24px;
+							display: none;
+							a{
+								img{
+								width:64px;
+								height: 86px;
+								background: url("../../images/film_img01.jpg") no-repeat;
+								background-size:cover; 
+								}
+							}
+							
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}
+/*部分效果样式*/
+.yActive{
+	background:#1d1d20 ;
+}
+.yshow{
+	display: block;
+}
+.ymove{
+	left:0;
+}
+.ybgc{
+	background-color: #ff318c;
+	color: #fff;
+}
+

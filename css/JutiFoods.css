@@ -280,6 +280,8 @@
 .L-content2 .L-dlwai {
   display: inline-block;
   float: right;
+  background: white;
+  z-index: 1000;
   width: 230px;
 }
 .L-content2 .L-dlwai dl {
@@ -344,4 +346,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+footer {
+  margin-top: 20px;
 }

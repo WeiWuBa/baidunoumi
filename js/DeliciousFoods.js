@@ -1,6 +1,9 @@
 (function(){
     $('header').load('header.html');
 })();
+(function(){
+    $('footer').load('footer.html');
+})();
 var yema = 0;
 var dataBase =null;
 $.ajax({
@@ -131,11 +134,23 @@ $(".L-shopping").on('click','a',function(){
     codeArr[0]=L_code;
     var jsonStr = JSON.stringify({"L_code":codeArr});
     localStorage.setItem('L_goods',jsonStr);
-})
+});
 
-
-
-
+setTimeout(function(){
+    $('footer .re-footer-inner').css('margin','0 auto');
+    $('.tijiao').css('height','36px');
+    $('.searchInput').css('height','36px');
+    // $('.HeaNav1 .dl_f_xr').css({"display":"block","z-index":"999"});
+    $('.interlock_xr').css({'left':"217px"});
+    $('.HeaNav1 dl').css({'display':'block','width':"217px"});
+},0);
+    
+// $('.HeaNav1').on('mouseover',function(){
+//     $('.HeaNav1 ..dl_f_xr').css('display','block');
+// })
+// $('.HeaNav1').on('mouseout',function(){
+//     $('.HeaNav1 ..dl_f_xr').css('display','none');
+// })
 
 
 

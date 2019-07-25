@@ -4,7 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="swiper-4.5.0/dist/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/H_home.css">
+    <link rel="stylesheet" href="iconfont/header/iconfont.css">
     <title>【找工作_人才招聘_深圳招聘信息】-百度百聘</title>
 </head>
 <body>
@@ -12,44 +15,346 @@
         <div id="head_cont">
             <div class="logo contain"></div>
             <span></span>
-            <ul>
-                <li><a href="">首页</a></li>
-                <li>全职</li>
-                <li>培训</li>
-                <li>兼职</li>
-                <li>校园</li>
-                <li>招聘会</li>
-                <li>企业</li>
-                <li>百聘日报</li>
-                <li><a href="">发布职位</a></li>
+            <ul class="nav_yangS">
             </ul>
             <div class="fabu"></div>
         </div>
     </div>
+    <!-- 以上为头部 -->
     <div id="subject" class="clearfix">
-        <div id="search">
-            <div class="suggest-result">
-                <!-- ajax搜索框 -->
-                <ul>
-                </ul>
+        <div class="centent">
+            <div id="search">
+                    <!-- 搜索框 -->
+                <div></div>
+                <div class="suggest-result" >
+                    <!-- ajax搜索框 -->
+                    <ul>
+                    </ul>
+                </div>
+                <div class="occupation"><span>全职</span><i> </i>
+                    <div>
+                        <ul>
+                            <li><a href="#">兼职</a></li>
+                            <li><a href="#">校园</a></li>
+                            <li><a href="#">宣讲会</a></li>
+                            <li><a href="#">招聘会</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" class="search_input" placeholder="请输入职位名／公司名 进行搜索">
+                <div class="fangdj">
+                    <i></i>
+                </div>
             </div>
-            <div class="occupation">全职<i> </i>
+        </div>
+        <!-- 搜索框 -->
+
+        <!-- 轮播banner部分 -->
+        <div id="banner" class="clearfix  centent">
+            <div class="banner_left"></div>
+            <div class="swiper-container swiper-no-swiping">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/H_images/bn_img1.jpg"></div>
+                    <div class="swiper-slide"><img src="images/H_images/bn_img2.jpg"></div>
+                    <div class="swiper-slide"><img src="images/H_images/bn_img3.jpg"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="banner_right">
+                <div>
+                    <ul class="nav_yangS banner_right_top">
+                        <li>
+                            <a href="#">排行</a>
+                        </li>
+                        <li>
+                            <a href="#">咨询</a>
+                        </li>
+                        <li>
+                            <a href="#">经验</a>
+                        </li>
+                        <li>
+                            <a href="#">视频</a>
+                        </li>
+                        <li>
+                            <a href="#">职播</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner_right_cent">
+                </div>
+                <div class="banner_right_buttom">
+                    <a href="#">查看更多
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播banner部分 -->
+
+        <!-- 主体部分-全职 -->
+        <div class="centent subject_quanzhi clearfix">
+            <div class="subject_quanzhi_left">
+                <div class="subject_quanzhi_left1"><a href="#">全职有保障</a></div>
+                <div class="subject_quanzhi_left2"><a href="#"></a></div>
+                <div class="subject_quanzhi_left3"><a href="#">被 骗 有 赔 付</a></div>
+            </div>
+            <div class="subject_quanzhi_right">
+            </div>
+        </div>
+
+        <!-- 主体部分-全职 -->
+
+        <!-- 主体部分-兼职 -->
+        <div class="centent subject_quanzhi clearfix">
+            <div class="subject_quanzhi_left">
+                <div class="subject_quanzhi_left1"><a href="#">兼职当日结</a></div>
+                <div class="subject_quanzhi_left2"><a href="#"></a></div>
+                <div class="subject_quanzhi_left3"><a href="#">当 日 结 算 日 薪</a></div>
+            </div>
+            <div class="subject_quanzhi_right">
+            </div>
+        </div>
+        <!-- 主体部分-兼职 -->
+
+
+        <!-- 主体部分-校招 -->
+        <div class="centent subject_quanzhi clearfix">
+            <div class="subject_quanzhi_left">
+                <div class="subject_quanzhi_left1"><a href="#">校招找名企</a></div>
+                <div class="subject_quanzhi_left2"><a href="#"></a></div>
+                <div class="subject_quanzhi_left3"><a href="#">第一份工作很重要</a></div>
+            </div>
+            <div class="subject_quanzhi_right subject_xiAozHao_right">
+            </div>
+        </div>
+        <!-- 主体部分-校招 -->
+
+        <!-- 为你推荐 -->
+        <div class="recommend centent clearfix">
+            <h3>为你推荐</h3>
+        </div>
+        <!-- 为你推荐 -->  
+
+        <!-- 热点 -->
+        <div id="hot" class="clearfix">
+            <div class="hot_cont centent clearfix">
+            </div>
+        </div>
+        <!-- 热点 -->
+
+        <!-- 介绍 -->
+        <div id="introduce">
+            <div class="introduce_cent centent clearfix">
+                <h2>百度百聘 · 全网职位搜索引擎</h2>
                 <div>
                     <ul>
-                        <li><a href="#">兼职</a></li>
+                        <li>
+                            <img src="http://zhaopin.baidu.com/static/newpczhaopin/b5cd4dc0ff97a21113e06d580ac1e9ca.png">
+                            <div>
+                                <strong>200<em>+</em></strong>
+                                <span>专业招聘网站</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="http://zhaopin.baidu.com/static/newpczhaopin/b5cd4dc0ff97a21113e06d580ac1e9ca.png">
+                            <div>
+                                <strong>200<em>+</em></strong>
+                                <span>专业招聘网站</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="http://zhaopin.baidu.com/static/newpczhaopin/b5cd4dc0ff97a21113e06d580ac1e9ca.png">
+                            <div>
+                                <strong>200<em>+</em></strong>
+                                <span>专业招聘网站</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="http://zhaopin.baidu.com/static/newpczhaopin/b5cd4dc0ff97a21113e06d580ac1e9ca.png">
+                            <div>
+                                <strong>200<em>+</em></strong>
+                                <span>专业招聘网站</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <input type="text" class="search_input" placeholder="请输入职位名／公司名 进行搜索">
-            <div class="fangdj">
-                <i></i>
+        </div>
+        <!-- 介绍 -->
+
+        <!-- 底部 -->
+        <div id="footer">
+            <div class="footer_cent centent clearfix">
+                <div class="footer_cent_top">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd>
+                            <a href="#">产品介绍</a>
+                            <a href="#">百聘百科</a>
+                            <a href="#">相关新闻</a>
+                            <a href="#">百聘熊掌号</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>用户中心</dt>
+                        <dd>
+                            <a href="#">使用帮助</a>
+                            <a href="#">用户协议</a>
+                            <a href="#">防骗指南</a>
+                            <a href="#">企业咨询</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>网站指南</dt>
+                        <dd>
+                            <a href="#">网站加入</a>
+                            <a href="#">职位合作</a>
+                            <a href="#">职位直投</a>
+                            <a href="#">网站咨询</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>企业指南</dt>
+                        <dd>
+                            <a href="#">发布职位</a>
+                            <a href="#">付费套餐</a>
+                            <a href="#">快速招人</a>
+                        </dd>
+                    </dl>
+                    <div>
+                        <img src="http://zhaopin.baidu.com/static/newpczhaopin/ac12c530c952ea2c5d378d6e8f11f67d.png">
+                        <span>手机扫一扫，轻松找工作</span>
+                    </div>
+                </div>
+                <div class="footer_cent_bottom">
+                    <p>
+                        <a href="#">合作邮箱：ZPKF@baidu.com</a>
+                        <span>© 2018 Baidu &nbsp;<a href="#">使用百度前必读</a></span>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>  
+        <!-- 底部 -->
+    </div>
     <div class="right_black">
-        
+        <div class="right_black_top">
+            <ul>
+                <li><!-- title="请先登录" -->
+                    <a href="#" class="portrait"></a>
+                </li>
+                <li>
+                    <a href="#" class="right_black_g right_black_top_a clearfix">
+                        <img src="http://zhaopin.baidu.com/static/newpczhaopin/72ed73f3a54a644d2d687cdf31202ecd.png"></img>
+                        <span>简历</span>
+                        <div>我的简历<i class="jiAnTou"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="right_black_g right_black_top_a clearfix">
+                        <img src="http://zhaopin.baidu.com/static/newpczhaopin/e83afebbff1d2bb29ad1ba9e034f3ccb.png"></img>
+                        <span>收藏</span>
+                        <div>我的收藏<i class="jiAnTou"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="right_black_g right_black_top_a clearfix">
+                        <img src="http://zhaopin.baidu.com/static/newpczhaopin/31b03d655168a6bfacfe8c41ae846700.png"></img>
+                        <span>关注</span>
+                        <div>关注企业<i class="jiAnTou"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="right_black_g right_black_top_a clearfix">
+                        <img src="http://zhaopin.baidu.com/static/newpczhaopin/1f05a7adade95361c63e0627df35c079.png"></img>
+                        <span>申请</span>
+                        <div>申请职位<i class="jiAnTou"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="right_black_g right_black_top_a clearfix">
+                        <img src="http://zhaopin.baidu.com/static/newpczhaopin/5d1789f5aa7845650b09f276e1ca86a2.png"></img>
+                        <span>订阅</span>
+                        <div>职位订阅<i class="jiAnTou"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="right_black_g right_black_top_a clearfix fenlei">
+                        <img src="http://zhaopin.baidu.com/static/newpczhaopin/b782297f62b5b19c7f6721c9db4713c3.png"></img>
+                        <span>分类</span>
+                        <div>职位分类<i class="jiAnTou"></i></div>
+                    </a>
+                </li>
+            </ul>   
+        </div>
+        <div class="kon"></div>
+        <div class="right_black_bottom">
+            <span class="right_black_g app">app
+                <div class="erwei">
+                <em class="jiAnTou"></em></div>
+            </span>
+            <p class="right_black_g">反馈</p>
+        </div>
+        <a class="return right_black_g">
+            <img src="http://zhaopin.baidu.com/static/newpczhaopin/9ca3859deb439a2d8496e9c26146b67b.png"></img>
+            <span>顶部</span>
+        </a>
+    </div>
+    <div class="bianqukuai">
+        <div class="bianqukuai_top">
+            <span>职业分类</span>
+            <i></i>
+        </div>
+        <div>
+            <ul class="bianqukuai_dalei clearfix dalei_index">
+                <li class="bianqukuai_span">
+                    销售
+                </li>
+                <li class="bianqukuai_span">
+                    市场
+                </li>
+                <li class="bianqukuai_span">
+                    客服
+                </li>
+                <li class="bianqukuai_span">
+                    公关
+                </li>
+            </ul>
+        </div>
+        <div class="bianqukuai_dalei_xia clearfix">
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+            <a href="#">销售代表</a>
+        </div>
+        <div class="bianqukuai_ajax">
+            <ul class="bianqukuai_dalei clearfix">
+                <li class="bianqukuai_span">
+                    销售
+                </li>
+                <li class="bianqukuai_span">
+                    市场
+                </li>
+                <li class="bianqukuai_span">
+                    客服
+                </li>
+                <li class="bianqukuai_span">
+                    公关
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="js/jquery-1.8.3.js"></script>
+    <script src="swiper-4.5.0/dist/js/swiper.min.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/H_home.js"></script>
 </body>

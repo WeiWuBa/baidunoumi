@@ -1,3 +1,12 @@
+body{
+    letter-spacing:1;
+}
+
+.jiAnTou{
+    border-right: 6px solid #fff;
+    border-top: 6px dashed transparent;
+    border-bottom: 6px dashed transparent;
+}
 /* ********************头部***************** */
 #head{
     width: 100%;
@@ -26,13 +35,13 @@
     text-align: center;
     float: right;
 }
-#head_cont>ul>li{
+.nav_yangS>li{
     line-height: 70px;
 }
-#head_cont>ul>li:nth-child(1){
+.nav_yangS>li:nth-child(1){
     font-weight: 700;
 }
-#head_cont>ul>li:nth-child(1)::after{
+.nav_yangS>li:nth-child(1)::after{
     content: '';
     display: block;
     width: 20px;
@@ -42,7 +51,7 @@
     bottom: 16px;
     left: 5.5px;
 }
-#head_cont>ul>li>a:hover{
+.nav_yangS>li>a:hover{
     font-weight: 700;
 }
 #head_cont>ul>li:last-child>a{
@@ -54,17 +63,31 @@
     border-radius: 19px;
     color: #fff;
 }
+#head_cont>ul>li:last-child>a:hover{
+    box-shadow: 0 0 20px 0 rgba(97,149,254,.35);
+}
 /* ********************头部***************** */
 
 
 #subject{
     margin: 0 auto;
-    overflow: hidden;background: #f8f8f9;
+    overflow: hidden;
     background: url(http://zhaopin.baidu.com/static/newpczhaopin/a27d1e713e60967d0db8118311a566c9.jpg) no-repeat;
     padding-right: 56px;
+    background-color: #f8f8f9;
 }
 
+.string{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+}
 /* ********************搜索框***************** */
+.centent{
+    width: 1200px;
+    margin: 0 auto;
+}
 #search{
     width: 798px;
     height: 50px;
@@ -73,6 +96,7 @@
     box-shadow: 0 0 40px 0 hsla(0,0%,56%,.2);
     margin: 32px auto;
     background: #fff;
+    z-index: 99;
 }
 .search_input{
     width: 600px;
@@ -83,8 +107,9 @@
     float: left;
     height:50px;
     line-height: 50px;
-    margin: 0 15px 0 36px;
+    padding: 0 15px 0 36px;
     position: relative;
+    cursor:pointer;
 }
 .occupation>i{
     display: inline-block;
@@ -103,7 +128,7 @@
     border:1px solid #5183ff;
     border-top: 1px solid #fff;
     position: absolute;
-    left: -16px;
+    left: 20px;
     display: none;
 }
 .occupation>div>ul>li{
@@ -117,6 +142,7 @@
     width: 60px;
     height: 50px;
     float: right;
+    cursor:pointer;
 }
 .fangdj>i{
     display: block;
@@ -153,15 +179,790 @@
 }
 /* ********************搜索框***************** */
 
+/* ********************banner部分***************** */
+#banner{
+    box-shadow: 0 0 70px 0 rgba(33,44,55,.5);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+.banner_left{
+    float: left;
+    width: 250px;
+    height: 520px;
+    background: #222;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    position: relative;
+}
+.banner_left>ul{
+    padding-top: 18px;
+}
+.banner_left>ul>li{
+    line-height: 40px;
+    padding-left:35px;
+    position: relative;
+    cursor:pointer;
+}
+.banner_left>ul>li>.left_arrow{
+    position: absolute;
+    right: 0px;
+    top: 13.5px;
+    z-index: 100;
+    display: none;
+}
+.banner_left>ul>li:hover{
+    background: #404040;
+}
+.banner_left>ul>li>a{
+    color: #fff;
+    margin: 0 4px;
+}
+.banner_level{
+    width: 698px;
+    height: 520px;
+    padding: 34px 30px 20px 29px;
+    box-sizing:border-box;
+    z-index: 99;
+    border: 1px solid #5183ff;
+    border-left: none;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 40px 0 rgba(81,131,255,.35);
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    display: none;
+    font-size: 14px;
+    line-height: 14px;
+}
+.banner_level>ul>li{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.banner_level>ul>li>span{
+    float: left;
+    color: #000;
+    margin-left: 8px;
+}
+.banner_level>ul>li>div{
+    margin-left: 108px;
+}
+.banner_level>ul>li>div>a{
+    color: #666;    
+    float: left;
+    padding: 3px 0 16px;
+    margin-right: 20px;
+}
+.banner_level>ul>li>div>a:hover{
+    color: #5183ff;
+}
+.banner_right{
+    float: right;
+    height: 520px;
+    background: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+}
+.banner_right_top{
+    width: 259px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing:border-box;    
+}
+.banner_right_top>li{
+    line-height: 58px;
+}
+.banner_right_cent>ul>li>a{
+    display: block;
+    padding: 10px 30px;
+}
+.banner_right_cent>ul>li>a>span:nth-child(1){
+    float: left;
+}
+.banner_right_cent>ul>li>a>span:nth-child(2){
+    display: inline-block;
+    max-width: 100px;
+    height: 19px;
+    margin-left: 10px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    float: left;
+}
+.banner_right_cent>ul>li>a>span:nth-child(3){
+    color: #666;
+    float: right;
+}
+.banner_right_cent>ul>li:nth-child(1)>a>span:nth-child(1){
+    color: #f94e4c;
+    font-weight: 600;
+}
+.banner_right_cent>ul>li:nth-child(2)>a>span:nth-child(1){
+    color: #ff910d;
+    font-weight: 600;
+}
+.banner_right_cent>ul>li:nth-child(3)>a>span:nth-child(1){
+    color: #ffbe00;
+    font-weight: 600;
+}
+.banner_right_buttom>a{
+    display: block;
+    margin-top: 33px;
+    font-size: 12px;
+    color: #666;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/0a080ae333880aa96a20934eae5c5614.png) no-repeat;
+    background-size: 4px 7px;
+    background-position: 150px;
+    padding-right:14px;
+}
+.banner_right_buttom>a:hover{
+    color: #5183ff;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/af29178b5f658517739fc32605d6080d.png) no-repeat;
+    background-size: 4px 7px;
+    background-position: 150px;
+    padding-right:14px;
+}
+.banner_centre_xr{
+    float: left;
+}
+.swiper-container{
+    width: 690px;
+    height: 520px;
+    float: left;
+    cursor: pointer;
+}
+.swiper-button-prev{
+    background-image: url(http://zhaopin.baidu.com/static/newpczhaopin/30b3005c693b04377106427b88d28765.png);
+    background-size: 40px 48px;
+    opacity: 0.5;
+}
+.swiper-button-prev:hover{
+    opacity: 1;
+}
+.swiper-button-next:hover{
+    opacity: 1;
+}
+.swiper-button-next{
+    background-image:url(http://zhaopin.baidu.com/static/newpczhaopin/158a70da2affcdbc9df5193760670ece.png);
+    background-size: 40px 48px;
+    opacity: 0.5;
+}
+.swiper-pagination-bullet{
+    width: 56px;
+    height: 5px;
+    background: #fff;
+    opacity: .4;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius:0;
+}
+.swiper-pagination>.swiper-pagination-bullet-active{
+    background: #5183ff;
+}
+/* ********************banner部分***************** */
+
+/* ********************主体部分-全职***************** */
+.subject_quanzhi{
+    background: #fff;
+    padding: 36px 36px 30px 0;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.subject_quanzhi_left{
+    width: 252px;
+    text-align: center;
+    float: left;
+}
+.subject_quanzhi_left>.subject_quanzhi_left1{
+    line-height: 55px;
+    font-size: 24px;
+}
+.subject_quanzhi_left>.subject_quanzhi_left2>a{
+    display: block;
+    cursor: pointer;
+    height: 14px;
+    margin-bottom: 11px;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/47c7c53af95a5282226f75379e7b6523.png) no-repeat;
+    margin-top: -6px;
+    background-position: 50%;
+    background-size: 100%;
+}
+.subject_quanzhi_left>.subject_quanzhi_left3>a{
+    display: block;
+    margin: 0 auto 19px;
+    width: 190px;
+    line-height: 38px;
+    border: #5179ff 1px solid;
+    border-right:none;
+    border-left:none;
+    color: #5179ff;
+    font-size: 18px;
+}
+.subject_quanzhi_left>.subject_quanzhi_left4{
+    line-height: 40px;
+    font-size: 14px;
+}
+.subject_quanzhi_left>.subject_quanzhi_left4>em{
+    margin: 0 14px;
+}
+.subject_quanzhi_left>.subject_quanzhi_left4>a:hover{
+    color: #5179ff;
+}
+.subject_quanzhi_left>a{
+    display: block;
+    width: 96px;
+    height: 32px;
+    border-radius: 17px;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    font-size: 12px;
+    line-height: 32px;
+    margin: 0 auto;
+}
+.subject_quanzhi_left>a:hover{
+    border-color:#5183ff;
+    box-shadow: 0 0 20px 0 rgba(81,131,255,.35);
+    color:  #5183ff;
+}
+.subject_quanzhi_right{
+    float: left;
+}
+.subject_quanzhi_right>ul{
+    width: 912px;
+    display: flex;
+    justify-content:space-between; 
+    flex-wrap: wrap;
+}
+.subject_quanzhi_right_a{
+    display: block;
+    width: 300px;
+    height: 162px;
+    box-sizing:border-box;    
+    background: hsla(0,0%,40%,.02);
+    margin-bottom: 6px;
+    padding: 24px;
+    color: #666;
+    font-size: 14px;
+}
+.subject_quanzhi_right_a:hover{
+    background: #f8f8f8;
+}
+.subject_quanzhi_right_a>div:nth-child(1){
+    font-size: 20px;
+    line-clamp: 24px;
+    margin-bottom: 14px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.subject_quanzhi_right_a>div:nth-child(2)>em{
+    margin: 0 10px;
+}
+.subject_quanzhi_right_a>div:nth-child(2)>.string:nth-child(1){
+    display: none;
+}
+.subject_quanzhi_right_a>div:nth-child(3){
+    margin: 10px 0 12px;
+}
+.subject_quanzhi_right_a>div:nth-child(4){
+    font-size: 20px;
+    color: #ff7900;
+    line-height: 27px;
+    overflow: hidden;
+}
+.subject_quanzhi_right_a>div:nth-child(4)>span:nth-child(n+2){
+    display: inline-block;
+    width: 36px;
+    height: 16px;
+    margin-left: 8px;
+    line-height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    color: #000;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+    letter-spacing: 0;
+}
+.subject_quanzhi_right_a>div:nth-child(4)>span:nth-child(n+2)>em{
+    display: block;
+    font-size: 14px;
+    transform:scale(.8);
+    margin-top: -3.55px;
+}
+/* ********************主体部分-全职***************** */
+
+/* ********************主体部分-校招***************** */
+.subject_xiAozHao_right_a{
+    display: block;
+    width: 178px;
+    height: 162px;
+    padding: 21px;
+    margin-bottom: 6px;
+    box-sizing:border-box;    
+    background: hsla(0,0%,40%,.02);
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+.subject_xiAozHao_right_a:hover{
+    background: #f8f8f8;
+}
+.subject_xiAozHao_right_a>img{
+    width: 88px;
+    height: 88px;
+    border: 1px solid #ededed;
+    border-radius: 50%;
+    object-fit: contain;
+    background: #fff;
+}
+.subject_xiAozHao_right_a>span{
+    margin-top: 16px;
+    display: block;
+    text-align: center;
+}
+/* ********************主体部分-校招***************** */
+
+/* ********************为你推荐***************** */
+.recommend>h3{
+    text-align: center;
+    line-height: 72px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.recommend>ul{
+    width: 100%;
+    display: flex;
+    justify-content:space-between; 
+    flex-wrap: wrap;
+}
+.recommend_a{
+    display: block;
+    width: 393px;
+    height: 162px;
+    box-sizing:border-box;    
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 24px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.recommend_a:hover{
+    box-shadow: 0 0 12px 0 rgba(0,0,0,.08);
+}
+.recommend_a>div:nth-child(1){
+    font-size: 20px;
+    line-clamp: 24px;
+    margin-bottom: 14px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.recommend_a>div:nth-child(2)>em{
+    margin: 0 10px;
+}
+.recommend_a>div:nth-child(3){
+    margin: 10px 0 12px;
+}
+.recommend_a>div:nth-child(4){
+    font-size: 20px;
+    color: #ff7900;
+    line-height: 27px;
+    overflow: hidden;
+}
+.recommend_a>div:nth-child(4)>span:nth-child(n+2){
+    display: inline-block;
+    width: 36px;
+    height: 16px;
+    margin-left: 8px;
+    line-height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    color: #000;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+    letter-spacing: 0;
+}
+.recommend_a>div:nth-child(4)>span:nth-child(n+2)>em{
+    display: block;
+    font-size: 14px;
+    transform:scale(.8);
+    margin-top: -3.55px;
+}
+/* ********************为你推荐***************** */
+
+/* ********************热点***************** */
+#hot{
+    margin-top: 20px;
+    width: 100%;
+    background: #fff;
+    padding-top: 40px;
+}
+.hot_cont{
+    padding-bottom: 26px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content:space-between; 
+}
+.hot_cont>div{
+    padding: 0 24px;
+    width: 30%;
+}
+.hot_cont>div>h3{
+    font-size: 16px;
+    color: #000;
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+.hot_cont>div>ul>li{
+    float: left;
+}
+.hot_cont>div>ul>li>a{
+    font-size: 14px;
+    color: #666;
+    margin: 0 20px 10px 0;
+}
+.hot_cont>div>ul>li>a:hover{
+    color: #5183ff;
+}
+/* ********************热点***************** */
+
+/* ********************介绍***************** */
+#introduce{
+    width: 100%;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/6f957d89636e4d1142d4eb515ac5bfb4.png) no-repeat;
+    padding: 72px 0 69px;
+    box-sizing: border-box;
+    color: #000;
+}
+.introduce_cent>h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.introduce_cent>div>ul{
+    padding-left: 24px;
+    display: flex;
+    justify-content:space-between; 
+}
+.introduce_cent>div>ul>li{
+    position: relative;
+    padding-left: 80px;
+}
+.introduce_cent>div>ul>li>img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.introduce_cent>div>ul>li>div{
+    float: left;
+}
+.introduce_cent>div>ul>li>div>strong>em{
+    font-size: 28px;
+}
+.introduce_cent>div>ul>li>div>strong{
+    display: block;
+    font-size: 34px;
+    line-height: 48px;
+}
+.introduce_cent>div>ul>li>div>span{
+    color: #444649;
+    font-size: 16px;
+}
+/* ********************介绍***************** */
+
+/* ********************底部样式***************** */
+#footer{
+    background: #000;
+    padding: 50px 0 30px;
+}
+.footer_cent{
+    padding-left: 24px;
+}
+.footer_cent_top>dl{
+    margin-right: 184px;
+    float: left;
+}
+.footer_cent_top>dl>dt{
+    display: block;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+.footer_cent_top>dl>dd>a{
+    display: block;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    opacity: .8;
+}
+.footer_cent_top>dl>dd>a:hover{
+    color: #5179ff;
+    text-decoration:none;
+    transition: all .2s linear;
+}
+.footer_cent_top>div{
+    float: left;
+    margin-top: -10px;
+}
+.footer_cent_top>div>img{
+    width: 154px;
+    height: 154px;
+    display: block;
+}
+.footer_cent_top>div>span{
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+}
+.footer_cent_bottom>p{
+    margin-top:33px;
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(255,255,255,.4);
+}
+.footer_cent_bottom>p>a{
+    margin-right: 40px;
+}
+.footer_cent_bottom>p a{
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    opacity: .4;
+}
+.footer_cent_bottom>p>span>a:hover{
+    color: #5183ff;
+}
+/* ********************底部样式***************** */
 
 /* ********************侧边框***************** */
 .right_black{
     background: #222;
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 0px;
     width: 56px;
     height: 100%;
     z-index: 100000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.right_black_g{
+    height: 50px;
+    box-sizing: border-box;
+    display: block;
+    padding: 7 0;
+    cursor: pointer;
+}
+.right_black_g:hover{
+    transition: all .3s linear;
+    background: #404040;
+}
+.right_black_g>span{
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 6px;
+}
+.right_black_g>img{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0 auto; 
+}
+.right_black a{
+    color: #fff;
+}
+.right_black_top>ul>li{
+    margin-bottom: 7px;
+}
+.portrait{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/a08c247ca70c37582a3fd7951dc2df1c.jpeg) no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+.right_black_top_a{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.right_black_top_a>div{
+    width: 56px;
+    position: absolute;
+    background: linear-gradient(45deg,#6d93fe,#3b99fc);
+    height: 50px;
+    top:0;
+    right: 56px;
+    font-size: 14px;
+    line-height: 50px;
+    border-radius: 2px;
+    padding: 0 15px;
+    letter-spacing:0;
+    display: none;
+}
+.right_black_top_a:hover div{
+    display: block;
+}
+.right_black_top_a>div>i{
+    position: absolute;
+    border-right: none;
+    border-left: 6px solid #3b99fc;
+    right: -6px;
+    top: 20px;
+}
+.kon{
+    height: 349px;
+}
+.right_black_bottom>.right_black_g{
+    padding: 0;
+    font-size: 12px;
+    line-height: 42px;
+    height: 42px;
+}
+.app{
+    position: relative;
+}
+.app:hover>.erwei{
+    display: block;
+}
+.erwei{
+    background: url(http://static.open.baidu.com/media/ch6/png/baipinAPP1.0.1logo-shouzhu.png) no-repeat;
+    width: 122px;
+    height: 122px;
+    background-size: 90px 90px;
+    background-position: 50%;
+    position: absolute;
+    top: -40.5px;
+    right: 56px;
+    background-color: #fff;
+    border:1px solid #5183ff;
+    border-right: none;
+    box-shadow: 0 0 40px 0 rgba(81,131,255,.35);
+    box-sizing: border-box;
+    display: none;
+}
+.app>.erwei>.jiAnTou{
+    border-right: none;
+    border-left: 6px solid #fff;
+    position: absolute;
+    top: 54.5px;
+    right: -6px;
+}
+
+.return{
+    display: block;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.animated {
+    animation-duration: 0.2s;
+    animation-timing-function:linear;
+}
+@keyframes fadeInLeft{
+    0%{
+        -webkit-transform:translate3d(-10px,0,0);
+        opacity: 0;
+    };
 }
 /* ********************侧边框***************** */
+
+/* ********************边区块***************** */
+.bianqukuai{
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    padding: 9px 0 84px;
+    font-size: 16px;
+    line-height: 16px;
+    box-sizing: border-box;
+    cursor:pointer; 
+    z-index: 1000001;
+}
+.bianqukuai_top>span{
+    display: block;
+    line-height: 24px;
+    margin: 14px 0 24px 24px;
+}
+.bianqukuai_top>i{
+    display: block;
+    width: 52px;
+    height: 24px;
+    background: url(http://zhaopin.baidu.com/static/newpczhaopin/3310890b88423edcc2dfc300e454780c.png) no-repeat;
+    background-size: 12px;
+    background-position: 50%;
+    position: absolute;
+    top: 18px;
+    right: 0px;
+}
+.bianqukuai_top>i:hover{
+    background-image: url(http://zhaopin.baidu.com/static/newpczhaopin/e394c6d15c754e2afca6f6b5d0bb2e99.png);
+}
+
+.bianqukuai_dalei{
+    margin-left: 40px;
+}
+
+.bianqukuai_span{
+    padding: 7px 10px;
+    color: #000;
+}
+.bianqukuai_dalei>li{
+    float: left;
+}
+
+.dalei_index>li:nth-child(1){
+    background: #f8f8f8;
+}
+
+.bianqukuai_dalei_xia{
+    width: 230px;
+    height: 116px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8px 10px;
+    background: #f8f8f8;
+}
+.bianqukuai_dalei_xia>a{
+    font-size: 13px;
+    line-height: 13px;
+    color: #666;
+    letter-spacing: 0;
+    margin: 0 10px;
+    padding: 8px 0;
+}
+/* ********************边区块***************** */

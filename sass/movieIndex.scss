@@ -1,0 +1,430 @@
+@mixin buttomcommon{
+	display: inline-block;
+	width:42px;
+	height:42px;
+	font-size:20px;
+	color:888;
+	line-height: 42px;
+	text-align: center;
+	background: #000;
+	border-radius:50%;
+	 position: absolute;
+	z-index:99;
+	color: #fff;
+	top:100px;
+}
+@mixin h3spancommon{
+	padding:0 14px;
+	font-size: 20px;
+	height: 30px;
+	line-height: 28px;
+	span{
+		float: right;
+		font-size: 14px;
+		color: #666;
+		margin-top:4px;
+	}
+}
+@mixin h4common{
+	font-size:14px;
+	height: 40px;
+	line-height: 20px;
+	color: #333333;
+}
+/*头部*/
+.yCommon{
+	width: 1210px;
+	margin: 0 auto;
+}
+.yHeaderWrap{
+	
+	height: 80px;
+	
+	.yHeader{
+		height: 80px;
+		.yLogo{
+			width: 313px;
+			height: 40px;
+			background: url("../../images/yLogo.png") no-repeat;
+			background-size:cover;
+			margin-top: 27px;
+			float: left;
+			.yLogoName{
+				display: block;
+				width: 313px;
+				height: 40px;
+				text-indent:-999px;
+			}
+		}
+		.ySite{
+			float: left;
+			min-width: 80px;
+			height:26px;
+			line-height: 26px;
+			margin-top: 36px;
+			margin-left:20px; 
+			position: relative;
+			.yAddress{
+				display: inline-block;
+				float: left;
+			}
+			.ydownarrow{
+				display: inline-block;
+				width:30px;
+				height:30px;
+				float: left;
+				font-size: 20px;
+				margin-left:6px; 
+				position: absolute;
+				top: 2px;
+				
+			}
+			.ychooseCity{
+				
+				float: left;
+				width:190px;
+				position: absolute;
+				top:28px;
+				padding:8px;
+				background: #fff;
+				border: 1px solid #dfdfdf;
+				display:none;
+				h3{
+					padding-left: 10px;
+					color: #73adc9;
+					line-height: 28px;
+					
+				}
+				.yHotcity{
+					li{
+						float: left;
+						line-height: 26px;
+						width: 25%;
+						text-align: center;
+						color: #333;
+						font-size: 12px;
+					}
+				}
+				.ymore-city{
+					text-align:right;
+					line-height: 20px;
+					color: #999;		
+				}
+			}
+		}
+		
+		.ySearch{
+			margin-top:20px;
+			width: 390px;
+			height: 40px;
+			line-height: 40px;
+			float: right;
+			border: 1px solid #ccc;
+			padding: 0 10px;
+			 position: relative;
+			 color: #ccc;
+			.ySearchbox{
+				// display: inline-block;
+				width: 360px;
+				height: 24px;
+				line-height: 24px;
+				font-size: 14px;
+			}
+			.ymagnifyingglass{
+				font-size: 26px;
+				cursor: pointer; 
+				 position: absolute;
+				 color: #666;
+			}
+		}
+	}	
+}
+
+/*导航区*/
+.yNavWrap{
+	height: 60px;
+	
+	background: #333;
+	.yNav{
+		height: 60px;
+		line-height: 60px;
+		.yNavBox{
+			float: left;
+			li{
+				float: left;
+				font-size: 18px;
+				padding:0 32px;
+				&:hover{
+					background:#1d1d20 ;
+				}
+				a{
+					color: #fff;
+				}
+			}
+		}
+	}
+	.yNav-right{
+		float: right;
+		height: 60px;
+		.yposter{
+			display:inline-block;
+			width:182px;
+			height:32px;
+			background:url("../../images/icon.png") no-repeat;
+			background-size:cover;
+			margin-top:16px; 
+		}
+		.ylogin{
+			display:inline-block;
+			float: right;
+			margin-left: 18px;
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+}
+
+/*内容区*/
+.yContentWrap{
+	minheight: 60px;
+	margin-top: 36px;
+	.yContent{
+		minheight: 60px;
+		/*左边内容更换区*/
+		.yContent-left{
+			float: left;
+			width:958px;
+			h3{
+				@include h3spancommon;
+			}
+			.yswiper-container{
+				margin: 0 auto;
+				padding: 4px;
+				position: relative;
+				overflow: hidden;
+				width: 946px;
+				min-height: 300px;
+				margin-bottom: 36px;
+				.ybuttonLeftRight{
+					position: absolute;
+					.yrightarrow{
+						@include buttomcommon;
+						left:990px;
+						 
+					}
+					.yleftarrow{
+						@include buttomcommon;
+						left:-60px;
+						
+					}
+					
+				}
+				.ymovie-list{
+					// margin: 0 auto;
+					position: absolute;
+					width:8000px;
+					.ymovie{
+						width:140px;
+						height:276px;
+						padding:6px; 
+						float: left;
+						border:1px solid #fff;
+						&:hover{
+							border:1px solid #ff318c;
+						}
+						.ypictures{
+							img{
+								display: block;
+								width:138px;
+								height:206px;
+								background:url("../../images/film_img02.jpg") no-repeat;
+								background-size:cover; 
+							}
+							
+						}
+						h4{
+							@include h4common;
+						}
+						
+						.ychooseSeat{
+							height: 30px;
+							line-height: 30px;
+							a{
+								display: inline-block;
+								color:#ff318c;
+								width:70px;
+								height: 24px;
+								line-height: 24px;
+								text-align: center;
+								font-size:10px;
+								border-radius: 2px;
+								 border:1px solid #ff318c;
+								 &:hover{
+									 background: #ff318c;
+									 color: #fff;
+								 }
+							}
+							.ygrade{
+								color:#fd8e51;
+								font-size:12px;
+								float: right;
+							}
+						}
+					}
+				}
+				
+				
+			}
+			.yUpcoming{
+				margin:0 auto;
+				position:relative;
+				width:950px;
+				margin-bottom: 30px;
+				min-height: 320px;
+				overflow: hidden;
+				.ylowbuttonLeftRight{
+					position: absolute;
+					.ylowrightarrow{
+						@include buttomcommon;
+						left:990px;
+						
+					}
+					.ylowleftarrow{
+						@include buttomcommon;
+						left:-60px;
+					
+					}
+				}
+				
+				.yUpList{
+					margin: 0 auto;
+					width: 5000px;
+					height:300px;
+					overflow: hidden;
+					.yUpmovie{
+						width:140px;
+						height:276px;
+						padding:8px; 
+						float: left;
+						border:1px solid #fff;
+						&:hover{
+							border:1px solid #ff318c;
+						} 
+						a{
+							img{
+								display: block;
+								width:138px;
+								height:206px;
+								background:url("../../images/film_img02.jpg") no-repeat;
+								background-size:cover; 
+							}
+						}
+						h4{
+							@include h4common;
+						}
+						.ylookinfo{
+							height: 30px;
+							line-height: 30px;
+							a{
+								display: inline-block;
+								color:#333;
+								width:70px;
+								height: 24px;
+								line-height: 24px;
+								text-align: center;
+								font-size:10px;
+								 border-radius: 2px;
+								border:1px solid #e3e3e3;
+								 
+							}
+						}
+					}
+					
+				}
+			}
+		}
+		.yContent-right{
+			float: left;
+			width:250px;
+			h3{
+				font-size: 20px;
+				height: 28px;
+				margin-bottom: 34px;
+				line-height: 28px;
+				a{
+					margin-top: 2px;
+					float: right;
+					font-size: 12px;
+					color: #666;
+				}
+			}
+			.ybox-office{
+				h2{
+				font-size: 20px;
+				height: 54px;
+				line-height: 54px;
+				border-bottom:1px solid #f3f3f3;
+				}
+				.yrank{
+					
+					li{
+						span{
+						color: #ff318c;
+						display: inline-block;
+						width: 24px;
+						line-height: 36px;
+						float: left;
+						}
+						
+						h4{
+							display: inline-block;
+							width: 224px;
+							height: 36px;
+							line-height: 36px;
+							 overflow: hidden;
+							cursor: pointer;
+							a{
+								display: inline-block;
+							    width: 147px;
+								color: #111;
+								font-size: 14px;
+							}
+							em{
+								float: right;
+								color: darkorange;
+								font-size: 12px;
+								padding: 0 11px 0 5px;
+							}
+							
+						}
+						.ystage-photo{
+							width:204px;
+							margin-left: 24px;
+							display: none;
+							a{
+								img{
+								width:64px;
+								height: 86px;
+								background: url("../../images/film_img01.jpg") no-repeat;
+								background-size:cover; 
+								}
+							}
+							
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}
+/*部分效果样式*/
+.yActive{
+	background:#1d1d20 ;
+}
+.yshow{
+	display: block;
+}
+.ymove{
+	left:0;
+}

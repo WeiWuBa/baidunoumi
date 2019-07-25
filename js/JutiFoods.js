@@ -1,7 +1,9 @@
 (function(){
     $('header').load('header.html');
 })();
-
+(function(){
+    $('footer').load('footer.html');
+})();
 
 window.onscroll = function(){
     if(document.documentElement.scrollTop>573){
@@ -47,7 +49,14 @@ function  L_jiashuju(){
     }
    
 }
-
+setTimeout(function(){
+    $('footer .re-footer-inner').css('margin','0 auto');
+    $('.tijiao').css('height','36px');
+    $('.searchInput').css('height','36px');
+    // $('.HeaNav1 .dl_f_xr').css({"display":"block","z-index":"999"});
+    $('.interlock_xr').css({'left':"217px"});
+    $('.HeaNav1 dl').css({'display':'block','width':"217px"});
+},0);
 
 
 

@@ -281,6 +281,8 @@
     .L-dlwai{
         display: inline-block;
         float: right;
+        background: white;
+        z-index: 1000;
         width: 230px;
         dl{
             width: 226px;
@@ -347,4 +349,6 @@
         }
     } 
 }
-
+footer{
+    margin-top: 20px;
+}
