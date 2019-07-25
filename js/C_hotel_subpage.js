@@ -9,7 +9,11 @@ $(function(){
 	// "xingzhengqu":["崇明县","浦东新区","闵行区","黄浦区","宝山区","松江区","杨浦区","虹口区","徐汇区","卢湾区","长宁区","青浦区","奉贤区","静安区"],
 	// "C_cityid":"shanghai"
 	// }
+<<<<<<< HEAD
 /* ———————————————————————————————二级页面获取一级页面数据—————————————————————————— */
+=======
+/* ———————————————————————————————二级页面获取一级页面数据————————————————————————————— */
+>>>>>>> CMD
 
 if (localStorage.getItem('C_Data')) {
 	// 获取本地数据[]
@@ -57,6 +61,7 @@ if (localStorage.getItem('C_Data')) {
 	$('.C_mian_bot_R_map').mouseout(function(){
 		$(this).find('a').css('opacity','0');
 	});
+<<<<<<< HEAD
 /* ———————————————————————————————酒店推荐页随机显示————————————————————————————— */
 $.ajax({
 	url:'json/hotel/C_hotel.json',
@@ -91,3 +96,52 @@ $.ajax({
 	}
 });
 });
+=======
+	
+/* ———————————————————————————————酒店广告推荐————————————————————————————— */
+var C_hoteladvertising = function(){
+	$.ajax({
+		url:'json/hotel/C_hotel.json',
+		dataType:'json',//服务器返回json格式数据
+		type:'get',//HTTP请求类型
+		cache:false,//是否使用缓存
+		success:function(data){
+			if(data.length > 0){
+				var arr_length = data.length;// 总条数
+				var newarr = [];
+				for (var i = 0; i < arr_length; i+= 4) {//每隔成每一页要显示的数量
+					newarr.push(data.slice(i,i+4));
+				}
+				var str = '';
+				var Rand = newarr[getRand(0, 15)];
+				for(var j = 0; j < Rand.length; j++){
+					console.log(Rand.length);
+					var num = getRand(1, 19);
+					var price_min = getRand(300,1000);
+					var price_max = getRand(price_min,2000);
+					str +='<li class="clearfix"><a href="//www.nuomi.com/deal/u00rsopxy.html"><img src="images/hotel_json/houshotel'+num+'.jpg" title="'+Rand[j].hotel_name+'"><dl><dt>'+Rand[j].hotel_name+'</dt><dd>'+Rand[j].hotel_appraise+Rand[j].hotel_appraise+'</dd><p><span>￥'+price_min+'</span><span>￥'+price_max+'</span></p></dl></a></li>';
+				}
+			$('.C_mian_bot_R_rec_con').html(str);
+			}else{
+				$('.C_contenthotel_list').html("请求失败，请重试！！");
+			}
+		},
+		error:function(xhr,type,errorThrown){
+			$('.C_contenthotel_list').html("请求失败，请重试！！");
+		}
+	});
+}
+C_hoteladvertising();
+//——————————————点击刷新按钮；
+$('.C_mian_bot_R_rec_header').on('click','a',function(){
+	C_hoteladvertising();
+});
+});
+
+
+
+
+
+
+
+>>>>>>> CMD
