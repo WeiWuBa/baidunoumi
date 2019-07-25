@@ -686,15 +686,15 @@
 	},
 	{
 		"hotel_img_url":"images/hotel_json/houshotel7.jpg",
-<<<<<<< HEAD
 		"hotel_img_url1":"images/hotel/hotel_subpage/jiudian2_1.jpg",
 		"hotel_img_url2":"images/hotel/hotel_subpage/jiudian4_2.jpg",
 		"hotel_name":"川投国际酒店",
 		"hotel_price":"人均￥161",
 		"hotel_appraise":"商旅人士偏爱",
 		"hotel_site":"龙华",
-		"hotel_address":"成都市双流县金河路66号",
-=======
+		"hotel_address":"成都市双流县金河路66号"
+	},
+	{
 		"hotel_img_url1":"images/hotel/hotel_subpage/jiudian7_1.jpg",
 		"hotel_img_url2":"images/hotel/hotel_subpage/jiudian3_2.jpg",
 		"hotel_name":"格林豪泰酒店(2号店)",
@@ -702,12 +702,10 @@
 		"hotel_appraise":"商旅人士偏爱 SPA酒店",
 		"hotel_site":"龙华",
 		"hotel_address":"深圳市龙岗区横岗六约塘坑路7-1号(塘坑地铁站旁)",
->>>>>>> CMD
 		"hotel_id":"24"
 	},
 	{
 		"hotel_img_url":"images/hotel_json/houshotel8.jpg",
-<<<<<<< HEAD
 		"hotel_img_url1":"images/hotel/hotel_subpage/jiudian4_1.jpg",
 		"hotel_img_url2":"images/hotel/hotel_subpage/jiudian3_2.jpg",
 		"hotel_name":"时代商务酒店(双楠店)",
@@ -826,7 +824,8 @@
 		"hotel_site":"龙华",
 		"hotel_address":"成都市双流县金河路66号",
 		"hotel_id":"34"
-=======
+	},
+	{
 		"hotel_img_url1":"images/hotel/hotel_subpage/jiudian7_1.jpg",
 		"hotel_img_url2":"images/hotel/hotel_subpage/jiudian3_2.jpg",
 		"hotel_name":"米欧伯爵酒店",
@@ -901,7 +900,6 @@
 		"hotel_site":"龙华",
 		"hotel_address":"深圳市龙华新区观澜大和路锦鲤新村一栋5~7层（大和路与人民路路口）",
 		"hotel_id":"31"
->>>>>>> CMD
 	}
 ]
 

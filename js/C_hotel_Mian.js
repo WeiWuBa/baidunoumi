@@ -157,11 +157,8 @@ $.ajax({
 /* ———————————————————————————————数据分页显示————————————————————————————— */
 // 绑定点击页码事件
 $('.C_contentBot_pagination').on('click','li a',function(){
-<<<<<<< HEAD
-	var str =$(this).html();	location.reload();
-=======
+	// var str =$(this).html();	location.reload();
 	var str =$(this).html();
->>>>>>> CMD
 	if(!isNaN(str)){
 		//移除之前的C_active
 		$('.C_contentBot_pagination li a').removeClass('C_active');
@@ -176,7 +173,6 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 });
 $('.C_contentBot_pagination').on('click','li a',function(){
 	var pageNum = $(this).attr('data_cod'); 	// 页数
-	console.log(pageNum);
 	var pageSize = 10;	// 每一页显示条数
 	$.ajax({
 		url:'json/hotel/C_hotel.json',
