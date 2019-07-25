@@ -40,6 +40,7 @@ function  L_jiashuju(){
             $(".L-ulwai .L-shopping1 .L-shop-foods1 .L-a2-h31 h3").html(L_shujuku[i].L_FoodsName);;
             $(".L-ulwai .L-shopping1 .L-shop-foods1 .L-a1-img1 img ").attr("src",L_shujuku[i].L_FoodsImg);
             $(".L-ulwai .L-shopping1 .L-shop-foods1 .L-message11 ").html(L_shujuku[i].L_FoodsName);
+            $("title").html(L_shujuku[i].L_FoodsName);
             $(".L-dlwai dl dd .L-a1-img1 img ").attr("src",L_shujuku[i].L_FoodsImg);
         }
     }
