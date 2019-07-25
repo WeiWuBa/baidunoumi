@@ -1,0 +1,227 @@
+#Z-main{
+   width: 980px;
+   margin: 20px auto;
+}
+#Z-top{
+	background:#FAFAFA;
+	overflow: hidden;
+}
+#Z-top-left{
+	float: left;
+	font-size:  12px;
+	line-height: 50px;
+	padding-left: 10px;
+	height: 50px;
+}
+#Z-top-left p{
+	display: inline-block;
+	color: #666;
+}
+#Z-top-left a{
+	float: right;
+	color: #73ABC9;
+	padding-left: 10px;
+}
+#Z-top-right{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+}
+#Z-top-right p{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+	padding-left: 10px;
+}
+#Z-top-right span{
+	font-size: 22px;
+	color: #FD8f52;
+	padding-right: 10px;
+}
+#Z-top-right span:nth-child(2){
+	border-right: 1px solid #DFDFDF;
+}
+#Z-center{
+	margin-top:15px;
+	overflow: hidden;
+}
+#Z-center-left{
+	width: 150px;
+	background: #FAFAFA;
+	float: left;
+}
+
+#Z-center-left ul li a{
+	display: block;
+	padding: 13px 0 13px 32px;
+	font-size: 12px;
+	color: #666;
+}
+
+#Z-center-left .text-nav{
+	font-size: 14px;
+	padding: 13px 0 13px 32px;
+}
+#Z-center-left ul li:nth-child(1){
+	color: #ff658c;
+	border-bottom: 1px solid #F0F0F0;
+}
+#Z-center-left ul li:nth-child(4){
+	border-bottom: 1px solid #F0F0F0;
+	border-top: 1px solid #F0F0F0;
+}
+#Z-center-left h2{
+	border-top:5px solid #fff;
+	font-size: 18px;
+	margin-left: 16px;
+	color: #333;
+}
+#Z-center-left p{
+	font-size: 12px;
+	color: #666;
+	padding: 0 0 14px 16px;
+	line-height: 22px;
+}
+#Z-center-right{
+	width: 828px;
+	border: 1px solid #F0F0F0;
+	float: right;
+}
+#Z-center-right a{
+	font-size: 14px;
+	color: #666;
+	margin-left:30px;
+	line-height: 48px;
+}
+#Z-center-nav{
+	padding: 0 39px 60px;
+}
+#Z-center-nav a:hover{
+	color: #FFFFFF;
+	background: #FF658C;
+	text-decoration: none!important;
+	
+}
+#Z-center-right #bannar{
+	height: 259px;
+	width: 750px;
+	border-top:1px solid #f0f0f0 ;
+}
+#Z-center-right #bannar img{
+	margin-left:280px;
+}
+#Z-center-right #bannar strong{
+	display: block;
+	font-size:22px ;
+	margin-left:310px;
+	color: #9D9D9D;
+}
+#Z-center #Z-center-left ul li:hover{
+	color: #FFFFFF;
+	background: #FF658C;
+}
+#Z-center #Z-center-left ul li a:hover{
+	color: #FFFFFF;
+}
+.Z-win{
+	width:455px ;
+	height:436px ;
+	position: absolute;
+	left: 35%;
+	top: 100px;
+	border: 1px solid #CCCCCC;
+	background: #fff;
+	display: none;
+	z-index: 9;
+}
+.mask{
+	position: fixed;
+	z-index: 8;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+.Z-win-main .form-control{
+	width: 360px;
+	margin: 20px 0;
+}
+
+.Z-win-top{
+	display: flex;
+	justify-content: space-between;
+	line-height: 48px;
+	font-size: 14px;
+	background: #FCFCFC;
+	border-bottom: 2px solid #F2F2F2;
+}
+.Z-win-top strong{
+	margin-left:20px ;
+}
+.Z-win-top a{
+	margin-right: 20px;
+}
+.Z-win-main p{
+	font-size: 14px;
+	padding: 5px 0 0;
+	color: #666;
+	
+}
+.Z-win-main{
+	width: 365px;
+	margin-left: 40px;
+	margin-top: 20px;
+	
+}
+.Z-win-main h3{
+	font: 14px "宋体";
+	margin-top: 40px;
+	font-weight: 700;
+}
+.Z-win-main input{
+	width: 200px;
+	height: 42px;
+	padding-left:10px ;
+	font-size: 12px;
+}
+.Z-win-main .Z-txt-a{
+	
+	border: 1px solid #ccc;
+	margin-left: 20px;
+	padding:13px 30px;
+	font-size:12px ;
+}
+.Z-win-main span{
+	font-size: 14px;
+	line-height: 50px;
+}
+.Z-s-a{
+	
+	font-size: 14px;
+	color: #5291ff;
+}
+.Z-win-main .Z-btn{
+	border: none;
+	background: #438bE9;
+	width: 360px;
+	height: 45px;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.Z-win-boss{
+	position: relative;
+}
+.Z-win-main .Z-help{
+	position: absolute;
+	right: -1px;
+	top: 60px;
+	height: 80px;
+	width: 22px;
+	font-size: 12px;
+	color: #1D61AD;
+	border: 1px solid #ccc;
+	border-radius:5px ;
+	padding-left:5px ;
+	padding-top: 8px;
+	background: #F7F7F7;
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<title>【携程机票】飞机票查询,机票预订,机票价格查询,打折特价机票</title>	
+</head>
+<link rel="icon" href="images/titleLogo.ioc" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/xiecheng.css"/>
+<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+
+<body>
+ <a  class="Z-zhiding"></a>
+ <a href="" class="Z-jianyi">建议反馈</a>
+ <a href="" class="Z-zxkf">在线客服</a>
+ 
+<div class="Z-header  conment">
+	<img src="images/c_logo2013.png"  class="Z-img1">
+	<a href=""><img src="images/dl_banner01.png" ></a>
+</div>
+
+<div id="Z-Bnav">
+	<div class="Z-nav  conment">
+		<div class="Z-nav-left">
+			<a href="">国内机票</a>
+			<a href="">国际机票</a>
+		</div>
+		<div class="Z-nav-right">
+			<a href="">登录携程</a>
+		</div>
+	</div>
+</div>
+
+<div id="Z-main" class="conment">
+	<div class="Z-top-input">
+		<div class="Z-top-input-top">
+			<a href="" class="Z-bgw">国内</a>
+			<a href="">国际·港澳台</a>
+			<a href="">特价机票</a>
+		</div>
+		<div class="Z-top-input-center">
+				<a class="Z-huan"></a>
+				<a class="Z-hover"></a>
+				<span>航程类型</span>
+				<input type="radio" name="ture" checked="checked" class="Z-dancheng"/>单程
+				<input type="radio" name="ture" class="Z-wangfan" />往返
+				<input type="radio" name="ture"  class="Z-duocheng"/>多程	
+				<br />
+				<div class="Z-input-city">
+				<span>出发城市</span>
+				<input type="text" placeholder="深圳(SZX)" class="Z-goto">	
+				</div>
+				
+				<div class="Z-input-city Z-diyi" style="display: none;">
+				<span>第一日期</span>
+				<input type="text" placeholder="yyyy-mm-dd">	
+				</div>
+				
+				<div class="Z-input-city Z-zhongzhuan" style="display: none;">
+				<span>中转城市</span>
+				<input type="text" placeholder="城市/机场">	
+				</div>
+				
+				
+					
+				<div class="Z-input-city Z-dier" style="display: none;">
+				<span>第二日期</span>
+				<input type="text" placeholder="yyyy-mm-dd">	
+				</div>
+				
+				<div class="Z-input-city">
+				<span>到达城市</span>
+				<input type="text" placeholder="城市/机场" class="Z-come">	
+				</div>
+				
+				<div class="Z-input-city Z-gotime">	
+				<span>出发日期</span>
+				<input type="text" placeholder="yyyy-mm-dd">
+				</div>
+				
+				<div class="Z-input-city fanhui">		
+				<span>返回日期</span>
+				<input type="text" placeholder="yyyy-mm-dd">
+				</div>
+				
+				<br>
+				<form>
+					<div class="Z-input-baby">
+						
+				<input type="checkbox" name="xiedai" id="" value="" />
+				<dl>
+					<dt>带儿童</dt>
+					<dd>2-12岁</dd>
+				</dl>
+					</div>
+					<div class="Z-input-baby">		
+				<input type="checkbox" name="xiedai" id="" value="" />
+				<dl>
+					<dt>带婴儿</dt>
+					<dd>14天-2岁</dd>
+				</dl>
+					</div>
+				<a href="">儿童/婴儿 <i>!</i></a>
+				<br>
+				</form>
+				<a class="sousuo Z-st">高级搜索 <i>下</i></a>
+				<br>
+				<button type="button" class="Z-bt">搜索</button>
+				<a class="Z-jj" style="color: #33336B;" >搜索机+酒</a>
+		</div>
+		
+		<div class="Z-main-bottom">
+			
+			<div class="Z-main-bottom-radio">
+				<span>舱位等级</span>
+				<input type="radio" name="Grades"/>经济舱
+				<input type="radio" name="Grades"/>公务/头等舱
+			</div>
+			<div class="Z-main-bottom-option">
+				<span>航空公司</span>
+				<select>
+					<option>不限</option>
+					<option>中国国航</option>
+				</select>
+			</div>
+			<a class="sousuo Z-sb">高级搜索 <i>上</i></a>
+			<br>
+			<button type="button" class="Z-bb">搜索</button>
+		</div>
+	</div>
+	
+	
+	<div class="Z-main-right">
+		<div class="swiper-container sw">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><a href=""><img src="images/zg0d16000000z1oum3BB5.jpg" ></a></div>
+				<div class="swiper-slide"><a href=""><img src="images/zg0h16000000z08wvBE27.jpg" ></a></div>
+				<div class="swiper-slide"><a href=""><img src="images/zg0e1600000108tpzAC4A.jpg" ></a></div>
+				<div class="swiper-slide"><a href=""><img src="images/zg0k16000000zd92b82B1.jpg" ></a></div>
+				
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+			<!-- 如果需要导航按钮 -->
+			
+			<!--    <div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div> -->
+			<!-- 如果需要滚动条 -->
+			<!-- <div class="swiper-scrollbar"></div> -->
+		</div>
+		
+		
+		<div class="Z-main-right-nav">
+			<p>航空公司特惠专区</p>
+			<div class="swiper-container swn">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide Z-AA">
+							<span><img src="images/CZ.png" ><a href="">南方航空</a></span>
+							<span><img src="images/MU.png" ><a href="">东方航空</a> </span>
+							<span><img src="images/ZH.png" ><a href="">深圳航空</a> </span>
+							<span><img src="images/8L.png" ><a href="">祥鹏航空</a> </span>
+							<span><img src="images/PN.png" ><a href="">西部航空</a> </span>
+							<span><img src="images/GX.png" ><a href="">北部湾航空</a></span>
+							<span><img src="images/DZ.png" ><a href="">国际航空</a></span>
+							<span><img src="images/CA.png" ><a href="">东海航空</a></span>
+							<span><img src="images/AQ.png" ><a href="">九元航空</a></span>
+							<span><img src="images/KY.png" ><a href="">昆明航空</a></span>
+						</div>
+						
+						<div class="swiper-slide Z-AA">
+							<span><img src="images/9C.png" ><a href="">春秋航空</a></span>
+							<span><img src="images/HU.png" ><a href="">海南航空</a></span>
+							<span><img src="images/HO.png" ><a href="">吉祥航空</a></span>
+							<span><img src="images/GS.png" ><a href="">天津航空</a></span>
+							<span><img src="images/UQ.png" ><a href="">乌鲁木齐航空</a></span>
+							<span><img src="images/QW.png" ><a href="">青岛航空</a></span>
+							<span><img src="images/MF.png" ><a href="">厦门航空</a></span>
+							<span><img src="images/SC.png" ><a href="">山东航空</a></span>
+							<span><img src="images/JD.png" ><a href="">首都航空</a></span>
+							<span><img src="images/3U.png" ><a href="">四川航空</a></span>
+						</div>
+						<div class="swiper-slide Z-BB">
+							<img src="images/Y8.png" ><a href="">金鹏航空</a>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="Z-right-like">
+			<a>猜你喜欢</a>
+			<a>低价日历</a>
+		</div>
+		<div class="Z-right-box">
+			<div class="Z-right-sbox">
+				<ul class="Z-ulone">
+					<li><a href="">
+						<img src="images/bjs.jpg">
+						<span class="Z-xiaobq">北京</span>
+						<p>上海 → 北京</p>
+						<strong>07月27日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">3.0折</span>
+							<span class="price">￥445</span>
+						</div>
+						</a>
+					</li>
+					<li><a href="">
+						<img src="images/szx.jpg" >
+						<span class="Z-xiaobq">深圳</span>
+						<p>上海 → 深圳</p>
+						<strong>07月22日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">3.5折</span>
+							<span class="price">￥590</span>
+						</div>
+						</a>
+					</li>
+					<li><a href="">
+						<img src="images/can.jpg" >
+						<span class="Z-xiaobq">广州</span>
+						<p>上海 → 广州</p>
+						<strong>07月28日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">3.6折</span>
+							<span class="price">￥580</span>
+						</div>
+						</a>
+					</li>
+					<li><a href="">
+						<img src="images/ctu.jpg" >
+						<span class="Z-xiaobq">成都</span>
+						<p>上海 → 成都</p>
+						<strong>07月23日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">3.5折</span>
+							<span class="price">￥740</span>
+						</div>
+						</a>
+					</li>
+				</ul>
+				
+				<ul class="Z-ulone Z-two">
+					<li><a href="">
+						<p>上海 → 厦门</p>
+						<strong>07月29日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">3.6折</span>
+							<span class="price">￥486</span>
+						</div>
+						</a>
+					</li>
+					<li><a href="">
+						<p>上海 → 青岛</p>
+						<strong>07月24日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">3.5折</span>
+							<span class="price">￥440</span>
+						</div>
+						</a>
+					</li>
+					<li><a href="">
+					<p>上海 → 重庆</p>
+					<strong>07月28日</strong>
+					<br>
+					<div class="twospan">
+						<span class="discount">3.1折</span>
+						<span class="price">￥570</span>
+					</div>
+					</a>
+					</li>
+					<li><a href="">
+					<p>上海 → 西安</p>
+					<strong>07月27日</strong>
+					<br>
+					<div class="twospan">
+						<span class="discount">3.3折</span>
+						<span class="price">￥538</span>
+					</div>
+					</a>
+					</li>
+				</ul>
+				
+				<ul class="Z-ulone Z-two">
+					<li><a href="">
+						<span class="Z-biaoqian">抢低价</span>
+						<p>上海 → 天津</p>
+						<strong>07月28日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">2.4折</span>
+							<span class="price">￥420</span>
+						</div>
+						</a>
+					</li>
+					<li><a href="">
+						<span class="Z-biaoqian">人气</span>
+						<p>北京 → 上海</p>
+						<strong>07月27日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">3.1折</span>
+							<span class="price">￥450</span>
+						</div>
+						</a>
+					</li>
+					<li><a href="">
+						<span class="Z-biaoqian">超值</span>
+						<p>上海 → 大连</p>
+						<strong>07月24日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">3.6折</span>
+							<span class="price">￥477</span>
+						</div>
+						</a>
+					</li>
+					<li><a href="">
+						<span class="Z-biaoqian">特价</span>
+						<p>上海 → 三亚</p>
+						<strong>07月22日</strong>
+						<br>
+						<div class="twospan">
+							<span class="discount">2.6折</span>
+							<span class="price">￥600</span>
+						</div>
+						</a>
+					</li>
+				<ul>
+			</div>
+		</div>
+		<div class="Z-kefu">
+			<ul>
+				<li><a href="">
+					<img src="images/reassured-service.png" >
+					<dl>
+						<dt>放心的服务</dt>
+						<dd>10000名客服，7*24小时在线</dd>
+					</dl>
+					</a>
+				</li>
+				<li><a href="">
+					<img src="images/reassured-price.png" >
+					<dl>
+						<dt>放心的价格</dt>
+						<dd>价格有保证，出行有保障</dd>
+					</dl>
+					</a>
+				</li>
+				<li><a href="">
+					<img src="images/undertaking.png" >
+					<dl>
+						<dt>机票交易平台承诺书</dt>
+						<dd>诚信的购票环境，安全的交易平台</dd>
+					</dl>
+					</a>
+				</li>
+				<!-- <li>
+					<img src="images/reassured-service.png" >
+					<dl>
+						<dt>放心的服务</dt>
+						<dd>10000名客服，7*24小时在线</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/reassured-service.png" >
+					<dl>
+						<dt>放心的服务</dt>
+						<dd>10000名客服，7*24小时在线</dd>
+					</dl>
+				</li> -->
+			</ul>
+			
+				
+		</div>
+	</div>
+	
+	<div class="Z-jinggao">
+		<img src="images/banner-201615.png">
+		<p>机票工具箱</p>
+	</div>
+	<div class="Z-gongjuxiang">
+		<ul>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</ul>
+		<div class="Z-gongjuxiang-footer">
+			<p>航班动态查询</p>
+			<div class="twoinput">
+				<input type="radio" name="chaxun" checked="checked" class="Z-cxan"/><span>按航班号查询</span>
+				<input type="radio" name="chaxun" class="Z-ctcx"/><span>按起降城市查询</span>
+			</div>
+			
+			<br>
+			<input type="text" class="cxt" />
+			<input type="text" class="cxc" placeholder="中文/拼音" style="display: none;"/>
+			<input type="text" class="cxf" placeholder="中文/拼音" style="display: none;"/>
+			<button type="button" class="cxb">查询</button>
+		</div>
+		
+	</div>
+	<div class="Z-serve">
+		<h2>服务公告</h2>
+		<ul>
+			<li><a href="">·&nbsp;机票预订服务提供方：上海华程西南国际旅行社有限公司</a></li>
+			<li><a href="">·&nbsp;关于禁止携带危险品乘机的通知</a></li>
+			<li><a href="">·&nbsp;关于欺诈短信电话的提醒</a></li>
+			<li><a href="">·&nbsp;国内机票预订须知</a></li>
+		</ul>
+		<a href="" class="gg">&nbsp;更多公告 >></a>
+	</div>
+	
+</div>
+<div class="Z-last-foot conment">
+		<p>携程旅行网提供机票预订，飞机票查询时刻表。票价查询以及特价机票，便宜机票，打折机票查询预订服务</p>
+		<strong>热门热线</strong>
+		<div class="Z-rmrx"></div>
+		<br>
+		<strong>机票工具箱</strong>
+		<div class="Z-gjx"></div>
+		<br>
+		<strong>打折机票</strong>
+		<div class="Z-dz"></div>
+		<br>
+		<strong>航空机票</strong>
+		<div class="Z-hkjp"></div>
+		<br>
+		<strong>最新预定</strong>
+</div>
+<div class="Z-bottom">
+	<p>
+		<a href="">网站导航</a> |
+		<a href="">宾馆索引</a> |
+		<a href="">机票索引</a> |
+		<a href="">旅游索引</a> |
+		<a href="">商旅索引</a> |
+		<a href="">攻略索引</a> |
+		<a href="">关于携程</a> |
+		<a href="">企业公民</a> |
+		<a href="">诚聘英才</a> |
+		<a href="">智慧旅游</a> |
+		<a href="">分销联盟</a> |
+		<a href="">代理合作</a> |
+		<a href="">企业商旅</a> |
+		<a href="">中小企业差旅</a> |
+		<a href="">广告业务</a> |
+		<a href="">联系我们</a> 
+	</p>
+	<p>
+		<a href="">酒店加盟</a> |
+		<a href="">旅游局及景区合作</a> |
+		<a href="">服务说明</a> |
+		<a href="">营业执照</a> |
+		<a href="">旅游度假资质</a> |
+		<a href="">保险代理</a> |
+		<a href="">友情链接</a> |
+		<a href=""> Copyright?1999-2016 ctrip.com All rights reserved.</a>|
+		<a href="">ICP证：沪B2-20050130</a>
+	</p>
+	    <div class="Z-jinghui">
+	    	<span></span><a href="">沪公网备31010502000018号</a>
+	    </div>
+		<div class="Z-jinghui2">
+			<a href=""><i></i>信用评级</a>
+			<a href=""><i></i>上海工商</a>
+			<a href=""></a>
+			<a href=""><i></i><span>网络社会</span></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+</div>
+
+<script src="js/xiechengsw.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/xiecheng.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
