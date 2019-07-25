@@ -1,0 +1,920 @@
+@charset "UTF-8";
+/*头部*/
+.yCommon {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.yHeaderWrap {
+  height: 80px;
+}
+.yHeaderWrap .yHeader {
+  height: 80px;
+}
+.yHeaderWrap .yHeader .yLogo {
+  width: 313px;
+  height: 40px;
+  background: url("../../images/yLogo.png") no-repeat;
+  background-size: cover;
+  margin-top: 27px;
+  float: left;
+}
+.yHeaderWrap .yHeader .yLogo .yLogoName {
+  display: block;
+  width: 313px;
+  height: 40px;
+  text-indent: -999px;
+}
+.yHeaderWrap .yHeader .ySite {
+  float: left;
+  min-width: 80px;
+  height: 26px;
+  line-height: 26px;
+  margin-top: 36px;
+  margin-left: 20px;
+  position: relative;
+}
+.yHeaderWrap .yHeader .ySite .yAddress {
+  display: inline-block;
+  float: left;
+}
+.yHeaderWrap .yHeader .ySite .ydownarrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  font-size: 20px;
+  margin-left: 6px;
+  position: absolute;
+  top: 2px;
+}
+.yHeaderWrap .yHeader .ySite .ychooseCity {
+  float: left;
+  width: 190px;
+  position: absolute;
+  top: 28px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  display: none;
+}
+.yHeaderWrap .yHeader .ySite .ychooseCity h3 {
+  padding-left: 10px;
+  color: #73adc9;
+  line-height: 28px;
+}
+.yHeaderWrap .yHeader .ySite .ychooseCity .yHotcity li {
+  float: left;
+  line-height: 26px;
+  width: 25%;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+}
+.yHeaderWrap .yHeader .ySite .ychooseCity .ymore-city {
+  text-align: right;
+  line-height: 20px;
+  color: #999;
+}
+
+.yHeaderWrap .yHeader .ySearch {
+  margin-top: 20px;
+  width: 390px;
+  height: 40px;
+  line-height: 40px;
+  float: right;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  position: relative;
+  color: #ccc;
+}
+.yHeaderWrap .yHeader .ySearch .ySearchbox {
+  width: 360px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.yHeaderWrap .yHeader .ySearch .ymagnifyingglass {
+  font-size: 26px;
+  cursor: pointer;
+  position: absolute;
+  color: #666;
+}
+
+/*导航区*/
+.yNavWrap {
+  height: 60px;
+  background: #333;
+}
+.yNavWrap .yNav {
+  height: 60px;
+  line-height: 60px;
+}
+.yNavWrap .yNav .yNavBox {
+  float: left;
+}
+.yNavWrap .yNav .yNavBox a {
+  float: left;
+  font-size: 18px;
+  padding: 0 32px;
+	color: #fff;
+}
+.yNavWrap .yNav .yNavBox a:hover {
+  background: #1d1d20;
+}
+/* .yNavWrap .yNav .yNavBox li a {
+  color: #fff;
+} */
+.yNavWrap .yNav-right {
+  float: right;
+  height: 60px;
+}
+.yNavWrap .yNav-right .yposter {
+  display: inline-block;
+  width: 182px;
+  height: 32px;
+  background: url("../../images/icon.png") no-repeat;
+  background-size: cover;
+  margin-top: 16px;
+}
+.yNavWrap .yNav-right .ylogin {
+  display: inline-block;
+  float: right;
+  margin-left: 18px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/*内容区*/
+.yContentWrap {
+  minheight: 60px;
+  margin-top: 36px;
+}
+.yContentWrap .yContent {
+  minheight: 60px;
+  /*左边内容更换区*/
+}
+.yContentWrap .yContent .yContent-left {
+  float: left;
+  width: 958px;
+}
+.yContentWrap .yContent .yContent-left h3 {
+  padding: 0 14px;
+  font-size: 20px;
+  height: 30px;
+  line-height: 28px;
+}
+.yContentWrap .yContent .yContent-left h3 span {
+  float: right;
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container {
+  position: relative;
+  overflow: hidden;
+  width: 954px;
+  min-height: 300px;
+  margin-bottom: 36px;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ybuttonLeftRight {
+  position: absolute;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ybuttonLeftRight .yrightarrow {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  color: 888;
+  line-height: 42px;
+  text-align: center;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  top: 100px;
+  left: 990px;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ybuttonLeftRight .yleftarrow {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  color: 888;
+  line-height: 42px;
+  text-align: center;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  top: 100px;
+  left: -60px;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list {
+  margin: 0 auto;
+  width: 8000px;
+  position: absolute;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list .ymovie {
+  width: 141px;
+  height: 276px;
+  padding: 8px;
+  float: left;
+  border: 1px solid #fff;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list .ymovie:hover {
+  border: 1px solid #ff318c;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list .ymovie .ypictures img {
+  display: block;
+  width: 141px;
+  height: 206px;
+/*  background: url("") no-repeat; */
+  background-size: cover;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list .ymovie h4 {
+  font-size: 14px;
+	line-height: 20px;
+  height: 40px;
+  color: #333333;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list .ymovie .ychooseSeat {
+  height: 30px;
+  line-height: 30px;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list .ymovie .ychooseSeat a {
+  display: inline-block;
+  color: #ff318c;
+  width: 70px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 2px;
+  border: 1px solid #ff318c;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list .ymovie .ychooseSeat a:hover {
+  background: #ff318c;
+  color: #fff;
+}
+.yContentWrap .yContent .yContent-left .yswiper-container .ymovie-list .ymovie .ychooseSeat .ygrade {
+  color: #fd8e51;
+  font-size: 12px;
+  float: right;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming {
+  position: relative;
+  width: 954px;
+  margin-bottom: 30px;
+  min-height: 320px;
+  overflow: hidden;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .ylowbuttonLeftRight {
+  position: absolute;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .ylowbuttonLeftRight .ylowrightarrow {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  color: 888;
+  line-height: 42px;
+  text-align: center;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  top: 100px;
+  left: 990px;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .ylowbuttonLeftRight .ylowleftarrow {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  color: 888;
+  line-height: 42px;
+  text-align: center;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  top: 100px;
+  left: -60px;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .yUpList {
+  margin: 0 auto;
+	width:3000px;
+	position: absolute;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .yUpList .yUpmovie {
+  width: 141px;
+  height: 276px;
+  padding: 8px;
+  float: left;
+  border: 1px solid #fff;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .yUpList .yUpmovie:hover {
+  border: 1px solid #ff318c;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .yUpList .yUpmovie a img {
+  display: block;
+  width: 138px;
+  height: 206px;
+  /* background: url("../../images/film_img02.jpg") no-repeat; */
+  background-size: cover;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .yUpList .yUpmovie h4 {
+  font-size: 14px;
+ line-height: 20px;
+ height: 40px;
+ color: #333333;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .yUpList .yUpmovie .ylookinfo {
+  height: 30px;
+  line-height: 30px;
+	cursor: pointer;
+}
+.yContentWrap .yContent .yContent-left .yUpcoming .yUpList .yUpmovie .ylookinfo a {
+  display: inline-block;
+  color: #333;
+  width: 70px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 2px;
+  border: 1px solid #e3e3e3;
+}
+.yContentWrap .yContent .yContent-right {
+  float: left;
+  width: 250px;
+}
+.yContentWrap .yContent .yContent-right h3 {
+  font-size: 20px;
+  height: 28px;
+  margin-bottom: 34px;
+  line-height: 28px;
+}
+.yContentWrap .yContent .yContent-right h3 a {
+  margin-top: 2px;
+  float: right;
+  font-size: 12px;
+  color: #666;
+}
+.yContentWrap .yContent .yContent-right .ybox-office h2 {
+  font-size: 20px;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li span {
+  color: #ff318c;
+  display: inline-block;
+  width: 24px;
+  line-height: 36px;
+  float: left;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li h4 {
+  display: inline-block;
+  width: 224px;
+  height: 36px;
+  line-height: 36px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li h4 a {
+  display: inline-block;
+  width: 147px;
+  color: #111;
+  font-size: 14px;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li h4 em {
+  float: right;
+  color: orangered;
+  font-size: 12px;
+  padding: 0 11px 0 5px;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li .ystage-photo {
+  width: 204px;
+  margin-left: 24px;
+  display: none;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li .ystage-photo a img {
+  width: 64px;
+  height: 86px;
+  /* background: url("../../images/film_img01.jpg") no-repeat; */
+  background-size: cover;
+}
+
+/*部分效果样式*/
+.yActive {
+  background: #1d1d20;
+}
+.yshow {
+  display: block;
+}
+
+.ymove {
+  left: 0;
+}
+
+@charset "UTF-8";
+/*头部*/
+.yCommon {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.yHeaderWrap {
+  height: 80px;
+}
+.yHeaderWrap .yHeader {
+  height: 80px;
+}
+.yHeaderWrap .yHeader .yLogo {
+  width: 313px;
+  height: 40px;
+  background: url("../../images/yLogo.png") no-repeat;
+  background-size: cover;
+  margin-top: 27px;
+  float: left;
+}
+.yHeaderWrap .yHeader .yLogo .yLogoName {
+  display: block;
+  width: 313px;
+  height: 40px;
+  text-indent: -999px;
+}
+.yHeaderWrap .yHeader .ySite {
+  float: left;
+  min-width: 80px;
+  height: 26px;
+  line-height: 26px;
+  margin-top: 36px;
+  margin-left: 20px;
+  position: relative;
+}
+.yHeaderWrap .yHeader .ySite .yAddress {
+  display: inline-block;
+  float: left;
+}
+.yHeaderWrap .yHeader .ySite .ydownarrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  font-size: 20px;
+  margin-left: 6px;
+  position: absolute;
+  top: 2px;
+}
+.yHeaderWrap .yHeader .ySite .ychooseCity {
+  float: left;
+  width: 190px;
+  position: absolute;
+  top: 28px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  display: none;
+}
+.yHeaderWrap .yHeader .ySite .ychooseCity h3 {
+  padding-left: 10px;
+  color: #73adc9;
+  line-height: 28px;
+}
+.yHeaderWrap .yHeader .ySite .ychooseCity .yHotcity li {
+	
+  float: left;
+  line-height: 26px;
+  width: 25%;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+	
+}
+
+.yHeaderWrap .yHeader .ySite .ychooseCity .ymore-city {
+  text-align: right;
+  line-height: 20px;
+  color: #999;
+}
+.yHeaderWrap .yHeader .ySearch {
+  margin-top: 20px;
+  width: 390px;
+  height: 40px;
+  line-height: 40px;
+  float: right;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  position: relative;
+  color: #ccc;
+}
+.yHeaderWrap .yHeader .ySearch .ySearchbox {
+  width: 360px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.yHeaderWrap .yHeader .ySearch .ymagnifyingglass {
+  font-size: 26px;
+  cursor: pointer;
+  position: absolute;
+  color: #666;
+}
+
+/*导航区*/
+.yNavWrap {
+  height: 60px;
+  background: #333;
+}
+.yNavWrap .yNav {
+  height: 60px;
+  line-height: 60px;
+}
+.yNavWrap .yNav .yNavBox {
+  float: left;
+}
+.yNavWrap .yNav .yNavBox a {
+  float: left;
+  font-size: 18px;
+  padding: 0 32px;
+	color: #fff;
+}
+.yNavWrap .yNav .yNavBox a:hover {
+  background: #1d1d20;
+}
+/* .yNavWrap .yNav .yNavBox li a {
+  color: #fff;
+} */
+.yNavWrap .yNav-right {
+  float: right;
+  height: 60px;
+}
+.yNavWrap .yNav-right .yposter {
+  display: inline-block;
+  width: 182px;
+  height: 32px;
+  background: url("../../images/icon.png") no-repeat;
+  background-size: cover;
+  margin-top: 16px;
+}
+.yNavWrap .yNav-right .ylogin {
+  display: inline-block;
+  float: right;
+  margin-left: 18px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/*内容区*/
+.yTopWrap {
+  background: #fff;
+  height: 292px;
+  margin-top: 34px;
+}
+.yTopWrap .ytopContent {
+  background: black;
+  height: 292px;
+  box-sizing: border-box;
+  padding: 16px;
+  color: #fff;
+}
+.yTopWrap .ytopContent a img{
+  display: inline-block;
+  float: left;
+  width: 183px;
+  height: 252px;
+  background-size: cover;
+}
+.yTopWrap .ytopContent .yTopCon-right {
+  float: left;
+  width: 894px;
+  padding: 0 18px;
+}
+.yTopWrap .ytopContent .yTopCon-right h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovierating {
+  margin-top: 4px;
+  color: #ff7e00;
+  height: 20px;
+  line-height: 20px;
+}
+ .yTopWrap .ytopContent .yTopCon-right .ymovierating .ydiscount{
+	display: inline-block;
+
+}
+
+.yTopWrap .ytopContent .yTopCon-right .ymovierating .ylevel {
+  margin-left: 10px;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovie-infor {
+  line-height: 28px;
+  font-size: 14px;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovie-infor .ysummarize {
+	
+  line-height: 44px;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovie-infor .ysynopsis {
+  width: 916px;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovie-infor .ysynopsis span {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 894px;
+  text-overflow: ellipsis;
+ white-space: nowrap;
+  overflow: hidden;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovie-infor .ysynopsis .icon-xiajiantou {
+  float: left;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovie-infor .ylike {
+  width: 166px;
+  text-align: center;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #bdc0af;
+  background: transparent;
+  margin-top: 16px;
+  border-radius: 2px;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovie-infor .ylike:hover {
+  cursor: pointer;
+}
+.yTopWrap .ytopContent .yTopCon-right .ymovie-infor .ylike .icon-icon-test {
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.yContentWrap {
+  minheight: 60px;
+  margin-top: 36px;
+}
+.yContentWrap .yContent {
+  minheight: 60px;
+  /*左边内容更换区*/
+}
+.yContentWrap .yContent .yContent-left {
+  float: left;
+  width: 958px;
+}
+.yContentWrap .yContent .yContent-left h3 {
+  font-size: 20px;
+  height: 28px;
+  margin-bottom: 15px;
+  color: #333333;
+}
+.yContentWrap .yContent .yContent-left .yTicket {
+  margin: 0 auto;
+  width: 940px;
+  border: 1px solid #f3f3f3;
+  padding: 20px 0 14px 0;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yPlaydate {
+  height: 18px;
+  line-height: 18px;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yPlaydate h5 {
+  width: 58px;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yPlaydate ul {
+  width: 850px;
+  float: left;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yPlaydate ul li {
+	cursor: pointer;
+  float: left;
+  padding: 0 4px;
+  margin-right: 26px;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yPlayarea {
+  margin-top: 34px;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yPlayarea h5 {
+  width: 58px;
+  text-align: center;
+  float: left;
+  font-size: 14px;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yPlayarea .yareadate li{
+	float: left;
+	margin-right: 26px;
+	cursor: pointer;
+	 padding: 0 4px;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yspecificarea {
+  width: 860px;
+  margin-top: 10px;
+  margin-left: 56px;
+	display: none;
+}
+.yContentWrap .yContent .yContent-left .yTicket .yspecificarea .ylocalarea {
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  padding: 12px 20px 0 20px;
+  min-height: 44px;
+  background: #fbfbfb;
+	
+}
+.yContentWrap .yContent .yContent-left .yTicket .yspecificarea .ylocalarea li {
+  margin-right: 30px;
+  float: left;
+  height: 18px;
+  line-height: 18px;
+	cursor: pointer;
+}
+.yContentWrap .yContent .yContent-left .yCineplexList {
+  min-height: 196px;
+  margin: 0 auto;
+  width: 940px;
+}
+.yContentWrap .yContent .yContent-left .yCineplexList li {
+	cursor: pointer;
+  border-bottom: 1px solid #f3f3f3;
+  height: 75px;
+  padding: 30px 0 26px  0;
+}
+.yContentWrap .yContent .yContent-left .yCineplexList li .yInf {
+  float: left;
+  width: 402px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+.yContentWrap .yContent .yContent-left .yCineplexList li .yInf p {
+  font-size: 14px;
+  line-height: 34px;
+  max-width: 398px;
+}
+.yContentWrap .yContent .yContent-left .yCineplexList li .yPrices {
+  float: left;
+  width: 88px;
+  margin-top: 26px;
+  margin-left: 180px;
+	cursor: pointer;
+}
+.yContentWrap .yContent .yContent-left .yCineplexList li .yPrices i {
+  font-size: 18px;
+  color: #fd8e51;
+}
+.yContentWrap .yContent .yContent-left .yCineplexList li .yChoosein {
+  float: right;
+  width: 244px;
+  height: 75px;
+  text-align: right;
+}
+.yContentWrap .yContent .yContent-left .yCineplexList li .yChoosein a {
+  display: inline-block;
+  width: 87px;
+  height: 25px;
+  line-height: 25px;
+  color: #fff;
+  margin-top: 28px;
+  margin-right: 8px;
+  background: #fe8f50;
+  text-align: center;
+}
+.yContentWrap .yContent .yContent-left .yContentBottom {
+  height: 34px;
+  border: 1px solid #f3f3f3;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #767676;
+  margin-bottom: 36px;
+	cursor: pointer;
+}
+.yContentWrap .yContent .yContent-left .ygetMore {
+  margin: 0 auto;
+}
+.yContentWrap .yContent .yContent-left .ygetMore h3 {
+  width: 940px;
+  height: 28px;
+}
+.yContentWrap .yContent .yContent-left .ygetMore ul {
+  width: 940px;
+}
+.yContentWrap .yContent .yContent-left .ygetMore ul li {
+  width: 33%;
+  float: left;
+  text-align: center;
+  border-left: 1px solid #f3f3f3;
+}
+.yContentWrap .yContent .yContent-left .ygetMore ul li:nth-child(1) {
+  border-left: none;
+}
+.yContentWrap .yContent .yContent-left .ygetMore ul li strong {
+  line-height: 40px;
+  font-size: 18px;
+}
+.yContentWrap .yContent .yContent-left .ygetMore ul li strong span {
+  font-size: 50px;
+  color: #ff318c;
+}
+.yContentWrap .yContent .yContent-left .ygetMore ul li p {
+  font-size: 16px;
+}
+.yContentWrap .yContent .yContent-left .ygetMore .yRelevant {
+  margin-top: 44px;
+}
+.yContentWrap .yContent .yContent-left .ygetMore .yRelevant h3 {
+  width: 940px;
+  height: 28px;
+}
+.yContentWrap .yContent .yContent-left .ygetMore .yRelevant ul {
+  min-height: 100px;
+}
+.yContentWrap .yContent .yContent-right {
+  float: left;
+  width: 250px;
+}
+.yContentWrap .yContent .yContent-right h3 {
+  font-size: 20px;
+  height: 46px;
+  margin-bottom: 15px;
+  line-height: 46px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.yContentWrap .yContent .yContent-right h3 a {
+  margin-top: 2px;
+  float: right;
+  font-size: 12px;
+  color: #666;
+}
+.yContentWrap .yContent .yContent-right .ybox-office h2 {
+  font-size: 20px;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li span {
+  color: #ff318c;
+  display: inline-block;
+  width: 24px;
+  line-height: 36px;
+  float: left;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li h4 {
+  display: inline-block;
+  width: 224px;
+  height: 36px;
+  line-height: 36px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li h4 a {
+  display: inline-block;
+  width: 147px;
+  color: #111;
+  font-size: 14px;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li h4 em {
+  float: right;
+  color: orangered;
+  font-size: 12px;
+  padding: 0 11px 0 5px;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li .ystage-photo {
+  width: 204px;
+  margin-left: 24px;
+  display: none;
+}
+.yContentWrap .yContent .yContent-right .ybox-office .yrank li .ystage-photo a img{
+  width: 64px;
+  height: 86px;
+  background-size: cover;
+}
+
+/*部分效果样式*/
+.yActive {
+  background: #1d1d20;
+}
+
+.yshow {
+  display: block;
+}
+
+.ymove {
+  left: 0;
+}
+
+.ybgc {
+  background-color: #ff318c;
+  color: #fff;
+}

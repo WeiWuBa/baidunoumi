@@ -5,7 +5,8 @@ html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, l
 	padding:0;	/* 内边距归零 */
 }
 body,html{
-	font: 12px "微软雅黑",Arial;	/* 设置网页内字号及字体 */
+	color: #333;
+	font:12px "微软雅黑",Arial;	/* 设置网页内字号及字体 */
 }
 h1,h2,h3,h4,h5,h6,b,strong{
 	font-weight:normal;			/* 清除加粗 */
@@ -13,32 +14,30 @@ h1,h2,h3,h4,h5,h6,b,strong{
 i,em{
 	font-style:normal;			/* 清除倾斜 */
 }
-img{
-	vertical-align: top;
-}
 li{
 	list-style:none;			/* 清除项目符号 */
 }
 a{
 	text-decoration:none;		/* 清除下划线 */
-	color:#6d6d6d;
+	color: #333;
 }	
 input{
-	outline:none;				/* 清除input选中后蓝色框 */
+	outline:none;/* 清除input选中后蓝色框 */
+	border:0;				
+}
+img{
+	border: 0;
+	vertical-align: top;
 }
 
 /* 清除高度塌陷 */
-.clearfix{
+.yClearfix{
 	*zoom:1;	
 }
-.clearfix:after{
+.yClearfix:after{
 	content:' ';
 	display:block;
 	height:0;
 	overflow:hidden;
 	clear:both;	
-}
-.common_xr{
-	width: 1210px;
-	margin: 0 auto;
 }
