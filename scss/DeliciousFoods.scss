@@ -1,0 +1,303 @@
+.L-content{
+    width: 1210px;
+    margin: 0 auto;
+    background: #ccc;
+    .L-content-left{
+        width: 982px;
+        float: left;
+        .L-litFoods{
+            width: 982px;
+            height: 44px;
+            a{
+                font-size: 14px;
+                line-height: 44px;
+                color: #666666;
+            }
+        }
+        .L-map{
+            width: 982px;
+            border: 1px solid #ccc;
+            .L-map1{
+                width: 946px;
+                margin-top: 16px;
+                border-bottom: 1px solid #ccc;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+            .L-map2{
+                width: 946px;
+                margin-top: 16px;
+                border-bottom: 1px solid #ccc;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+            .L-map3{
+                width: 946px;
+                margin-top: 16px;
+                padding-bottom:8px;
+                font-size: 14px;
+                margin: 0 auto;
+                line-height: 30px;
+            }
+            .L-map1,.L-map2,.L-map3{
+                .Llei1{
+                    height: 100%;
+                    .Lback{
+                        background: black;
+                        color: white;
+                    }
+                    .L-nav-left{
+                        padding-top: 12px;
+                        width: 84px;
+                        margin-left: 10px;
+                        height: 100%;
+                        float: left;
+                        display: inline-block;
+                        h5{
+                            display: inline-block;
+                            height: 100%;
+                        }
+                        .Lpinzhong1{
+                            display: inline-block;
+                            height: 22px;
+                            line-height: 22px;
+                        }
+                    }
+                    .L_tiaozheng{
+                        height: 64px;
+                        overflow: hidden;
+                    }
+                    .L-nav-right{
+                        margin-top: 12px;
+                        float: left;
+                        margin-bottom: 8px;
+                        .Lbigbox{
+                            cursor: pointer;
+                            width: 110px;
+                            display: inline-block;
+                            height: 22px;
+                            margin-bottom: 8px;
+                            .Lpinzhong{
+                                line-height: 22px;
+                                display: inline-block;
+                                padding: 0 8px;
+                                cursor: pointer;
+                                font-size: 14px;
+                            }
+                        }
+                        .Lpinzhong2{
+                            line-height: 22px;
+                            display: inline-block;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+        .L-content-shop{
+            width: 982px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            .L-bar-area{
+                width: 980px;
+                height: 48px;
+                background: #f5f5f5;
+                border-bottom: 1px solid #ccc;
+                .L-nav1{
+                    position: relative;
+                    width: 83px;
+                    height: 47px;
+                    display: inline-block;
+                    line-height: 47px;
+                    text-align: center;
+                    margin-left: -1px;
+                }
+                .L-xuanze{
+                    background: white;
+                    border: 1px solid #ccc;
+                    border-top: none;
+                    box-sizing: content-box;
+                    border-bottom: 1px solid white;
+                }
+                .L-nav1:nth-of-type(3){
+                    margin-right: 100px;
+                }
+                .L-fuxuan{
+                    display: inline-block;
+                    font-size: 14px;
+                    // margin-right: 233px;
+                    label{
+                        margin-right: 20px;
+                        input{
+                            border: 1px solid #ccc;
+                            background: white;
+                            margin-right: 10px;
+                        }
+                    }    
+                }
+                .L-shenzsou{
+                    display: none;
+                    .Lfangdajing{
+                        border: 1px solid #ccc;
+                        height: 30px;
+                        padding: 5px 0 5px 10px;
+                        line-height: 20px;
+                        font-size: 14px;
+                    }
+                    .Ltijiao{
+                        border: 1px solid #ccc;
+                        border-left: none;
+                        height: 30px;
+                        position: relative;
+                        top: 1px;
+                        width: 30px;
+                        margin-top: 1px;
+                        background: white;
+                    }
+                }
+                .Lrightconft{
+                    float: right;
+                    margin: 16px;
+                   .iconfont{
+                        cursor: pointer;
+                    } 
+                }
+                
+            }
+            ul{
+                list-style: none;
+                .L-shop-foods{
+                    width: 980px;
+                    height: 165px;
+                    border-bottom: 1px solid #eee;
+                    box-sizing: border-box;
+                    padding: 18px;
+                    .L-a1-img{
+                        float: left;
+                        margin-right: 18px;
+                        img{
+                            width: 174px;
+                            height: 124px;
+                        }
+                    }
+                    .L-a2-h3{
+                        float: left;
+                        width: 480px;
+                        height: 18px;
+                        margin-bottom: 10px;
+                    }
+                    .L-history{
+                        float: left;
+                        width: 580px;
+                        height: 30px;
+                        span{
+                            font-size: 14px;
+                            color: #aaa;
+                            margin-right: 8px;
+                            display: inline-block;
+                        }
+                        .L-pingfen{
+                            z-index: -1;
+                            font-size: 14px;
+                            color: #aaa;
+                            margin-right: 8px;
+                            width: 115px;
+                            height: 26px;
+                            position: relative;
+                            em{
+                                float: right;
+                            }
+                            .L-an-star{
+                                position: absolute;
+                                top: 3px;
+                                left: 0;
+                                width: 72px;
+                            }
+                            .L-xingxing{
+                                position: relative;
+                                height: 12px;
+                                width: 72px;
+                                display: inline-block;
+                                overflow: hidden;
+                                img{
+                                    position:absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 72px;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .L-message1,.L-message2{
+                        float: left;
+                        width: 580px;
+                        height: 26px;
+                        line-height: 26px;
+                        color: #666666;
+                        font-size: 14px;
+                        a{
+                            .L-tuan{
+                                background-image: url(../images/L-tuan.png);
+                                background-size: 14px 14px;
+                                background-repeat: no-repeat;
+                                width: 14px;
+                                height: 14px;
+                                display: inline-block;
+                                position: relative;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .L-tip{
+            width: 980px;
+            padding-top: 20px;
+            margin: 24px 0 0;
+            height: 113px;
+            .L-tip1{
+                padding-left: 15px;
+                color: #888;
+            }
+            .L-yema{
+                width: 980px;
+                height: 30px;
+                text-align: center;
+                margin-top: 10px;
+                .L-now{
+                    border: 1px solid #000;
+                    color: #000;
+                }
+                button{
+                    cursor: pointer;
+                    margin-right: 4px;
+                    width: 24px;
+                    height: 28px;
+                    border: #aaa 1px solid;
+                    color: #aaa;
+                    background: white;
+                }
+            }
+        }
+    }
+    .L-content-right{
+        width: 208px;
+        height: 178px;
+        float: right;
+    }
+    .L-right-image{
+        width: 208px;
+        height: 132px;
+        margin-top: 44px;
+    }
+}
+
+

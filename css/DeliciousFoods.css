@@ -1,0 +1,289 @@
+.L-content {
+  width: 1210px;
+  margin: 0 auto;
+  background: #ccc;
+}
+.L-content .L-content-left {
+  width: 982px;
+  float: left;
+}
+.L-content .L-content-left .L-litFoods {
+  width: 982px;
+  height: 44px;
+}
+.L-content .L-content-left .L-litFoods a {
+  font-size: 14px;
+  line-height: 44px;
+  color: #666666;
+}
+.L-content .L-content-left .L-map {
+  width: 982px;
+  border: 1px solid #ccc;
+}
+.L-content .L-content-left .L-map .L-map1 {
+  width: 946px;
+  margin-top: 16px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.L-content .L-content-left .L-map .L-map2 {
+  width: 946px;
+  margin-top: 16px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.L-content .L-content-left .L-map .L-map3 {
+  width: 946px;
+  margin-top: 16px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1, .L-content .L-content-left .L-map .L-map2 .Llei1, .L-content .L-content-left .L-map .L-map3 .Llei1 {
+  height: 100%;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .Lback, .L-content .L-content-left .L-map .L-map2 .Llei1 .Lback, .L-content .L-content-left .L-map .L-map3 .Llei1 .Lback {
+  background: black;
+  color: white;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .L-nav-left, .L-content .L-content-left .L-map .L-map2 .Llei1 .L-nav-left, .L-content .L-content-left .L-map .L-map3 .Llei1 .L-nav-left {
+  padding-top: 12px;
+  width: 84px;
+  margin-left: 10px;
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .L-nav-left h5, .L-content .L-content-left .L-map .L-map2 .Llei1 .L-nav-left h5, .L-content .L-content-left .L-map .L-map3 .Llei1 .L-nav-left h5 {
+  display: inline-block;
+  height: 100%;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .L-nav-left .Lpinzhong1, .L-content .L-content-left .L-map .L-map2 .Llei1 .L-nav-left .Lpinzhong1, .L-content .L-content-left .L-map .L-map3 .Llei1 .L-nav-left .Lpinzhong1 {
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .L_tiaozheng, .L-content .L-content-left .L-map .L-map2 .Llei1 .L_tiaozheng, .L-content .L-content-left .L-map .L-map3 .Llei1 .L_tiaozheng {
+  height: 64px;
+  overflow: hidden;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .L-nav-right, .L-content .L-content-left .L-map .L-map2 .Llei1 .L-nav-right, .L-content .L-content-left .L-map .L-map3 .Llei1 .L-nav-right {
+  margin-top: 12px;
+  float: left;
+  margin-bottom: 8px;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .L-nav-right .Lbigbox, .L-content .L-content-left .L-map .L-map2 .Llei1 .L-nav-right .Lbigbox, .L-content .L-content-left .L-map .L-map3 .Llei1 .L-nav-right .Lbigbox {
+  cursor: pointer;
+  width: 110px;
+  display: inline-block;
+  height: 22px;
+  margin-bottom: 8px;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .L-nav-right .Lbigbox .Lpinzhong, .L-content .L-content-left .L-map .L-map2 .Llei1 .L-nav-right .Lbigbox .Lpinzhong, .L-content .L-content-left .L-map .L-map3 .Llei1 .L-nav-right .Lbigbox .Lpinzhong {
+  line-height: 22px;
+  display: inline-block;
+  padding: 0 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.L-content .L-content-left .L-map .L-map1 .Llei1 .L-nav-right .Lpinzhong2, .L-content .L-content-left .L-map .L-map2 .Llei1 .L-nav-right .Lpinzhong2, .L-content .L-content-left .L-map .L-map3 .Llei1 .L-nav-right .Lpinzhong2 {
+  line-height: 22px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+}
+.L-content .L-content-left .L-content-shop {
+  width: 982px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area {
+  width: 980px;
+  height: 48px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-nav1 {
+  position: relative;
+  width: 83px;
+  height: 47px;
+  display: inline-block;
+  line-height: 47px;
+  text-align: center;
+  margin-left: -1px;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-xuanze {
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-sizing: content-box;
+  border-bottom: 1px solid white;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-nav1:nth-of-type(3) {
+  margin-right: 100px;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-fuxuan {
+  display: inline-block;
+  font-size: 14px;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-fuxuan label {
+  margin-right: 20px;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-fuxuan label input {
+  border: 1px solid #ccc;
+  background: white;
+  margin-right: 10px;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-shenzsou {
+  display: none;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-shenzsou .Lfangdajing {
+  border: 1px solid #ccc;
+  height: 30px;
+  padding: 5px 0 5px 10px;
+  line-height: 20px;
+  font-size: 14px;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .L-shenzsou .Ltijiao {
+  border: 1px solid #ccc;
+  border-left: none;
+  height: 30px;
+  position: relative;
+  top: 1px;
+  width: 30px;
+  margin-top: 1px;
+  background: white;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .Lrightconft {
+  float: right;
+  margin: 16px;
+}
+.L-content .L-content-left .L-content-shop .L-bar-area .Lrightconft .iconfont {
+  cursor: pointer;
+}
+.L-content .L-content-left .L-content-shop ul {
+  list-style: none;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods {
+  width: 980px;
+  height: 165px;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  padding: 18px;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-a1-img {
+  float: left;
+  margin-right: 18px;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-a1-img img {
+  width: 174px;
+  height: 124px;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-a2-h3 {
+  float: left;
+  width: 480px;
+  height: 18px;
+  margin-bottom: 10px;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-history {
+  float: left;
+  width: 580px;
+  height: 30px;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-history span {
+  font-size: 14px;
+  color: #aaa;
+  margin-right: 8px;
+  display: inline-block;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-history .L-pingfen {
+  z-index: -1;
+  font-size: 14px;
+  color: #aaa;
+  margin-right: 8px;
+  width: 115px;
+  height: 26px;
+  position: relative;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-history .L-pingfen em {
+  float: right;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-history .L-pingfen .L-an-star {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 72px;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-history .L-pingfen .L-xingxing {
+  position: relative;
+  height: 12px;
+  width: 72px;
+  display: inline-block;
+  overflow: hidden;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-history .L-pingfen .L-xingxing img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-message1, .L-content .L-content-left .L-content-shop ul .L-shop-foods .L-message2 {
+  float: left;
+  width: 580px;
+  height: 26px;
+  line-height: 26px;
+  color: #666666;
+  font-size: 14px;
+}
+.L-content .L-content-left .L-content-shop ul .L-shop-foods .L-message1 a .L-tuan, .L-content .L-content-left .L-content-shop ul .L-shop-foods .L-message2 a .L-tuan {
+  background-image: url(../images/L-tuan.png);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+}
+.L-content .L-content-left .L-tip {
+  width: 980px;
+  padding-top: 20px;
+  margin: 24px 0 0;
+  height: 113px;
+}
+.L-content .L-content-left .L-tip .L-tip1 {
+  padding-left: 15px;
+  color: #888;
+}
+.L-content .L-content-left .L-tip .L-yema {
+  width: 980px;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+.L-content .L-content-left .L-tip .L-yema .L-now {
+  border: 1px solid #000;
+  color: #000;
+}
+.L-content .L-content-left .L-tip .L-yema button {
+  cursor: pointer;
+  margin-right: 4px;
+  width: 24px;
+  height: 28px;
+  border: #aaa 1px solid;
+  color: #aaa;
+  background: white;
+}
+.L-content .L-content-right {
+  width: 208px;
+  height: 178px;
+  float: right;
+}
+.L-content .L-right-image {
+  width: 208px;
+  height: 132px;
+  margin-top: 44px;
+}

@@ -270,10 +270,12 @@ a{
     display: none;
 }
 .HeaNav1 dl{
+    display: none;
+    z-index: 4;
     position: absolute;
     top: 44px;
     left: 0;
-    width: 201px;
+    width: 217px;
     height: 49px;
     background: #333;
     padding: 0 16px;
@@ -285,7 +287,7 @@ a{
 .HeaNav1 dl dd a{
     text-align: left;
     font-weight: 500;
-    width: 50px;
+    width: 60px;
     height: 48px;
     line-height: 48px;
     font-size: 18px;
@@ -325,6 +327,31 @@ a{
 .HeaNav1 dl:nth-of-type(8){
     top: 387px;
 }
+.HeaNav1:hover > dl{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
