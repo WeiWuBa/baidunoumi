@@ -458,6 +458,9 @@ body{
     line-clamp: 24px;
     margin-bottom: 14px;
     color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .subject_quanzhi_right_a>div:nth-child(2)>em{
     margin: 0 10px;
@@ -562,6 +565,9 @@ body{
     line-clamp: 24px;
     margin-bottom: 14px;
     color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .recommend_a>div:nth-child(2)>em{
     margin: 0 10px;
@@ -783,13 +789,11 @@ body{
     line-height: 12px;
     padding-top: 6px;
 }
-.right_black_g>i{
+.right_black_g>img{
     display: block;
-    width: 100%;
+    width: 18px;
     height: 18px;
-    background: no-repeat;
-    background-size: 18px;
-    background-position: 50%;
+    margin: 0 auto; 
 }
 .right_black a{
     color: #fff;

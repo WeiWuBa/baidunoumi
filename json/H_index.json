@@ -1,5 +1,4 @@
-[
-    {"career":["销售","市场","客服","公关"]},
+[    {"career":["销售","市场","客服","公关"]},
     {"career":["技工","工人","生产","机械"]},
     {"career":["司机","物流","贸易","保险"]},
     {"career":["餐饮","酒店","超市","服务业"]},
@@ -68,6 +67,10 @@
     {"quanzhiGzuo":{"gongzuo":"人力资源专员(深圳衡伟环境技术有限公司)","yaoqiu":["深圳","经验不限","来自拉勾网"],"gongshi":"深圳衡伟环境技术有限公司","gongzhi":"5000-6000","baozhang":["保障"]}},
     {"quanzhiGzuo":{"gongzuo":"有梦想就来高铁动车乘务员招聘中","yaoqiu":["深圳","经验不限","来自百姓网"],"gongshi":"贵邦高铁服务有限公司","gongzhi":"5001-8000","baozhang":["保障","直投"]}},
     {"quanzhiGzuo":{"gongzuo":"日语会计(深圳福田)","yaoqiu":["深圳","经验3-5年","智通人才网"],"gongshi":"深圳市骏楚企业管理咨询有限公司","gongzhi":"7000-10000","baozhang":["保障"]}},
-    {"quanzhiGzuo":{"gongzuo":"直招客服","yaoqiu":["深圳","经验1-3年","来自58同城"],"gongshi":"深圳市奥雅智能卡科技有限公司","gongzhi":"3000-5000","baozhang":["保障"]}}
-  
+    {"quanzhiGzuo":{"gongzuo":"直招客服","yaoqiu":["深圳","经验1-3年","来自58同城"],"gongshi":"深圳市奥雅智能卡科技有限公司","gongzhi":"3000-5000","baozhang":["保障"]}},
+    {"hotJon":["热门职位","司机","普工","快递","厨师","保安","销售","教师","职业培训"]},
+    {"hotJon":["热招企业","百度","富士康","万达集团","蒙牛集团","中石油","中国人寿","中国平安","阿里巴巴","中国移动","工商银行"]},
+    {"hotJon":["热门区域","北京","上海","广州","深圳","厦门","成都","西安","天津","南京","武汉","沈阳","杭州","合肥","青岛","大连","重庆"]},
+    {"qiyeimg":["images/H_images/timg1.jpg","images/H_images/timg2.jpg","images/H_images/timg3.jpg","images/H_images/timg4.jpg","images/H_images/timg5.jpg","images/H_images/timg6.jpg","images/H_images/timg7.jpg","images/H_images/timg8.jpg","images/H_images/timg9.jpg","images/H_images/timg10.jpg"]},
+    {"qiyespan":["百度","IBM","特斯拉","联想","滴滴出行","招商银行","华为","新美大","可口可乐","跟谁学"]}
 ]

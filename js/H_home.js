@@ -222,9 +222,64 @@ ajax({
                 banner_baozhang += '<span><em>'+json[i].quanzhiGzuo.baozhang[c]+'</em></span>';
             }
             banner_li += '<li><a href="#" class="subject_quanzhi_right_a"><div>'+json[i].quanzhiGzuo.gongzuo+'</div><div>'+banner_span+'</div><div>'+json[i].quanzhiGzuo.gongshi+'</div><div><span>'+json[i].quanzhiGzuo.gongzhi+'</span>'+banner_baozhang+'</div></a></li>';
-        }
-        $('.subject_quanzhi_right').html('<ul>'+banner_li+'</ul>')
+        };
+        $('.subject_quanzhi_right').html('<ul>'+banner_li+'</ul>');
+        banner_a = '';
+        banner_baozhang ='';
+        banner_span = '';
+        banner_li = '';
 //*************************全职工作部分ajax**********************
+
+//*************************为你推荐部分ajax**********************
+        for(i = 64 ; i < 70 ; i++){
+            banner_a = '';
+            banner_baozhang ='';
+            banner_span = '';
+            for(g = 0 ; g < json[i].quanzhiGzuo.yaoqiu.length ; g++){
+                banner_span +=   '<em class="string"></em><span>'+json[i].quanzhiGzuo.yaoqiu[g]+'</span>';
+            }
+            for(c = 0 ; c < json[i].quanzhiGzuo.baozhang.length ; c++){
+                banner_baozhang += '<span><em>'+json[i].quanzhiGzuo.baozhang[c]+'</em></span>';
+            }
+            banner_li += '<li><a href="#" class="recommend_a"><div>'+json[i].quanzhiGzuo.gongzuo+'</div><div>'+banner_span+'</div><div>'+json[i].quanzhiGzuo.gongshi+'</div><div><span>'+json[i].quanzhiGzuo.gongzhi+'</span>'+banner_baozhang+'</div></a></li>';
+        };
+        $('.recommend').append('<ul>'+banner_li+'</ul>');
+        banner_a = '';
+        banner_baozhang ='';
+        banner_span = '';
+        banner_li = '';
+//*************************为你推荐部分ajax**********************
+        
+//*************************热门部分ajax**********************
+        for(i = 70 ; i < 73 ; i++){
+            banner_span = '';
+            for(g = 1 ; g < json[i].hotJon.length ; g++){
+                banner_span += '<a href="#">'+json[i].hotJon[g]+'</a>';
+            }
+            banner_li += '<div><h3>'+json[i].hotJon[0]+'</h3><ul><li>'+banner_span+'</li></ul></div>';
+        };
+        
+        $('.hot_cont').html(banner_li);
+        banner_span = '';
+        banner_li = '';
+//*************************热门部分ajax**********************
+
+//*************************热门部分ajax**********************
+        for(i = 73 ; i < 75 ; i++){
+            banner_li = '';
+            for(g = 0 ; g < json[73].qiyeimg.length ; g++){
+                banner_a = '';
+                banner_span = '';
+                banner_a += "<img src="+json[73].qiyeimg[g]+"></img>";
+                banner_span += '<span>'+json[74].qiyespan[g]+'</span>';
+                banner_li += '<li><a class="subject_xiAozHao_right_a">'+banner_a+banner_span+'</a></li>';
+                console.log(banner_a);
+            }
+        };
+        console.log(banner_li);
+        $('.subject_xiAozHao_right').html('<ul>'+banner_li+'</ul>');
+        
+//*************************热门部分ajax**********************
     }
 });
 
