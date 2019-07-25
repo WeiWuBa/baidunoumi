@@ -158,7 +158,11 @@ $.ajax({
 /* ———————————————————————————————数据分页显示————————————————————————————— */
 // 绑定点击页码事件
 $('.C_contentBot_pagination').on('click','li a',function(){
+<<<<<<< HEAD
 	var str =$(this).html();	location.reload();
+=======
+	var str =$(this).html();
+>>>>>>> CMD
 	if(!isNaN(str)){
 		//移除之前的C_active
 		$('.C_contentBot_pagination li a').removeClass('C_active');
