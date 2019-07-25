@@ -14,6 +14,11 @@
 		</div>
 		<div class="ySearch">
 			<input type="text" class="ySearchbox" placeholder="搜你感兴趣的电影">
+			<ul class="gjc_xr">
+				<!-- <li>qqq</li>-->
+				 
+			</ul>
+			
 			<i class="iconfont icon-fangdajing ymagnifyingglass "></i>
 		</div>
 	</div>
@@ -21,10 +26,10 @@
 <div class="yNavWrap">
 	<div class="yNav yCommon yClearfix">
 		<div class="yNavBox">
-			<a class="yActive" href ="movieIndex.html">首页</a>
-			<a href ="moviesecond.html">影片</a>
-			<a href ="123.html">影院</a>
-			<a href ="123.html">票房</a>
+			<a class="yone " href ="movieIndex.html">首页</a>
+			<a class ='ytwo' href ="moviesecond.html">影片</a>
+			<a href ="https://dianying.nuomi.com/cinema?cityId=340">影院</a>
+			<a href ="https://dianying.nuomi.com/movie/boxoffice?cityId=340">票房</a>
 		</div>
 		<div class="yNav-right">
 			<a href="#" class="yposter"></a>
@@ -33,25 +38,3 @@
 	</div>
 </div>
 
-<script>
-	var urlstr = location.href;
-	var act = false;
-	$('.yNavBox a').each(function(){
-		console.log($(this).attr('href'));
-		if((urlstr = '/').indexOf($(this).attr('href')) >-1 &&$(this).attr('href') != ''){
-			$(this).addClass('yActive');
-			act = true;
-		}else if((urlstr = '/').indexOf('movieIndex.html') >-1){
-			$('.yNavBox a').eq(0).addClass('yActive');
-			act = true;
-		}else if((urlstr = '/').indexOf('moviesecond.html') >-1){
-			$('.yNavBox a').eq(1).addClass('yActive');
-			act = true;
-		}else{
-			$(this).removeClass('yActive');
-		}
-	})
-	if(!urlstr){
-		$('.yNavBox a').eq(0).addClass('yActive')
-	}
-</script>
