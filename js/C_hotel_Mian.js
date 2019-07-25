@@ -158,7 +158,7 @@ $.ajax({
 /* ———————————————————————————————数据分页显示————————————————————————————— */
 // 绑定点击页码事件
 $('.C_contentBot_pagination').on('click','li a',function(){
-	var str =$(this).html();
+	var str =$(this).html();	location.reload();
 	if(!isNaN(str)){
 		//移除之前的C_active
 		$('.C_contentBot_pagination li a').removeClass('C_active');
@@ -172,6 +172,7 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 	}
 });
 $('.C_contentBot_pagination').on('click','li a',function(){
+
 	var pageNum = $(this).attr('data_cod'); 	// 页数
 	console.log(pageNum);
 	var pageSize = 10;	// 每一页显示条数
@@ -181,7 +182,7 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 		type:'get',//HTTP请求类型
 		cache:false,//是否使用缓存
 		success:function(data){
-			$(".C_contenthotel_list").html("")
+			// $(".C_contenthotel_list").html("");
 			if(data.length > 0){
 				var arr_length = data.length;// 总条数
 				var newarr = [];
