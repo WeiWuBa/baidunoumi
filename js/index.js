@@ -9,7 +9,7 @@
 			$('.Dangerous_nav').slideUp(200);//收起
 		}
 	});
-	
+//搜索	
 	if($(".ipt1").val() == ''){
 		$(".nav_ss_xr").css("display","none");
 	}
@@ -132,6 +132,9 @@
 			}
 			for(let l = 0; l<imgli.length; l++){
 				imgli[l].onclick = function(){
+					// for(var j = 0; j<imgList_xr.length; j++){
+					// 	index = j;
+					// }
 					for(var k = 0; k<imgli.length; k++){
 						imgli[k].className = "";
 					}
@@ -186,11 +189,11 @@
 				str += '<li><a href="#"><img src="'+data.data.films[index].poster+'" ><span>'+data.data.films[index].grade+'</span><p>'+data.data.films[index].name+'</p><div class="movie_xr_choose">选座购票</div></a></li>';
 			});
 			$(".item_list_xr").html(str);
-			
+			//轮播
 			$("#warp_xr").on("mouseenter",".movie_xr",function(){
-				$(".icon-jiantou_zuo").animate({opacity:1,left:50},500).css("color",getColor());
-				$(".icon-jiantou_you1").animate({opacity:1,right:50},500).css("color",getColor());
-				$(".ys").animate({opacity:0.8},500);
+				$(".icon-jiantou_zuo").animate({opacity:1,left:50},400).css("color",getColor());
+				$(".icon-jiantou_you1").animate({opacity:1,right:50},400).css("color",getColor());
+				$(".ys").animate({opacity:0.8},400);
 			});
 			$("#warp_xr").on("mouseleave",".movie_xr",function(){
 				$(".icon-jiantou_zuo").animate({opacity:0,left:-0},1000);
@@ -206,7 +209,7 @@
 					index--;
 				}
 				$(".ys").html("第"+(index+1)+"/"+(sum));
-				$(".item_list_xr").animate({left:-1200*index},1000);
+				$(".item_list_xr").animate({left:-1200*index},800);
 			});
 			$(".icon-jiantou_you1").click(function(){
 				if(index==sum-1){
@@ -215,8 +218,18 @@
 					index++;
 				}
 				$(".ys").html("第"+(index+1)+"/"+(sum));
-				$(".item_list_xr").animate({left:-1200*index},1000);
+				$(".item_list_xr").animate({left:-1200*index},800);
 			});
 		},
 	});
 })();
+setTimeout(function(){
+	$('.HeaNav1 .dl_f_xr').css({"display":"block","z-index":"999","position": "relative",
+	   "top": '-44px',"left": '-16px'});
+	   
+},100)
+
+
+
+
+

@@ -52,7 +52,7 @@ a{
 }
 .right li a{
     height: 40px;
-    display: inline-block;
+    display: block;
     line-height: 40px;
     padding-right: 20px;
 }
@@ -279,8 +279,6 @@ a{
     display: none;
 }
 .HeaNav1 dl{
-    display: none;
-    z-index: 4;
     position: absolute;
     top: 44px;
     left: 0;
@@ -296,12 +294,8 @@ a{
 .HeaNav1 .dl_f_xr{
 	width: 218px;
 	height: 386px;
-	position: absolute;
-    display: none;
-    top: 0;
-    left: 0;
-    z-index: 999;
-	/* 注释去掉显示联动 */ 
+	display: none;
+	/* 注释去掉显示联动 */
 }
 .HeaNav1 .dl_f_xr dt a{
 	color: #A6A6A6;
@@ -418,31 +412,6 @@ a{
 .HeaNav1 dl:nth-of-type(8){
     top: 387px;
 }
-.HeaNav1:hover > dl{
-    display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .right .recently_wp{
 	position: relative;
@@ -527,4 +496,30 @@ a{
 }
 .header-1 .yonhu_xr .tc{
 	cursor: pointer;
+}
+.form-right {
+	position: relative;
+}
+.form-right .gjc_xr{
+	width: 580px;
+	background: #fff;
+	position: absolute;
+	top: 45px;
+	left: -2px;
+	box-shadow: darkgrey 1px 1px 14px -1px;
+}
+.form-right .gjc_xr li{
+	width: 580px;
+	float: none;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 21px;
+	position: relative;
+	z-index: 99999;
+	background: #fff;
+	box-sizing: border-box;
+	margin: 0;
+}
+.select{
+	background: #F7F7F7 !important;
 }

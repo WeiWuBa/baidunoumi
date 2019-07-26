@@ -965,4 +965,7 @@ body{
     margin: 0 10px;
     padding: 8px 0;
 }
+.recommend>ul>li>a>div:nth-child(2)>em:nth-child(1){
+	display:none;
+}
 /* ********************边区块***************** */

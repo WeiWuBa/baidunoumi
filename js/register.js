@@ -43,7 +43,8 @@
 			success: function(data){
 				$.each(data,function(index,value){
 					if(acc == data[index].account && pas == data[index].password){
-						window.location.href = "http://localhost/baidunoumi/";
+						$(".mistake_xr").css("display","none");
+						window.location.href = "http://10.36.136.49/baidunoumi/index.html";
 						if($(".checkbox").prop('checked') == true){
 							setCookie("account",acc,7);
 							setCookie("password",pas,7);
@@ -60,6 +61,7 @@
 						return false;
 					}else{
 						$(".mistake_xr").css("display","block");
+						// return false;
 					}
 				});
 			}
@@ -67,4 +69,5 @@
 	 });
 	    $(".account_xr").val(getCookie("account"));
 	    $(".password_xr").val(getCookie("password"));
+	    // $(".checkbox").attr("checked",getCookie("checkbox"));
 })();

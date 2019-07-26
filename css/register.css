@@ -7,6 +7,7 @@
 .wrap_xr{
 	width: 980px;
 	margin: 0 auto;
+	position: relative;
 }
 .wrap_xr .logo_xr{
 	width: 980px;
@@ -50,8 +51,11 @@
 	width: 623px;
 	height: 337px;
 	background: salmon;
-	float: left;
-	margin-top: 80px;
+	/* float: left; */
+	/* margin-top: 80px; */
+	position: absolute;
+	top: 104px;
+	left: 0px;
 	background: url(../img/register_logo2.png) no-repeat;
 }
 body,html{
@@ -73,6 +77,8 @@ body,html{
 	margin-top: 80px;
 	padding: 20px 14px;
 	position: relative;
+	top: 20px;
+	right: -162px;
 }
 .wrap_xr .login_area_xr .title_xr{
 	width: 279px;

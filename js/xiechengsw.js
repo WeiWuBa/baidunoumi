@@ -9,7 +9,10 @@ var mySwiper = new Swiper ('.sw', {
     },
      speed:300,
 	autoplay : {
-		delay:3000
+		delay:3000,
+		stopOnLastSlide: false,
+		disableOnInteraction: false
+
 	},
 	
     // 如果需要前进后退按钮

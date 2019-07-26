@@ -50,16 +50,26 @@ function  L_jiashuju(){
     }
    
 }
+// setTimeout(function(){
+//     $('footer .re-footer-inner').css('margin','0 auto');
+//     $('.tijiao').css('height','36px');
+//     $('.searchInput').css('height','36px');
+//     // $('.HeaNav1 .dl_f_xr').css({"display":"block","z-index":"999"});
+//     $('.interlock_xr').css({'left':"217px"});
+//     $('.HeaNav1 dl').css({'display':'block','width':"217px"});
+// },0);
+
 setTimeout(function(){
     $('footer .re-footer-inner').css('margin','0 auto');
-    $('.tijiao').css('height','36px');
+    $('.tijiao').css('height','38px');
     $('.searchInput').css('height','36px');
-    // $('.HeaNav1 .dl_f_xr').css({"display":"block","z-index":"999"});
+	$('.HeaNav1 .dl_f_xr').css({"z-index":"999","position": "relative",
+    "top": '-44px',"left": '-16px'});
     $('.interlock_xr').css({'left':"217px"});
     $('.HeaNav1 dl').css({'display':'block','width':"217px"});
-},0);
-
-
+	$('.form-right').css({'border':"2.5px solid #d6ad62"});
+	$('.HeaNav1 dl dd a').css('font-size','14px');
+},70);
 
 
 

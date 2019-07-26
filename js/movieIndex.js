@@ -62,6 +62,7 @@ $(function(){
 			},
 		    dataType: 'json',//发送 json 请求
 		    success: function (data){
+				console.log(data);
 				  for(let i = 0;i<data.data.films.length;i++){
 					 // console.log(data.data.films[i]); 
 					  if(data.data.films[i].grade == undefined){
@@ -94,6 +95,7 @@ $(function(){
 					str3 +=`<li yfilmsId=${data.data.films[i].filmId}><span>${i+1}.</span><h4>${data.data.films[i].name}<em>${data.data.films[i].grade}</em></h4><div class="ystage-photo" ><a href="moviesecond.html"><img src=${data.data.films[i].poster}></img></a></div></li>`;
 				};
 				$('.yrank').append(str3);
+				//电影票房排行动画效果
 				$('.yrank').children(":first").find('.ystage-photo').css('display','block');
 				$('.yrank').on('mouseenter','li',function(){
 					$("li .ystage-photo").hide();
@@ -102,11 +104,12 @@ $(function(){
 				$('.yrank').on('mouseleave','li',function(){
 					($(this).find('.ystage-photo')).show();		
 				});
+				$('.yrank').on('click','li',function(){
+					document.cookie="filmid="+$(this).attr('yfilmsId');
+				})
 			},
-			
-			
 		});
- 		//电影票房排行动画效果
+ 		
 		
  		
 		//首页下部数据获取
@@ -266,28 +269,24 @@ $(function(){
 			ele3.html(ycount+1+'/'+page);
 		})
 	};
-// 	
+	
 	ymoveleft1($('.ylowleftarrow'),$('.yUpList'),$('.ycountPict'));	
 	yMoveUlRight1($('.ylowrightarrow'),$('.yUpList'),$('.ycountPict'));
-
-	
+	//获取cookie数据
+	 function getCookie(key){
+		var cookies = document.cookie;//获取cookie
+		var arr = cookies.split('; ');
+		for (var i = 0, len = arr.length; i < len; i++){
+			var arr2 = arr[i].split('=');//['user2','xw']
+			if (arr2[0] == key){
+				return unescape(arr2[1]);//解码
+			}
+		}
+		return '';
+	};
 	
 		//加载立即执行
 		$(function(){
-		 //获取cookie数据
-		 function getCookie(key){
-			var cookies = document.cookie;//获取cookie
-			var arr = cookies.split('; ');
-			for (var i = 0, len = arr.length; i < len; i++){
-				var arr2 = arr[i].split('=');//['user2','xw']
-				if (arr2[0] == key){
-					return unescape(arr2[1]);//解码
-				}
-			}
-			return '';
-		};
-		 
-		 
 			var str3='';
 			var stractor='';
 			var str1='';
@@ -347,14 +346,12 @@ $(function(){
 						var localcer = data.data.cinemas;
 						for(var i=0;i<8;i++){
 							 str1+=`<li class="yCineplexInf"><div class="yInf"><h4>${localcer[i].name}</h4><p> ${localcer[i].address}</p></div><div class="yPrices"><i>${localcer[i].lowPrice/100}</i>起</div><div class="yChoosein"><a>选座购票</a></div></li>`;
-						
 						}
 						$('.yCineplexList').append(str1);
 					}
 				})
 			};
-			
-		// 		//拿区域信息
+			//拿区域信息
 			$.ajax({
 				url: 'https://m.maizuo.com/gateway?cityId=440300&ticketFlag=1&k=4102088',
 				type: 'get',
@@ -413,10 +410,11 @@ $(function(){
 					$('.yweekdate').children(':first').addClass('ybgc');
 				}
 			});
-
+				
+				
+				
+			
 		});
-	
-	
 		//标记喜欢效果
 		$('.ylike').toggle(function(){
 			$('.ylike').find('.ywantlook').html('已标记想看');
@@ -425,7 +423,7 @@ $(function(){
 			$('.ylike').find('.ywantlook').html('想看');
 			$('.icon-icon-test').css('color','#fff');
 		});
-
+		
 		//拿区域数据 点击区域全部区域模块隐藏
 		$('.yadministrativeregion').click(function(){	
 			var areaname ='';
@@ -488,6 +486,79 @@ $(function(){
 				}
 			});
 		});
+		
+		
+		var str9=''
+		$.ajax({
+			url: 'https://m.maizuo.com/gateway?cityId=440300&pageNum=1&pageSize=44&type=1&k=2139792',
+			type: 'get',
+			headers:{
+				"X-Client-Info": '{"a":"3000","ch":"1002","v":"5.0.4","e":"1563798652721554505868"}',
+				"X-Host": "mall.film-ticket.film.list",
+			},
+			dataType: '',//发送 json 请求
+			success:function (data){
+				 console.log(data.data.films);
+				var localcer11 = data.data.films;
+				for(var i=27;i<localcer11.length;i++){
+ 					str9+=`<li class="yClearfix">
+							<h6>7月26号&nbsp;&nbsp;周五</h6>
+							<div class="yMovieup">
+								<a class="yfilmp"><img src="${localcer11[i].poster}"></a>
+								<div class="yfilmText">
+									<h3 class="ytitle">${localcer11[i].name}</h3>
+									<p class="ywantlook">777人想看</p>
+									<p>${localcer11[i].language}</p>
+									<p>类型${localcer11[i].category}：时长：${localcer11[i].runtime}上映时间：7月8日</p>
+								</div>
+								<a class="yyushou">预售选座</a>
+							</div>
+						</li>`
+						
+				}
+				$('.ymovieText').append(str9);
+			}
+		});
+		var str10='';
+		$('.yjjsy').click(function(){
+			$('.ymovieLive').children().each(function(index,item){
+				$('.ymovieLive').children().removeClass('yadd');
+			})
+				$(this).addClass('yadd');
+			
+			$('.ymovieText').empty();
+			$.ajax({
+			url: 'https://m.maizuo.com/gateway?cityId=440300&pageNum=1&pageSize=44&type=1&k=2139792',
+			type: 'get',
+			headers:{
+				"X-Client-Info": '{"a":"3000","ch":"1002","v":"5.0.4","e":"1563798652721554505868"}',
+				"X-Host": "mall.film-ticket.film.list",
+			},
+			dataType: '',//发送 json 请求
+			success:function (data){
+				 console.log(data.data.films);
+				var localcer11 = data.data.films;
+				for(var i=32;i<localcer11.length;i++){
+					str10+=`<li class="yClearfix">
+							<h6>7月26号&nbsp;&nbsp;周五</h6>
+							<div class="yMovieup">
+								<a class="yfilmp"><img src="${localcer11[i].poster}"></a>
+								<div class="yfilmText">
+									<h3 class="ytitle">${localcer11[i].name}</h3>
+									<p class="ywantlook">777人想看</p>
+									<p>${localcer11[i].language}</p>
+									<p>类型${localcer11[i].category}：时长：${localcer11[i].runtime}上映时间：7月8日</p>
+								</div>
+								<a class="yyushou">预售选座</a>
+							</div>
+						</li>`
+						
+				}
+				$('.ymovieText').append(str10);
+			}
+		});
+		})
+		
 		//加载更多效果
 		$('.ylookmoreci').click(function(){
 		if($('.yCineplexList').children().length>5){

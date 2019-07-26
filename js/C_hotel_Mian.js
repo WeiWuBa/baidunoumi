@@ -1,4 +1,3 @@
-
 $(function(){
 
 /* ———————————————————————————————入住城市选择———————————————————————————————————— */
@@ -37,26 +36,11 @@ $('.C_contentTop_list').on('click','a',function(){
 	$('.C_contentTop_list a').removeClass('C_contentTop_list_hover');
 	$(this).toggleClass('C_contentTop_list_hover');
 });
-//保存选中状态
-$('.contentTop_checek').click(function(){
-	$.cookie('checekId',null);
-	var val = $(this).val();
-	var arr = val.split(",");
-	$.cookie('checekId',val);
-	// if($(this).attr('checked','checked')){
-	// 	$('.contentTop_checek').click(function(){$(this).attr('checked','false');});
-	// }
-	// location.reload();
-});
-// var checekIdlength = localStorage.getItem('checekId');
-for (var i = 0; i < $('.contentTop_checek').length; i++) {
-	if($.cookie('checekId') == $('.contentTop_checek').val()){
-		$(this).attr('checked','true');
-	}
-}
 /* ———————————————————————————————酒店地点选择———————————————————————————————————— */
 $('.C_hotelCityDetail_tab').on('click','a',function(){
 	//三角小标
+	$('.C_hotelCityDetail_tab').find('a').css({'font-weight':'normal','color':'#6d6d6d'});
+	$(this).css({'font-weight':'800','color':'black'});
 	$('.C_hotelCityDetail_tab a span').css('display','none');
 	$('.C_hotelCityDetail_areaDetail').css('display','block');
 	$(this).find('span').css('display','inline-block');
@@ -112,14 +96,18 @@ $('.C_hotelCityDetail_fuoce2').find('a').click(function(){
 	$(this).parent().siblings().find('a').removeClass('C_hotelCityDetail_fuoce_click');
 });
 /* ———————————————————————————————数据存储到cookie————————————————————————————— */
-$('.C_contenthotel_list home-page').on('click','li a',function (){
+$('.C_contenthotel_list').on('click','li a',function (){
 	var code = $(this).parent().attr('code') || $(this).parent().parent().attr('code') || $(this).parent().parent().parent().attr('code');
+	
 	if (localStorage.getItem('C_Data')) {// 获取本地存储的数据[]
 		var codeArr = JSON.parse(localStorage.getItem('C_Data')).code;
+		// setCookie(key,val,-1);
 	} else {
 		var codeArr = [];
 	}
-	codeArr.push(code);
+	codeArr.length=0;
+	codeArr[0]=code;
+	console.log(codeArr);
 	// 把数据更新到本地存储
 	var jsonStr = JSON.stringify({"code":codeArr});
 	localStorage.setItem('C_Data',jsonStr);
@@ -142,7 +130,7 @@ $.ajax({
 			}
 			var str = '';
 			for(var j = 0; j < newarr[pageNum-1].length; j++){
-				str +='<li class="C_Data" code="'+newarr[pageNum-1][j].hotel_id+'"><!-- 酒店logo图 --><a href="hotel_subpage.html" class="clearfix"><img src="'+newarr[pageNum-1][j].hotel_img_url+'" /></a><div class="C_contenthotel_listcontent"><!-- 酒店名称 --><a href="hotel_subpage.html"><h3>'+newarr[pageNum-1][j].hotel_name+'</h3></a><!-- 酒店星形评价 --><p><a href="hotel_subpage.html"><img src="images/hotel/shop-star-b_767a724.png" /><span><img src="images/hotel/shop-star-o_e5d6259.png" /></span><span>4分</span></a><!-- 酒店价格 --><span>'+newarr[pageNum-1][j].hotel_price+'</span></p><!-- 酒店文字评价 --><span><a href="">'+newarr[pageNum-1][j].hotel_appraise+'</a></span><!-- 酒店地址 --><p><i class="iconfont">&#xe60c;</i>'+newarr[pageNum-1][j].hotel_site+'<span>'+newarr[pageNum-1][j].hotel_address+'</span></p></div></li>';
+				str +='<li class="C_Data" code="'+newarr[pageNum-1][j].hotel_id+'"><!-- 酒店logo图 --><a href="###" class="clearfix"><img src="'+newarr[pageNum-1][j].hotel_img_url+'" /></a><div class="C_contenthotel_listcontent"><!-- 酒店名称 --><a href="hotel_subpage.html"><h3>'+newarr[pageNum-1][j].hotel_name+'</h3></a><!-- 酒店星形评价 --><p><a href="hotel_subpage.html"><img src="images/hotel/shop-star-b_767a724.png" /><span><img src="images/hotel/shop-star-o_e5d6259.png" /></span><span>4分</span></a><!-- 酒店价格 --><span>'+newarr[pageNum-1][j].hotel_price+'</span></p><!-- 酒店文字评价 --><span><a href="">'+newarr[pageNum-1][j].hotel_appraise+'</a></span><!-- 酒店地址 --><p><i class="iconfont">&#xe60c;</i>'+newarr[pageNum-1][j].hotel_site+'<span>'+newarr[pageNum-1][j].hotel_address+'</span></p></div></li>';
 			}
 		$('.C_contenthotel_list').html(str);
 		$('.C_contentBot_pagingT1').html(arr_length);
@@ -157,7 +145,6 @@ $.ajax({
 /* ———————————————————————————————数据分页显示————————————————————————————— */
 // 绑定点击页码事件
 $('.C_contentBot_pagination').on('click','li a',function(){
-	// var str =$(this).html();	location.reload();
 	var str =$(this).html();
 	if(!isNaN(str)){
 		//移除之前的C_active
@@ -181,6 +168,7 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 		cache:false,//是否使用缓存
 		success:function(data){
 			$(".C_contenthotel_list").html("")
+		
 			if(data.length > 0){
 				var arr_length = data.length;// 总条数
 				var newarr = [];
@@ -202,29 +190,32 @@ $('.C_contentBot_pagination').on('click','li a',function(){
 		}
 	});
 });
-
-
+$('.C_contentTop_right_pagingR').on('click',function(){
+	pageNum = pageNum+1;
+	$('.C_contentTop_right_pagingT1').html(pageNum);
+});
+$('.C_contentTop_right_pagingl').on('click',function(){
+	if($('.C_contentTop_right_pagingT1').html() == '1'){
+		return;
+	}else{
+		pageNum = pageNum-1;
+		$('.C_contentTop_right_pagingT1').html(pageNum);
+	}
+});
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+setTimeout(function(){
+    $('footer .re-footer-inner').css('margin','0 auto');
+    $('.tijiao').css('height','43px');
+    $('.searchInput').css('height','40px');
+    // $('.HeaNav1 .dl_f_xr').css({"display":"block","z-index":"999"});
+	$('.HeaNav1 .dl_f_xr').css({"z-index":"999","position": "relative",
+    "top": '-44px',"left": '-16px'});
+    $('.interlock_xr').css({'left':"233px"});
+    $('.HeaNav1 dl').css({'display':'block','width':"211px"});
+	$('.form-right').css({'border':"2.4px solid #d6ad62"});
+	// $('.HeaNav1 dl dd a').css('font-size','14px');
+},70);
 
 
 
